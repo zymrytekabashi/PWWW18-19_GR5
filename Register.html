@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+   <head>
+     <meta charste="utf-8">
+     <title>Regjistrohu</title>
+
+      <style type="text/css">
+
+      body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #bdc3c7;
+
+            }
+      .registration {
+                    padding: 3em;
+                    margin: 1em;
+                    color:#1c2833  ;
+                    background-color: #5d6d7e;
+                    font-size: 16px;
+                    border: 1px dotted black;
+                    position: absolute;
+                    top: 100px;
+                    right: 700px;
+                    width: 300px;
+                    height: 300px;
+                    }
+           .title {
+                        text-align: center;
+
+
+                  }
+
+           .login {
+                         padding: 3em;
+                         margin: 1em;
+                         color:#1c2833  ;
+                         background-color: #566573 ;
+                         font-size: 16px;
+                         border: 1px dotted black;
+
+                         position: absolute;
+                         top: 100px;
+                         right:200px;
+                         width: 300px;
+                         height: 300px;
+                    }
+          a { color:#1a5276 ;}
+
+        input[type=text],input[type=password],input[type=email],input[type="submit"]{
+
+                         width: 100%;
+                         padding: 12px 20px;
+                         margin: 8px 0;
+                         box-sizing: border-box;
+
+
+                    }
+       input[type="submit"]:hover{
+
+                            color:red;
+                           }
+
+
+
+
+
+      </style>
+
+   </head>
+   <body>
+     <h1 class="title">Register&LogIn</h1>
+     <p  class="title" >It is necessary to register in order for you to be a part of our school system</p>
+     <form method="get" action="http://www.randyconnolly.com/tests/process.php">
+
+          <div  class="registration" >
+
+             <label>ARE YOU NEW? REGISTER</label></br>
+             <label><b>Emri</b></label></br>
+             <input type="text" name="name" placeholder="User name" required size="60" id="name"></br>
+             <label><b>E-mail</b></label></br>
+             <input type="email" name="email" placeholder="Email" required size="60" id="email"></br>
+             <label><b>Password</b></label></br>
+             <input type="password" name="password" placeholder="Password" required size="60" id="password"></br>
+             <input type="submit" value="Register">
+
+         </div>
+
+
+        <div class="login">
+
+               <label>ALREADY A STUDENT? LOGIN</label></br>
+                <label><b>Emri</b></label></br>
+               <input type="text" name="name" placeholder="User name" required size="60" id="logName"></br>
+                <label><b>Password</b></label></br>
+               <input type="password" name="password" placeholder="Password" required size="60" id="logPassword">
+
+
+
+
+             <input type="checkbox" name="remember">
+             <label>Remember me?</label>
+             <input type="submit" value="LOGIN"></br>
+             <a href="#">Forgot password</a>
+
+         </div>
+
+
+
+
+
+
+
+
+
+
+   </body>
+
+
+
+
+
+
+</html>
