@@ -10,54 +10,120 @@ and open the template in the editor.
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <style type="text/css">
-            body{background-color: #BEBEBE}
-            a:link{color:#00008B}
+            a:link{color:blue;}
             a:visited{color:red;}
-            h1 {border-style:outset;
-                 border-color: #888888;
-                background-color:#787878;
-                border-radius: 8px;
-             text-align: center;}
-            .list{font-size: 20px;}
-         
-            p{ font-family: Arial, Helvetica, sans-serif;
-            font-size: 24px;
-             border: 1px solid black;
-    background-color: #787878;
-    padding-top: 50px;
-    padding-right: 30px;
-    padding-bottom: 50px;
-    padding-left: 80px;}
-            
-   </style>
+            .title{
+                
+                color:black;
+                font-family: "Comic Sans MS", cursive, sans-serif;
+            }
+              .topnav {
+                 overflow: hidden;
+                 background-color: transparent;
+                }
+    .topnav a {
+        
+                   float: right;
+                   display: block;
+                     position: relative; 
+                  max-width: 400px; 
+                    margin: 0 auto; 
+
+                   text-align: center;
+                   padding: 10px 16px;
+                   text-decoration: none;
+                }
+                .topnav .content {
+                     font-family: "Comic Sans MS", cursive, sans-serif;
+                    float:left;
+  position: absolute; 
+  top: 0; 
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.0); 
+  color: #f1f1f1; 
+  width: 96%; 
+  padding: 20px; 
+}
+                h1{color:blue;}
+     .topnav a:hover {
+                  text-decoration: overline;
+                     }
+     .title {
+             font-size:25px;
+            }
+            body{ background-color: #BEBEBE;}
+            p{color:black;}
+        .prog{ padding:20px;
+            -webkit-column-count: 2; 
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  column-count: 2;
+  -webkit-column-gap: 40px;
+ 
+  column-gap: 40px;
+  ;}
+
+        </style>
    </head>
     <body>
-        <div id ="header">
+        <header>
+            <div class="topnav">
             
-                <h1>Programs</h1>
-                <p >  <strong> This school includes a lot of meaningful programs for our students.The students who choose to study here ,will be the greatest minds of their generation.
-            Some of our programs are: </strong></p>
             
-            <ul class="list">
-                <li><a href="#kidstech" > KidsTek </a>
-                    <img src ="Kidstek.jpg"  ></li><p>-Which teaches our children that technology is fun.</p>
                 
-                <li><a href="ecokids">Eco-Kids</a></li><img src="Eco.jpg"><p>:Children will learn how important is their environment.</p>
-                <li><a href="#math">Funny-math</a></li><img src="Math2.jpg"><p>Learning math in a funny way is always a great choice.</p>
-                <li><a href="#book">RAB*Read all about it!*</a></li><img src="Book.jpg">
+              <img src="School1.jpg" width='100%' >
+                    
+             <div class='content' style="float:right">
+                 <h1 >Programs</h1>
+              <a href="#">HOMEPAGE</a>
+             <a href="#">REGISTER</a>
+              <a href="#">ACTIVITY</a>
+              <a href="#">PROGRAMS</a>
+            <a href="#">SOMETHING ELSE</a>
+                
+            </div>
+            </div>
+          
+                
+         
+               
+            
+            
+        </header>
+        <section>
+                
+                <p >  <strong> This school includes a lot of meaningful programs for our students.
+                        The students who choose to study here ,will be the greatest minds of their generation.
+            Some of our programs are: </strong></p>
+            <div class='prog' >
+                <div style="float:left">
+            
+                    <span class="title">KidsTek</span><br>
+                    <img src ="Kidstek.jpg" width='50%'  >
+                <p>-Which teaches our children that technology is fun.</p>
+                
+                <span class='title'>Eco-Kids</span><br>
+                <img src="Eco.jpg" width='50%'><p>:Children will learn how important is their environment.</p>
+                <span class='title'>Funny-math</span>
+                <br>
+                <img src="Math2.jpg" width='50%'><p>Learning math in a funny way is always a great choice.</p>
+                <span class='title'>RAB*Read all about it!*</span>
+                <br><img src="Book.jpg" width='50%'>
                     <p>For kids who like to read and also for those who have never
                         read a book(but open for new opportunities).</p>
-                        <li><a href="#music">Music-Time </a>
+                    <span class='title'>Music-Time </span><br>
                     <ul><li>Karaoke-kids</li>
                         <li>Play your instrument!</li>
                         <li>Dance party!</li></ul>
-                         <img src="karaoke.png"> 
+                         <img src="karaoke.png" width='50%'> 
+                         <br>
                         
-                        <li><a href="#">Let the children choose!</a>-Any program that is choosen by the children but has never been used in the school before.</li>
+                        <span class='title'>Let the children choose!</span>
+                        <p>  -Any program that is choosen by the children but has never been used in the school before.</p>
             
+            </div>
+            </div>
             
-            
-        </div>
+        </section>
         <div id="body">
             <h3>If you already are or were a student in this school please take a moment and fill in this form and let us know which two of these programs were best for you or your children</h3>
              <form method="get" action="http://www.randyconnolly.com/tests/process.php"/>
