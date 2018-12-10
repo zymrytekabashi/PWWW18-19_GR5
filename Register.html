@@ -9,108 +9,150 @@
 
       body {
             font-family: Arial, Helvetica, sans-serif;
-            background-color: #bdc3c7;
+            background-image: url("play.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
 
             }
       .registration {
                     padding: 3em;
                     margin: 1em;
-                    color:#1c2833  ;
-                    background-color: #5d6d7e;
+                    color: #17202a ;
+
                     font-size: 16px;
-                    border: 1px dotted black;
+                    border: 1px dashed gray;
                     position: absolute;
-                    top: 100px;
-                    right: 700px;
+                    top: 220px;
+                    right: 850px;
                     width: 300px;
-                    height: 300px;
+                    height: 900px;
+                    border-radius:20px;
                     }
-           .title {
+        section h1 {
                         text-align: center;
-
-
+                        font-family: "Comic Sans MS ",sans-serif;
+                        font-weight: bolder;
+                         padding: 0;
+                         margin: 0;
+                         font-size:38px;
+                         text-shadow:-4px 4px 6px dimgray;
+                           color:#132d3e;
                   }
 
-           .login {
-                         padding: 3em;
-                         margin: 1em;
-                         color:#1c2833  ;
-                         background-color: #566573 ;
-                         font-size: 16px;
-                         border: 1px dotted black;
 
-                         position: absolute;
-                         top: 100px;
-                         right:200px;
-                         width: 300px;
-                         height: 300px;
-                    }
           a { color:#1a5276 ;}
 
-        input[type=text],input[type=password],input[type=email],input[type="submit"]{
+        input[type=text],input[type=password],input[type=email],input[type="submit"],input[type="number"],input[type="radio"],option{
 
                          width: 100%;
                          padding: 12px 20px;
                          margin: 8px 0;
                          box-sizing: border-box;
-
+                         background-color: rgba(211, 211, 211, 0.3);
+                         border: 0;
+                         border-bottom: 1px solid #1c2833;
 
                     }
        input[type="submit"]:hover{
 
                             color:red;
                            }
+       .navigacioni {
+                      overflow: hidden;
+                      background-color: #132d3e;
 
 
+                    }
 
+       .navigacioni a,p {
+                        float:left;
+                        display:inline-block;
+                        color: #f2f2f2;
+                        text-align: center;
+                        padding: 5px 16px 1px 1em;
+                        text-decoration: none;
+
+                         }
+
+          .navigacioni a:hover {
+                                text-decoration: overline;
+                                }
+
+         nav p { color:#b3b3b3;}
 
 
       </style>
 
    </head>
    <body>
-     <h1 class="title">Register&LogIn</h1>
-     <p  class="title" >It is necessary to register in order for you to be a part of our school system</p>
+     <header>
+
+             <div class="navigacioni">
+
+
+           <p style="color:#b3b3b3"> <a href="#"  style="text-decoration: none; font-size:25px;";>ModernSchool</a></br>Discover MS</p>
+             <nav style="float:right">
+               <p ><a href="#">ACADEMICS</a></br>Internships</p>
+               <p >  <a href="#">REGISTER</a></br>Not a member?</p>
+               <p >  <a href="#">INFORMATION</a></br>Get informed</p>
+               <p >  <a href="#">MORE</a> </br> Extra info</p>
+                <p ><a href="#">ACTIVITY</a></br>School activities</p>
+
+
+
+             </nav>
+       </div>
+
+   </header>
+
+   <section>
+     <h1>Register</h1>
+     <h3  class="title" style="color:#34495e ;text-align: center;font-family: "Comic Sans MS ",sans-serif;">Welcome to the ModernSchool application!<br>It is necessary to register in order for you to be a part of our school system.<br> We look forward to meeting you soon.</h3>
+   </section>
+
+   <section>
      <form method="get" action="http://www.randyconnolly.com/tests/process.php">
 
           <div  class="registration" >
 
-             <label>ARE YOU NEW? REGISTER</label></br>
-             <label><b>Emri</b></label></br>
-             <input type="text" name="name" placeholder="User name" required size="60" id="name"></br>
+             <label>ARE YOU NEW? REGISTER</label></br><br>
+             <label><b>Parent/guardian-s Name </b></label></br>
+             <input type="text" name="Parent" placeholder="Your Name " required size="60" id="parent"></br>
              <label><b>E-mail</b></label></br>
              <input type="email" name="email" placeholder="Email" required size="60" id="email"></br>
+             <label><b>How old is your child that will be applying?</b></label></br>
+             <input type="number" name="Children"  max=15 placeholder="Number" required size="60" id="children"></br>
+             <label for="txtList">Birth Month <input type="text" id="txtList" placeholder="Select a month" list="months">
+              <datalist id="months">
+                <option value="January">
+                <option value="February">
+                <option value="March">
+                <option value="April">
+                <option value="May">
+                <option value="June">
+                <option value="July">
+                <option value="August">
+                <option value="September">
+                <option value="October">
+                <option value="November">
+                <option value="December">
+
+              </datalist>
+            </label>
+             <label><b>First Name </b></label></br>
+             <input type="text" name="Name" placeholder="Child's name " required size="60" id="ChildName"></br>
+             <label><b>Last Name </b></label></br>
+             <input type="text" name="surname" placeholder="Last Name " required size="60" id="Surname"></br>
+             <label><b>Home Street Address </b></label></br>
+             <input type="text" name="address" placeholder="Address " required size="60" id="address"></br>
+             <label><b>Are you interested in applying for financal aid?</b></label></br>
+             Yes<input type="radio" name="financal aid" required size="60" value="yes"></br>
+             No<input type="radio" name="financal aid" required size="60" value="no"></br>
              <label><b>Password</b></label></br>
              <input type="password" name="password" placeholder="Password" required size="60" id="password"></br>
              <input type="submit" value="Register">
-
          </div>
-
-
-        <div class="login">
-
-               <label>ALREADY A STUDENT? LOGIN</label></br>
-                <label><b>Emri</b></label></br>
-               <input type="text" name="name" placeholder="User name" required size="60" id="logName"></br>
-                <label><b>Password</b></label></br>
-               <input type="password" name="password" placeholder="Password" required size="60" id="logPassword">
-
-
-
-
-             <input type="checkbox" name="remember">
-             <label>Remember me?</label>
-             <input type="submit" value="LOGIN"></br>
-             <a href="#">Forgot password</a>
-
-         </div>
-
-
-
-
-
-
-
+   </section>
 
 
 
