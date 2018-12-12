@@ -10,91 +10,134 @@ and open the template in the editor.
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <style type="text/css">
-            a:link{color:blue;}
-            a:visited{color:red;}
-            .title{
+            header{
+                background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url( "School1.jpg" );
+                height:800px;
                 
-                color:black;
-                font-family: "Comic Sans MS", cursive, sans-serif;
+                background-size: cover;
+                background-position: center;
+                
             }
-              .topnav {
-                 overflow: hidden;
+                          .topnav {
+                  
                  background-color: transparent;
                 }
-    .topnav a {
-        
-                   float: right;
-                   display: block;
-                     position: relative; 
-                  max-width: 400px; 
-                    margin: 0 auto; 
-
-                   text-align: center;
-                   padding: 10px 16px;
-                   text-decoration: none;
+                 
+                .menu{
+                    float:right;
+                    list-style:none;
+                    margin: 20px;
+                    
                 }
-                .topnav .content {
-                     font-family: "Comic Sans MS", cursive, sans-serif;
-                    float:left;
-  position: absolute; 
-  top: 0; 
-  background: rgb(0, 0, 0);
-  background: rgba(0, 0, 0, 0.0); 
-  color: #f1f1f1; 
-  width: 96%; 
-  padding: 20px; 
-}
-                h1,h2,h3{font-family: "Comic Sans MS", cursive, sans-serif;
-                text-align: center;}
-                
-     .topnav a:hover {
+                .menu li{
+                    display:inline-block;
+                    margin:10px 5px;
+                    
+                         
+                    
+                }
+                .menu li a{
+                   color:white;
+                   float:right;
+                   display: inline-block;
+                   font-family: "Comic Sans MS", cursive, sans-serif;
+                   text-align: center;
+                   padding:20px 20px;
+                   text-decoration: none;
+                   position:relative;
+                   letter-spacing: 2px;
+                }
+                .topnav a:hover {
                   text-decoration: overline;
                      }
-     .title {
-             font-size:25px;
-            }
-            body{ background-color: #BEBEBE;}
-            p{color:black;}
-        .prog{ padding:20px;
-            -webkit-column-count: 2; 
-  font-family: "Comic Sans MS", cursive, sans-serif;
-  column-count: 3;
-  -webkit-column-gap: 40px;
- text-align: center;
-  column-gap: 40px;
-  
-  ;}
-        .dropdown {
+     
+               .topnav .content {
+                 font-family: "Comic Sans MS", cursive, sans-serif;
+                 position: absolute; 
+                 top: 0; 
+                 background: rgb(0, 0, 0);
+                 background:  rgba(0, 0, 0, 0.0); 
+                 color: white; 
+                 width: 96%; 
+                 padding: 20px; 
+}
             
-            color:blue;
-            float:right;
-    position: relative;
-    display: inline-block;
-     background: rgb(0, 0, 0);
-  background: rgba(0, 0, 0, 0.0); 
-}
+           
+          
+                footer {
+  
+                    font-family: "Comic Sans MS", cursive, sans-serif;
+                    padding: 20px;
+                    text-align: center;
+                    background:	#808080;
+                    color:black;
+                    font-size:15px;
+                }  
+                
+  
+                .footer-menu li {
+                    
+                   
+                   display: inline-block;
+                  
+                   
+                }
+                .footer-menu li a{
+                    color:white;
+                    text-align: center;
+                   padding:20px 20px;
+                   text-decoration: none;
+                   position:relative;
+                   letter-spacing: 2px;
+                    
+                }
+            body{ background-color: #F5F5DC;
+                  font-family: "Comic Sans MS", cursive, sans-serif;}
+           
+           .prog{ padding:20px;
+                  -webkit-column-count: 2; 
+                  font-family: "Comic Sans MS", cursive, sans-serif;
+                  column-count: 3;
+                  -webkit-column-gap: 40px;
+                  text-align: center;
+                 column-gap: 40px;}
+        .dropdown {
+                margin:20px 5px;
+                color:white;
+                float:right;
+                position: relative;
+                display: inline-block;
+                background: rgb(0, 0, 0);
+                background: rgba(0, 0, 0, 0.0); 
+              }
 
-.dropdown-content {
-    display: none;
-    position: absolute;
-     background: rgb(0, 0, 0);
-  background: rgba(0, 0, 0, 0.0); 
-    min-width: 160px;
+          .dropdown-content {
+                 display: none;
+                 position: absolute;
+                 background: rgb(0, 0, 0);
+                 background: rgba(0, 0, 0, 0.0); 
+                 min-width: 160px;
     
-}
+                }
 
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
+            .dropdown-content a {
+                  color: black;
+                  padding: 5px 10px;
+                  text-decoration: none;
+                  display: block;
+               }
 
-.dropdown-content a:hover {background-color: #ddd;}
+              .dropdown :hover{text-decoration: overline;}
 
-.dropdown:hover .dropdown-content {display: block;}
-
-
+.dropdown:hover .dropdown-content {display: block;
+                                   text-decoration: overline;}
+                     .article{
+                      text-align:center;
+                     
+                    }
+                    .title{
+                        font-size:30px;
+                    }
 
         </style>
    </head>
@@ -102,53 +145,46 @@ and open the template in the editor.
         <header>
             <div class="topnav">
             
-            
-                
-              <img src="School1.jpg" width='100%' >
-                    
-             <div class='content' style="float:right">
-                 <h1 >Programs</h1>
-              <a href="#">HOMEPAGE</a>
-              
-             <a href="#">REGISTER</a>
-              <a href="#">ACTIVITY</a>
-              <div class="dropdown">
+          <div class='content' >
+             <ul class="menu">
+                 <li><a href="#">HOMEPAGE</a></li>
+                 <li><a href="#">REGISTER</a></li>
+                 <li><a href="#">ACTIVITY</a></li>
+                 <li><div class="dropdown">
                   <span class="dropbtn">PROGRAMS</span>
-              <div class="dropdown-content">
-    <a href="#">KidsTech</a>
-    <a href="#">Eco-kids</a>
-    <a href="#">Funny-math</a>
-   
-    <a href="#">RAB</a>
-    <a href="#">Karaoke-kids</a>
-    <a href="#">Summer special</a>
-    <a href="#">Draw the story!</a>
+                   <div class="dropdown-content">
+                    <a href="#">KIDS-TECH</a>
+                    <a href="#">ECO-KIDS</a>
+                    <a href="#">FUNNY-MATH</a>
+                    <a href="#">BOOK'S CHOICE AWARD</a>
+                    <a href="#">KARAOKE-KIDS</a>
+                    <a href="#">DRAW YOUR STORY!</a>
+                    <a href="#">SUMMER SPECIAL</a>
   
-  </div></div>
-            <a href="#">Contact Us</a>
-                
+                  </div></div></li>
+              <li><a href="#">CONTACT US</a></li>
+             </ul>
             </div>
             </div>
           
-                
-         
-               
-            
+          
             
         </header>
-        <section>
+        <div class='article'>
                 
             <h1 style='color:#efd098;'>6 PILLARS OF GROWTH</h1>
-            <h2>We're committed to cultivating global, happy citizens who know 
-                who they are, understand their gifts and approach life with wonder, joy, humility, and a profound desire to share.</h2>
-            <h3 ><i>Our practice is focused on supporting the growth of children's minds, bodies and souls through an integrated, 
+            <h3>We're committed to cultivating global, happy citizens who know 
+                who they are, understand their gifts and approach life with wonder, joy, humility, and a profound desire to share.</h3>
+            <h4><em>Our practice is focused on supporting the growth of children's minds, bodies and souls through an integrated, 
                     differentiated curriculum rooted in the Montessori tradition. By placing equal emphasis on all 6 Pillars of Growth,
-                    children can continue to grow as balanced, realized, happy humans.</i></h3>
+                    children can continue to grow as balanced, realized, happy humans.</em></h4>
+        </div>
             <div class='prog' >
-                <div style="float:left">
+                <div >
             
-                    <span class="title">KidsTek</span><br>
-                    <img src ="Kidstek.jpg" width='60%'  >
+                    <span class="title">Kids-tech</span><br>
+                    <img src ="Kidstek.jpg" 
+                         width='60%'>
                 <p>-Which teaches our children that technology is fun.</p>
                 
                 <span class='title'>Eco-Kids</span><br>
@@ -175,20 +211,25 @@ and open the template in the editor.
             </div>
             
         </section>
-        <div id="body">
-            <h3>If you already are or were a student in this school please take a moment and fill in this form and let us know which two of these programs were best for you or your children</h3>
-             <form method="get" action="http://www.randyconnolly.com/tests/process.php"/>
-            <fieldset>
-         <legend>Programs
-                    </legend>
-                <div class="box"><label>Choose only two of them:</label><br/>
-                     <input type="checkbox" name="cc" checked>Kids-tech<br/>
-                         <input type="checkbox" name="cc" checked >Eco-kids<br/>
-                            <input type="checkbox" name="cc" >Funny-Math<br/>
-                            <input type="checkbox" name="cc" >RAB<br/>
-                            <input type="checkbox" name="cc" >Music-time<br/>
-                            <input type="submit" value="Submit"/>
-                </div>
-        </div>
+        
+        
+        <footer >
+            <p style="font-size:19px;">Contact info:</p>
+            
+            
+            <p>modernschool@gmail.com</p>
+            <p>modern.school@yahoo.com</p>
+            
+             <ul class="footer-menu">
+                                <li><a href="/legal/">Terms of Service</a></li>|
+                                <li><a href="/legal/legal_domain">Registration Agreement</a></li>|
+                                <li><a href="https://www.endurance.com/privacy/privacy" target="_blank">Privacy</a></li>|
+                                <li><a href="/about/sitemap">Sitemap</a></li>
+                            </ul>
+            <p><em>Copyright &COPY; 2018 </em></p>
+
+ 
+</footer>
     </body>
+    
 </html>
