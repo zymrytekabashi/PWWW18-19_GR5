@@ -13,7 +13,7 @@ and open the template in the editor.
             header{
                 background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url( "School1.jpg" );
                 height:800px;
-                
+                margin:-10px;
                 background-size: cover;
                 background-position: center;
                 
@@ -92,15 +92,18 @@ and open the template in the editor.
                     
                 }
             body{ background-color: #F5F5DC;
-                  font-family: "Comic Sans MS", cursive, sans-serif;}
+                  font-family: "Courier New", Courier, monospace ;}
            
-           .prog{ padding:20px;
-                  -webkit-column-count: 2; 
-                  font-family: "Comic Sans MS", cursive, sans-serif;
+           .prog{ padding:60px;
+                  -webkit-column-count: 3; 
                   column-count: 3;
                   -webkit-column-gap: 40px;
                   text-align: center;
-                 column-gap: 40px;}
+                 column-gap: 40px;
+                  font-family: Goudy Old Style, Garamond, Big Caslon, Times New Roman, serif;
+                  
+                 
+           }
         .dropdown {
                 margin:20px 5px;
                 color:white;
@@ -131,6 +134,18 @@ and open the template in the editor.
 
 .dropdown:hover .dropdown-content {display: block;
                                    text-decoration: overline;}
+                   #centered {
+                   position: absolute;
+                   top: 50%;
+                   left: 50%;
+                   transform: translate(-50%, -50%);
+                   font-family: "cursive",Brush Script MT;
+                   font-weight:100;
+                   font-size:70px;
+                   color:white;
+                   text-shadow:-3px 3px 3px #000000;
+                   
+                   }
                      .article{
                       text-align:center;
                      
@@ -138,8 +153,20 @@ and open the template in the editor.
                     .title{
                         font-size:30px;
                     }
-                  
-
+                    .image{
+                         opacity: 1;
+                         display: block;
+                         width: 100%;
+                         height: auto;
+                         transition: .5s ease;
+                         backface-visibility: hidden;
+                         
+                           
+                    }
+                    p{
+                        font-size:20px;
+                        
+                    }
         </style>
    </head>
     <body>
@@ -168,7 +195,7 @@ and open the template in the editor.
             </div>
             </div>
           
-          
+            <p id="centered">“Education is the key to unlocking the world,  passport to freedom.”<br> – Oprah Winfrey</p>
             
         </header>
         <div class='article'>
@@ -176,32 +203,48 @@ and open the template in the editor.
             <h1 style='color:#efd098;'>6 PILLARS OF GROWTH</h1>
             <h3>We're committed to cultivating global, happy citizens who know 
                 who they are, understand their gifts and approach life with wonder, joy, humility, and a profound desire to share.</h3>
-            <h4><em>Our practice is focused on supporting the growth of children's minds, bodies and souls through an integrated, 
+            <h4>Our practice is focused on supporting the growth of children's minds, bodies and souls through an integrated, 
                     differentiated curriculum rooted in the Montessori tradition. By placing equal emphasis on all 6 Pillars of Growth,
-                    children can continue to grow as balanced, realized, happy humans.</em></h4>
-        </div>
+                    children can continue to grow as balanced, realized, happy humans.</h4>
+        </div><br><br>
             <div class='prog' >
                 <div >
-            
+                 <img src="Kidstek.jpg" class="image"><br>
                     <span class="title">Kids-tech</span><br>
-                    <img src ="Kidstek.jpg" 
-                         width='60%'>
-                <p>-Which teaches our children that technology is fun.</p>
+                   
+                <p>There are plenty of reasons why your child should learn to code, and so we wholeheartedly believe programming to be a
+                    vital skill for today’s youth. So do Bill Gates, Mark Zuckerberg, Sheryl Sandberg,
+                    Will.i.am, and other notable figures.
+                    <a href='https://www.youtube.com/watch?v=nKIu9yen5nc' target='_blank' style='text-decoration:none;'> 
+                        Watch the video</a> that has garnered over 14 million views since its release.</p><br><br><br>
                 
                 
-                <img src="Eco.jpg" width='60%'><br>
+                <img src="Eco.jpg" class="image"><br>
                 <span class='title'>Eco-Kids</span>
-                <p>:Children will learn how important is their environment.</p>
-                <span class='title'>Funny-math</span><br>
+                <p> EcoKids offers free learning activities and resources for 
+                   children to engage in environmental action.
+                    EcoKids is designed to inspire children to become life-long environmental stewards through nature connection and play.</p>
+                
+                <a href="Math2.html"><img src="Math2.jpg" class="image" ></a><br>
+                <span class='title'>Funny-math</span>
                
-                <img src="Math2.jpg" width='60%'><p>Learning math in a funny way is always a great choice.</p>
-                <span class='title'>RAB*Read all about it!*</span>
-                <br><img src="Book.jpg" width='60%'>
-                    <p>For kids who like to read and also for those who have never
-                        read a book(but open for new opportunities).</p>
-                    <img src="karaoke.png" width='60%'> <br>
+               <p>Our math program provides standards-based math curricula, 
+                   practice activities and games, 
+                   and fun counting materials, such as small cereal, fruit snacks or colored beads.
+               Many students are visual learners, and having tangible items to work with will help get a better
+               understanding for mathematical concepts being taught.</p><br><br>
+                 
+               <img src="Book.jpg" class="image" > <br>
+                <span class='title'>Kids’ Choice Book Awards</span>
+                
+                    <p>
+                       We  choose ten books for kids to read during the year.This helps promotion by 
+                   hosting book discussions and other activities.We finish the program by having a party or celebration in 
+                  which kids can vote on their top choice. If enough kids participate you may even be able to host a Battle of the Books.
+                  </p>
+                    <img src="music.jpg" class="image"> <br>
                     <span class='title'> Karaoke' kids </span>
-                    <ul style="list-style-type:disc">
+                     <ul style="list-style-type:disc; font-size:20px;">
                         <li>Dance-time</li>
                         <li>Pick an instrument!
                             <ul>
@@ -213,14 +256,14 @@ and open the template in the editor.
                             </ul></li>
                             <li>Guess the song!</li>
                     </ul>
-                   
+                    <br><br><br>
                     
                          
                         
                          
-                        
+                   <img src="Summer1.jpg" class="image"><br>
                         <span class='title'>Summer special</span>
-                        <img src='summer.jpg' width='60%'>
+                        
                         <p>  Spending the summer with your friends,at the same time learning
                         something new is always a great idea!We present to you our summer programs:</p>
                         <dl>
