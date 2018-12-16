@@ -12,15 +12,15 @@ and open the template in the editor.
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <style type="text/css">
           body{
-            background-color: white;
+            background-color:#F5F5DC;;
                }
         .navigacioni {
                  overflow: hidden;
                  background-color: #132d3e;
                  width:500;
-                  margin: 0em 20em 1em 1em;
+                
                 }
-          figure{margin: 0em 20em 1em 2em;}
+          
     .navigacioni a,p {
                    float:left;
                    display:inline-block;
@@ -39,10 +39,10 @@ and open the template in the editor.
            margin: 1em;
            background-color: #b3b3b3;
            border: 1px solid gray;
-            text-align:centered ;
+            text-align:centered;
            position: absolute;
-           top:120px;
-           left: 449px;
+           top:400px;
+           left: 749px;
            width: 480px;
            height:226px;
            }
@@ -53,9 +53,9 @@ and open the template in the editor.
             border: 1px solid gray;
              text-align:centered ;
             position: absolute;
-            top:490px;
+            top:730px;
             left: 60px;
-            width: 930px;
+            width: 1220px;
             height:70px;
 
 
@@ -81,17 +81,73 @@ section  h1 {
         color: black;
          }
 
+         .container{display:block;}
 
-
- .myclass {
-
-                   display:inline-block;
-
-                   text-align:left;
-                   padding: 10px 16px;
+ .myclass{  padding-left: 40px;
+                  -webkit-column-count: 3; 
+                  column-count: 3;
+                  -webkit-column-gap: 40px;
+                  text-align: center;
+                 column-gap: 40px;
+                 float:left;
+                 width:60%;
+ }
+  .image{
+                         opacity: 1;
+                         display: block;
+                         width: 100%;
+                         height: auto;
+                         transition: .5s ease;
+                         backface-visibility: hidden;
+  }
+  .rows{
+      float:right;
+      width:30%;
+     text-align: left;
+      
+  }
+  .image2{
+      display:list-item;
+     
+      width:140px;
+      
+  }
+  hr{
+       display: block;
+  float:right;
+     
+  width:100%;
+  border-style: inset;
+  border-width: 1px;
+  }
+  footer {
+  
+                    font-family: "Comic Sans MS", cursive, sans-serif;
+                    padding: 20px;
+                    text-align: center;
+                    background:	#808080;
+                    color:black;
+                    font-size:15px;
+                }  
+                
+  
+                .footer-menu li {
+                    
+                   
+                   display: inline-block;
+                  
+                   
+                }
+                .footer-menu li a{
+                    color:white;
+                    text-align: center;
+                   padding:20px 20px;
                    text-decoration: none;
-          }
-
+                   position:relative;
+                   letter-spacing: 2px;
+                    
+                }
+                
         </style>
     </head>
   <body>
@@ -137,52 +193,81 @@ section  h1 {
 <section>
 </div>
       <figure>
-        <img src="School.jpg"  width="960" height="450" >
+        <img src="School2.jpg"  style="width:100%; height:700px;" >
      </figure>
 
   </article>
-        <br>
-        <div class="myclass"; >
+        <div class="container">
+        <div class="myclass" >
+            <article>
+            <span class="title">Kids-Tech</span>
+            
 
-            <h2>A title</h2></br>
-            <div style="float:left">s
+            <h5>New class from 21.01.2019</h5>
 
-            <h5>Title description,Nov 13 2018</h5></br>
+            <img src="Kidstek.jpg"  class="image" >
+            <p >There are plenty of reasons why your child should learn to code, 
+                and so we wholeheartedly believe 
+                    </p></br>
+            <a href="programs.html" target="_blank">Continue reading...</a>
 
-            <img src="Book.jpg"  width="190" height="130" ></br>
-            <p >Some text here Some text here Some text here  </p></br>
-            <a href="#">Continue reading...</a>
+            </article>
 
-            </div>
+            
+            <article>
+            <span class="title">Get a discount on Ms!</span>
 
-            <div style="float:left">
+             <h5>Discount 30% ,02.02.2019</h5>
 
-            <h2>A title nr 2</h2></br>
+            <img src="Math2.jpg"  class="image" >
 
-             <h5>Title description,Nov 13 2018</h5></br>
+            <p >Ms comes with brand news for your kids who want to learn anything 
+            they ever wanted,for example..</p>  </br>
+            <a href="Register.html" target="_blank">Continue reading...</a><br>
 
-            <img src="Math1.jpg"  width="190" height="130" ></br>
+            </article>
 
-            <p >Some text here Some text here Some text here </p>  </br>
-            <a href="#">Continue reading...</a>
+            <article>
 
-            </div>
+          <span class="title">A title</span>
 
-            <div style="float:right">
+            <h5>Title description,Nov 13 2018</h5>
 
-            <h2>A title nr 3</h2></br>
-
-            <h5>Title description,Nov 13 2018</h5></br>
-
-            <img src="Kidstek.jpg"  width="190" height="130" >
-             </br>
+            <img src="Music2.jpg"  class="image" >
+             
              <p >Some text here Some text here Some text here
+                 Some text here Some text here Some text here
+                 some text
              </p>  </br>  <a href="#">Continue reading...</a>
 
-            </div>
+             </article>
         </div>
-
-
+     
+        <div class="rows">
+            
+            <article>
+                <span class="title2">A title here</span>
+                <p><img src="Book.jpg" align="left" class="image2">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+                Aenean commodo ligula eget dolor Aenean massa.
+                 Ligula eget dolor ligula eget Aenean massa.<br>
+                    <a href="#">Continue reading...</a></p>
+            </article>
+            <hr>
+            <article>
+                
+                <span class="title2">A title here</span>
+                <p><img src="School.jpg" align="left" class="image2">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+                Aenean commodo ligula eget dolor Aenean massa. 
+                Ligula eget dolor  ligula eget Aenean massa.<br>
+                    <a href="#">Continue reading...</a></p>
+                
+            </article>
+            <hr>
+        </div>
+        </div><br>
+    <div>
     <h1>Informata rreth Shkolles</h1>
     <p>Kjo shkolle eshte mjafte e mire per studentat te cilet kane aftesi te mira per teknologji dhe njohuri bazike ne matematike.
     Pas perfundimit te ksaj shkolle iu sigurohet edhe punesimi ne njeren prej qendrave tona po ne kete drejtim. </p>
@@ -191,6 +276,26 @@ section  h1 {
     <p>Kjo shkolle eshte mjafte e mire per studentat te cilet kane aftesi te mira per teknologji dhe njohuri bazike ne matematike.
     Pas perfundimit te ksaj shkolle iu sigurohet edhe punesimi ne njeren prej qendrave tona po ne kete drejtim. </p>
 >>>>>>> 5cae8dffbe9c6a782c47ec4141d5af1f08a791de
+</div>
+              <footer >
+            
+            
+           <address>
+                Our email address: <a href="mailto:modernschool@gmail.com">Modern School</a>.<br> 
+                   Visit us at:<br>
+                      Modernschool.com<br>
+                       Box 564, New York<br>
+                        USA
+                     </address>
+             <ul class="footer-menu">
+                                <li><a href="#">Terms of Service</a></li>|
+                                <li><a href="#">Registration Agreement</a></li>|
+                                <li><a href="#" target="_blank">Privacy</a></li>|
+                                <li><a href="#">Sitemap</a></li>
+                            </ul>
+            
 
+ 
+</footer>
     </body>
 </html>
