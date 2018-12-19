@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <style>
+            header{
+                background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url( "children.jpg" );
+                height:800px;
+                margin:-10px;
+                background-size: cover;
+                background-position: center;
+                
+            }
+                          .topnav {
+                  
+                 background-color: transparent;
+                }
+                 
+                .menu{
+                    float:right;
+                    list-style:none;
+                    margin: 20px;
+                    
+                }
+                .menu li{
+                    display:inline-block;
+                    margin:10px 5px;
+                    
+                         
+                    
+                }
+                .menu li a{
+                   color:white;
+                   float:right;
+                   display: inline-block;
+                   font-family: "Comic Sans MS", cursive, sans-serif;
+                   text-align: center;
+                   padding:20px 20px;
+                   text-decoration: none;
+                   position:relative;
+                   letter-spacing: 2px;
+                }
+                .topnav a:hover {
+                  text-decoration: overline;
+                     }
+     
+               .topnav .content {
+                 font-family: "Comic Sans MS", cursive, sans-serif;
+                 position: absolute; 
+                 top: 0; 
+                 background: rgb(0, 0, 0);
+                 background:  rgba(0, 0, 0, 0.0); 
+                 color: white; 
+                 width: 96%; 
+                 padding: 20px;}
+               body{ background-color: #F5F5DC;
+                  font-family: "Courier New", Courier, monospace ;}
+               
+               .dropdown {
+                margin:20px 5px;
+                color:white;
+                float:right;
+                position: relative;
+                display: inline-block;
+                background: rgb(0, 0, 0);
+                background: rgba(0, 0, 0, 0.0); 
+              }
+
+          .dropdown-content {
+                 display: none;
+                 position: absolute;
+                 background: rgb(0, 0, 0);
+                 background: rgba(0, 0, 0, 0.0); 
+                 min-width: 160px;
+    
+                }
+
+            .dropdown-content a {
+                  color: black;
+                  padding: 5px 10px;
+                  text-decoration: none;
+                  display: block;
+               }
+
+              .dropdown :hover{text-decoration: overline;}
+
+.dropdown:hover .dropdown-content {display: block;
+                                   text-decoration: overline;}
+                   #centered {
+                   position: absolute;
+                   top: 50%;
+                   left: 50%;
+                   transform: translate(-50%, -50%);
+                   font-family: "cursive",Brush Script MT;
+                   font-weight:100;
+                   font-size:70px;
+                   color:white;
+                   text-shadow:-3px 3px 3px #000000;
+                   
+                   }
+                     .article{
+                      text-align:center;
+                     
+                    }
+                    .title{
+                        font-size:30px;
+                    }
+                    .team{
+                        padding:60px;
+                  -webkit-column-count: 3; 
+                  column-count: 3;
+                  -webkit-column-gap: 40px;
+                  text-align: center;
+                 column-gap: 40px;
+                  font-family: Goudy Old Style, Garamond, Big Caslon, Times New Roman, serif;
+                  margin-top: 40px;
+                  text-align: center;
+                 
+                  
+           }
+           .image{
+               padding:60px;
+               width:30%;
+               
+           }
+           #team{padding:60px;
+           text-align: center;}
+           
+          .img-circle {
+           padding:30px;
+           opacity: 1;
+          display: block;
+          width: 50%;
+          height: auto;
+          border-radius: 50%;
+}
+                h1{
+                    color: #e6b800;
+    
+                      }   
+                      h2{
+                          color:#800000;
+                      }
+                       p{
+                  color:#8B4513;
+               }
+                    
+        </style>
+        
+        <header>
+            <div class="topnav">
+            
+          <div class='content' >
+             <ul class="menu">
+                 <li><a href="#">HOMEPAGE</a></li>
+                 <li><a href="#">REGISTER</a></li>
+                 <li><a href="#">ACTIVITY</a></li>
+                 <li><div class="dropdown">
+                  <span class="dropbtn">PROGRAMS</span>
+                   <div class="dropdown-content">
+                    <a href="#">KIDS-TECH</a>
+                    <a href="#">ECO-KIDS</a>
+                    <a href="#">FUNNY-MATH</a>
+                    <a href="#">BOOK'S CHOICE AWARD</a>
+                    <a href="#">KARAOKE-KIDS</a>
+                    
+                   <a href="#">SUMMER SPECIAL</a>
+                   
+  
+                  </div></div></li>
+              <li><a href="#">ABOUT US</a></li>
+             </ul>
+            </div>
+            </div>
+            <p id="centered">About us</p>
+            
+        </header>
+        <h1 style="text-align:center;">We believe we are all students of life for life and that the whole wide world is our classroom.</h1>
+        <p><img src="a.jpg" align="left"  class="image">FOUNDER & CEO
+         </p>
+         <div><h1>Name Surname </h1>
+         <p style="font-size:30px;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+                Aenean commodo ligula eget dolor Aenean massa. 
+                Ligula eget dolor  ligula eget Aenean massa.
+         Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+                Aenean commodo ligula eget dolor Aenean massa. 
+                Ligula eget dolor  ligula eget Aenean massa
+                Aenean commodo ligula eget dolor Aenean massa. 
+                Ligula eget dolor  ligula eget Aenean massa.</p>
+         </div>
+         <h1 id="team">Featured Team Member</h1>
+         <div class="team">
+               
+             <article>
+           
+             <img src="a.jpg" class="img-circle">
+             <h2>Name and Surname</h2>
+             <p>Position</p>
+             </article>
+               
+             <article>
+             
+             <img src="b.jpg" class="img-circle">
+             <h2>Name and Surname</h2>
+             <p>Position</p>
+             </article>
+             
+             <article>
+             <img src="c.jpg" class="img-circle">
+             <h2>Name and Surname</h2>
+             <p>Position</p>
+             </article>
+         </div>
+         
+         
+         
+    </body>
+</html>
