@@ -1,0 +1,116 @@
+body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-image: url("play.jpg");
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: center;
+      position: relative;
+      }
+.registration {
+              padding: 3em;
+              margin: 1em;
+              color: #17202a ;
+
+              font-size: 16px;
+               outline: 0px dashed #FFF8DC;
+              border: 1px dashed gray;
+              position: absolute;
+              top: 220px;
+              right: 850px;
+              width: 300px;
+              height: 900px;
+              border-radius:20px;
+              }
+  section h1 {
+                  text-align: center;
+                  font-family: "Comic Sans MS ",sans-serif;
+                  font-weight: bolder;
+                   padding: 0;
+                   margin: 0;
+                   font-size:38px;
+                   text-shadow:-4px 4px 6px dimgray;
+                     color:#132d3e;
+            }
+
+
+    a { color:#1a5276 ;}
+
+  input[type=text],input[type=password],input[type=email],input[type="submit"],input[type="number"],input[type="radio"],option{
+
+                   width: 100%;
+                   padding: 12px 20px;
+                   margin: 8px 0;
+                   box-sizing: border-box;
+                   background-color: rgba(211, 211, 211, 0.3);
+                   border: 0;
+                   border-bottom: 1px solid #1c2833;
+
+              }
+ input[type="submit"]:hover{
+
+                      color:red;
+                     }
+ .navigacioni {
+                overflow: hidden;
+                background-color: #132d3e;
+
+
+              }
+
+ .navigacioni a,p {
+                  float:left;
+                  display:inline-block;
+                  color: #f2f2f2;
+                  text-align: center;
+                  padding: 5px 16px 1px 1em;
+                  text-decoration: none;
+                  font-family: 'Charm', cursive;
+
+
+                   }
+
+    .navigacioni a:hover {
+                          text-decoration: overline;
+                          }
+
+   nav p { color:#b3b3b3;
+     font-family: 'Charm', cursive;
+     font-family: 'Pacifico', cursive;}
+
+   footer {
+
+                     font-family: "Comic Sans MS", cursive, sans-serif;
+                     padding: 20px;
+                     text-align: center;
+                     background:	#808080;
+                     color:black;
+                     font-size:15px;
+                     position: relative;
+                     top: 1000px;
+                 }
+
+
+                 .footer-menu li {
+
+
+                    display: inline-block;
+
+
+                 }
+                 .footer-menu li a{
+                     color:white;
+                     text-align: center;
+                    padding:20px 20px;
+                    text-decoration: none;
+                    position:relative;
+                    letter-spacing: 2px;
+
+                 }
+      #title {   color:white ;
+                 text-shadow:-3px 3px 3px #000000;
+                 text-align: center;
+                 font-family: 'Charm', cursive;
+                 font-family: 'Pacifico', cursive;
+                 color:#2F4F4F;
+
+               }

@@ -4,85 +4,9 @@
    <head>
      <meta charste="utf-8">
      <title>Regjistrohu</title>
-
-      <style type="text/css">
-
-      body {
-            font-family: Arial, Helvetica, sans-serif;
-            background-image: url("play.jpg");
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-
-            }
-      .registration {
-                    padding: 3em;
-                    margin: 1em;
-                    color: #17202a ;
-
-                    font-size: 16px;
-                    border: 1px dashed gray;
-                    position: absolute;
-                    top: 220px;
-                    right: 850px;
-                    width: 300px;
-                    height: 900px;
-                    border-radius:20px;
-                    }
-        section h1 {
-                        text-align: center;
-                        font-family: "Comic Sans MS ",sans-serif;
-                        font-weight: bolder;
-                         padding: 0;
-                         margin: 0;
-                         font-size:38px;
-                         text-shadow:-4px 4px 6px dimgray;
-                           color:#132d3e;
-                  }
-
-
-          a { color:#1a5276 ;}
-
-        input[type=text],input[type=password],input[type=email],input[type="submit"],input[type="number"],input[type="radio"],option{
-
-                         width: 100%;
-                         padding: 12px 20px;
-                         margin: 8px 0;
-                         box-sizing: border-box;
-                         background-color: rgba(211, 211, 211, 0.3);
-                         border: 0;
-                         border-bottom: 1px solid #1c2833;
-
-                    }
-       input[type="submit"]:hover{
-
-                            color:red;
-                           }
-       .navigacioni {
-                      overflow: hidden;
-                      background-color: #132d3e;
-
-
-                    }
-
-       .navigacioni a,p {
-                        float:left;
-                        display:inline-block;
-                        color: #f2f2f2;
-                        text-align: center;
-                        padding: 5px 16px 1px 1em;
-                        text-decoration: none;
-
-                         }
-
-          .navigacioni a:hover {
-                                text-decoration: overline;
-                                }
-
-         nav p { color:#b3b3b3;}
-
-
-      </style>
-
+    <link href="https://fonts.googleapis.com/css?family=Charm|Pacifico" rel="stylesheet">
+     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+     <link href="stilizimi.css" rel="stylesheet">
    </head>
    <body>
      <header>
@@ -90,13 +14,13 @@
              <div class="navigacioni">
 
 
-           <p style="color:#b3b3b3"> <a href="#"  style="text-decoration: none; font-size:25px;";>ModernSchool</a></br>Discover MS</p>
+           <p style="color:#b3b3b3"> <a href="index.html" target="_blank"  style="text-decoration: none; font-size:25px;";>ModernSchool</a></br>Discover MS</p>
              <nav style="float:right">
-               <p ><a href="#">ACADEMICS</a></br>Internships</p>
-               <p >  <a href="#">REGISTER</a></br>Not a member?</p>
-               <p >  <a href="#">INFORMATION</a></br>Get informed</p>
-               <p >  <a href="#">MORE</a> </br> Extra info</p>
-                <p ><a href="#">ACTIVITY</a></br>School activities</p>
+                <p><a href="#">ACADEMICS</a></br>Internships</p>
+                <p><a href="#">REGISTER</a></br>Not a member?</p>
+                <p><a href="#">INFORMATION</a></br>Get informed</p>
+                <p><a href="#">MORE</a> </br> Extra info</p>
+                <p><a href="#">ACTIVITY</a></br>School activities</p>
 
 
 
@@ -107,7 +31,7 @@
 
    <section>
      <h1>Register</h1>
-     <h3  class="title" style="color:#34495e ;text-align: center;font-family: "Comic Sans MS ",sans-serif;">Welcome to the ModernSchool application!<br>It is necessary to register in order for you to be a part of our school system.<br> We look forward to meeting you soon.</h3>
+     <h2  id="title" >Welcome to the <mark style="color:#2F4F4F">ModernSchool</mark> application!<br>It is necessary to register in order for you to be a part of our school system.<br> We look forward to meeting you soon.</h2>
    </section>
 
    <section>
@@ -152,10 +76,30 @@
              <input type="password" name="password" placeholder="Password" required size="60" id="password"></br>
              <input type="submit" value="Register">
          </div>
+       </form>
    </section>
 
 
+   <footer >
 
+
+ <address>
+     Our email address: <a href="mailto:modernschool@gmail.com">Modern School</a>.<br>
+        Visit us at:<br>
+           Modernschool.com<br>
+            Box 564, New York<br>
+             USA
+          </address>
+  <ul class="footer-menu">
+                     <li><a href="#">Terms of Service</a></li>|
+                     <li><a href="#">Registration Agreement</a></li>|
+                     <li><a href="#" target="_blank">Privacy</a></li>|
+                     <li><a href="#">Sitemap</a></li>
+                 </ul>
+
+
+
+ </footer>
    </body>
 
 
