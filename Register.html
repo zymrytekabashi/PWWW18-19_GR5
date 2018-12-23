@@ -6,7 +6,22 @@
      <title>Regjistrohu</title>
     <link href="https://fonts.googleapis.com/css?family=Charm|Pacifico" rel="stylesheet">
      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-     <link href="stilizimi.css" rel="stylesheet">
+     <link href="RegisterStyle.css" rel="stylesheet">
+     <script>
+           function allowDrop(ev){
+                                 ev.preventDefault();
+                                 }
+
+           function drag(ev){
+                             ev.dataTransfer.setData("Text",ev.target.id);
+                           }
+
+           function drop(ev){
+                            ev.preventDefault();
+                           var data=ev.dataTransfer.getData("Text");
+                           ev.target.appendChild(document.getElementById(data));
+                             }
+     </script>
    </head>
    <body>
      <header>
@@ -14,8 +29,14 @@
              <div class="navigacioni">
 
 
-           <p style="color:#b3b3b3"> <a href="index.html" target="_blank"  style="text-decoration: none; font-size:25px;";>ModernSchool</a></br>Discover MS</p>
+           <p style="color:#b3b3b3; font-family: 'Charm', cursive; font-family: 'Pacifico', cursive;"> <a href="index.html" target="_blank"  style="text-decoration: none; font-size:25px;";>ModernSchool</a></br>Discover MS</p>
+           <p><audio controls>
+            <source src="RockNRoll-AvrilLavigne.mp3" type="audio/mpeg">
+              Shfletuesi juaj nuk perkrahe audion.
+
+           </audio></p>
              <nav style="float:right">
+
                 <p><a href="#">ACADEMICS</a></br>Internships</p>
                 <p><a href="#">REGISTER</a></br>Not a member?</p>
                 <p><a href="#">INFORMATION</a></br>Get informed</p>
@@ -30,8 +51,9 @@
    </header>
 
    <section>
-     <h1>Register</h1>
-     <h2  id="title" >Welcome to the <mark style="color:#2F4F4F">ModernSchool</mark> application!<br>It is necessary to register in order for you to be a part of our school system.<br> We look forward to meeting you soon.</h2>
+     <h1 >Register</h1><br>
+      <div id="title"><h2  > Welcome to the ModernSchool application!<br>It is necessary to register in order for you to be a part of our school system.<br> We look forward to meeting you soon.</h2>
+  </div>
    </section>
 
    <section>
@@ -39,7 +61,7 @@
 
           <div  class="registration" >
 
-             <label>ARE YOU NEW? REGISTER</label></br><br>
+             <label>ARE YOU NEW?<mark> REGISTER</mark></label></br><br>
              <label><b>Parent/guardian-s Name </b></label></br>
              <input type="text" name="Parent" placeholder="Your Name " required size="60" id="parent"></br>
              <label><b>E-mail</b></label></br>
@@ -75,9 +97,12 @@
              <label><b>Password</b></label></br>
              <input type="password" name="password" placeholder="Password" required size="60" id="password"></br>
              <input type="submit" value="Register">
+             <div id="drag" ondrop="drop(event)" ondragover="allowDrop(event)"> <img id="foto" src="logo.png" draggable="true" ondragstart="drag(event)"style"display:inline;" width="50" height="50"></div>
+             <div id="drop" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
          </div>
+
        </form>
-   </section>
+
 
 
    <footer >
