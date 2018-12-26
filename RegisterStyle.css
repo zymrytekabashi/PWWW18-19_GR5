@@ -6,51 +6,50 @@ body {
       background-position: center;
       position: relative;
       }
+      
 .registration {
               padding: 3em;
               margin: 1em;
               color: #17202a ;
-              float:left;
+              float:left
               font-size: 16px;
-               outline: 0px dashed #FFF8DC;
+              outline: 0px dashed #FFF8DC;
               border: 1px dashed gray;
               position: relative;
-              display:inline-block;
               width: 300px;
               height: 860px;
               border-radius:20px;
               }
   section h1 {
-                  text-align: center;
-                  font-family: "Comic Sans MS ",sans-serif;
-                  font-weight: bolder;
-                   padding: 0;
-                   margin: 0;
-                   font-size:38px;
-                   text-shadow:-4px 4px 6px dimgray;
-
+                     text-align: center;
+                     font-family: "Comic Sans MS ",sans-serif;
+                     font-weight: bolder;
+                     padding: 0;
+                     margin: 0;
+                     font-size:38px;
+                     text-shadow:-4px 4px 6px dimgray;
                      color:#132d3e;
                      animation-duration: 2s;
                      animation-name: bounceIn;
-                    animation-iteration-count:infinite;
+                     animation-iteration-count:infinite;
 
             }
             section h1:hover {
                           animation-play-state: paused;
                               }
             @keyframes bounceIn {
-  0% {
-    transform: scale(0.1);
-    opacity: 0;
-  }
-  60% {
-    transform: scale(1.2);
-    opacity: 1;
-  }
-  100% {
-    transform: scale(1);
-  }
-}
+                             0% {
+                                 transform: scale(0.1);
+                                 opacity: 0;
+                                }
+                            60% {
+                                 transform: scale(1.2);
+                                 opacity: 1;
+                                 }
+                           100% {
+                                 transform: scale(1);
+                                 }
+                               }
 
     a { color:#1a5276 ;}
 
@@ -91,40 +90,30 @@ body {
                           text-decoration: overline;
                           }
 
-   nav p { color:#b3b3b3;
-     font-family: 'Charm', cursive;
-     font-family: 'Pacifico', cursive;}
+   nav p {          color:#b3b3b3;
+                    font-family: 'Charm', cursive;
+                    font-family: 'Pacifico', cursive;}
 
    footer {
-
                      font-family: "Comic Sans MS", cursive, sans-serif;
-                     padding: 20px;
                      text-align: center;
-                    background-color: rgba(88,88,88,0.6);
+                     background-color: rgba(88,88,88,0.6);
                      color:black;
                      font-size:15px;
                      position: relative;
-                     top: 1000px;
-                     margin-bottom:2px;
                  }
 
 
-                 .footer-menu li {
-
-
+   .footer-menu li {
                     display: inline-block;
-
-
-                 }
-                address{ color:white;}
-                 .footer-menu li a{
+                  }
+      address     { color:white;}
+    .footer-menu li a{
                      color:white;
                      text-align: center;
-                    padding:20px 20px;
-                    text-decoration: none;
-                    position:relative;
-                    letter-spacing: 2px;
-
+                     text-decoration: none;
+                     position:relative;
+                     letter-spacing: 2px;
                  }
       #title {   color:white ;
                  text-shadow:-3px 3px 3px #000000;
@@ -145,7 +134,7 @@ body {
            }
 
     #drag,#drop{
-                display:inline-block;
+                 display:inline-block;
                  border: 1px solid dimgray;
                  padding:1px;
                  width:50px;

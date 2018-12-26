@@ -4,65 +4,77 @@ To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
-
-    <head>
+<html manifest="demo_html.appcache">
+    <head >
         <title>Punimi</title>
         <meta charset="UTF-8">
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Charm|Pacifico" rel="stylesheet">
+
         <style type="text/css">
           body{
-            font-family: Arial, Helvetica, sans-serif;
-            background-color:#F5F5DC;
-            
 
+            font-family: 'Charm', cursive;
+            font-family: 'Pacifico', cursive;
+             background-color: #F5F5DC;
+             position: relative;
                }
-        .navigacioni {
-                 overflow: hidden;
-                 background-color: #132d3e;
+               .navigacioni {
+                              overflow: hidden;
+                              background-color: rgba(88,88,88,0.6);
 
+                            }
 
-                }
+               .navigacioni a,p {
+                                float:left;
+                                display:inline-block;
+                                color: #f2f2f2;
+                                text-align: center;
+                                padding: 5px 16px 1px 1em;
+                                text-decoration: none;
+                                font-family: 'Charm', cursive;
+                                text=align:center
 
-    .navigacioni a,.navigacioni p {
-                   float:left;
-                   display:inline-block;
-                   color: #f2f2f2;
-                   text-align: center;
-                   padding: 5px 16px 1px 1em;
-                   text-decoration: none;
+                                 }
 
+                  .navigacioni a:hover {
+                                        text-decoration: overline;
+                                        }
 
-                }
+                 nav p { color:#b3b3b3;
+                   font-family: 'Charm', cursive;
+                   font-family: 'Pacifico', cursive;}
 
-     .navigacioni a:hover {
-                  text-decoration: overline;
-                     }
+      #BoxAndImg {
+         position: relative;
+         font-family: Arial;
+       }
      .box{
-           padding: 1em;
-           margin: 1em;
-           background-color: #b3b3b3;
+
+           background-color: rgba(88,88,88,0.6);
            border: 1px solid gray;
             text-align:centered;
            position: absolute;
-           top:400px;
-           left: 749px;
-           width: 480px;
-           height:226px;
+           top:100px;
+           right:50px;
+
+           padding-left: 20px;
+           padding-right:20px;
+           width:40%;
+           z-index: 2;
            }
     .box2 {
-
-
-            background-color: #b3b3b3;
+            background-color: rgba(88,88,88,0.6);
             border: 1px solid gray;
              text-align:centered ;
             position: absolute;
-            top:730px;
-            left: 60px;
-            width: 1220px;
-            height:70px;
-
-
+            bottom:35px;
+            right:25px;
+            left:25px;
+            padding-left: 20px;
+            padding-right:20px;
+            z-index:1;
 
     }
      h3 {
@@ -85,19 +97,19 @@ section  h1 {
         color: black;
          }
 
-         .container{display:block;}
+  .container{display:block;}
 
- .myclass{  padding-left: 40px;
+ .myclass{        padding-left: 40px;
                   -webkit-column-count: 3;
                   column-count: 3;
                   -webkit-column-gap: 40px;
-                  text-align: left;
-                 column-gap: 40px;
-                 float:left;
-                 width:60%;
+                   text-align: left;
+                   column-gap: 40px;
+                   float:left;
+                   width:60%;
 
- }
-  .image{
+         }
+  article .image{
                          opacity: 1;
                          display: block;
                          width: 100%;
@@ -111,18 +123,29 @@ section  h1 {
      text-align: left;
 
   }
-  .myclass2{  padding: 30px;
-                   -webkit-column-count: 5;
+  .myclass2{       padding: 0px;
+                  -webkit-column-count: 5;
                    column-count: 5;
-                   -webkit-column-gap: 10px;
+                  -webkit-column-gap: 10px;
                    text-align: center;
-                  column-gap: 10px;
-                  display: block;
-                  width: 96%;
-                  text-align: left;
-                  background-color: rgba(88,88,88,0.4);
+                   column-gap: 10px;
+                   display: block;
+                   width: 100%;
+                   background-color: white;
 
   }
+  p{text-align:left;}
+  .myclass3 {
+             display: grid;
+             grid-row-gap: 50px;
+  }
+  .grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: left;
+}
   .image2{
       display:list-item;
 
@@ -137,14 +160,15 @@ section  h1 {
   border-style: inset;
   border-width: 1px;
   }
+  .title { text-align:left;}
   footer {
 
-                    font-family: "Comic Sans MS", cursive, sans-serif;
-                    padding: 20px;
+                    border-top: 1px solid dimgray;
+                    padding: 0px;
                     text-align: center;
-                    background:	#808080;
+
                     position: relative;
-                    top:900;
+
                     color:black;
                     font-size:15px;
                 }
@@ -158,57 +182,57 @@ section  h1 {
 
                 }
                 .footer-menu li a{
-                    color:white;
+                    color:pink;
                     text-align: center;
-                   padding:20px 20px;
+                   padding:10px 10px;
                    text-decoration: none;
                    position:relative;
                    letter-spacing: 2px;
 
                 }
-      table th,table td {
-                    text-align:left;
-                     width:25%;
-                   padding-bottom: :20px;
-                   position:relative;
-                 }
-                 table tr {margin-bottom: 20px;}
-      nav p { color:#b3b3b3;}
+
+
         </style>
     </head>
   <body>
-      <header id="HomePage">
+    <header>
 
-              <div class="navigacioni">
-
-
-            <p style="color:#b3b3b3"> <a href="#"  style="text-decoration: none; font-size:25px;";>ModernSchool</a></br>Discover MS</p>
-              <nav style="float:right">
-                  <p><a href="#">ACADEMICS</a></br>Internships</p>
-                  <p><a href="#">REGISTER</a></br>Not a member?</p>
-                  <p><a href="#">INFORMATION</a></br>Get informed</p>
-                  <p><a href="#">MORE</a> </br> Extra info</p>
-                  <p><a href="#">ACTIVITY</a></br>School activities</p>
+            <div class="navigacioni">
 
 
+          <p style="color:#b3b3b3; font-family: 'Charm', cursive; font-family: 'Pacifico', cursive;"> <a href="index.html" target="_blank"  style="text-decoration: none; font-size:25px;";>ModernSchool</a></br>Discover MS</p>
 
-              </nav>
-        </div>
+            <nav style="float:right">
 
-    </header>
-<div >
-  <article>
- <section class="box">
+               <p><a href="#">ACADEMICS</a></br>Internships</p>
+               <p><a href="#">REGISTER</a></br>Not a member?</p>
+               <p><a href="#">INFORMATION</a></br>Get informed</p>
+               <p><a href="#">MORE</a> </br> Extra info</p>
+               <p><a href="#">ACTIVITY</a></br>School activities</p>
+
+
+
+            </nav>
+      </div>
+
+  </header>
+
+  <div id="BoxAndImg">
+
+      <img src="Kidstek.jpg"  style="width:98%; margin:15px ; " >
+
+ <div  class="box">
 <h1 style="color:#4d4d4d ;font-family:sans-serif;">Diversity and Inclusion-Exploring and celebrating my identity </h1>
 <p style=" text-align:left; color:#666666;font-family:sans-serif;">With a long and proud history of diversity,
    ModernSchool advocates a college
    environment that explores differences. We embrace all demographics but diversity
     here goes far beyond that.Valuing, respecting and engaging in difference
-     makes DePauw and its students better citizens of the world.</p>
-</section>
+     makes DePauw and its students better citizens of the world.
+  </p>
+
 </div>
 <div class="box2">
- <section >
+
 <h3 style="color:#4d4d4d ;font-family:sans-serif;">We live, learn and thrive together on a closely connected campus </h3>
 <p style=" text-align:left; color:#666666;font-family:sans-serif;">
    Students enjoy a wide range of housing options,
@@ -216,13 +240,13 @@ section  h1 {
     Greek-affiliated houses and upperclass housing for sophomores,
      juniors and seniors. Each residence allows for a unique,
      co-curricular and connective college experience.</p>
-<section>
-</div>
-      <figure>
-        <img src="School2.jpg"  style="width:100%; height:700px;" >
-     </figure>
 
-  </article>
+</div>
+
+
+</div>
+
+
         <div class="container">
         <div class="myclass" >
             <article>
@@ -235,7 +259,7 @@ section  h1 {
             <p >There are plenty of reasons why your child should learn to code,
                 and so we wholeheartedly believe
                     </p></br>
-            <a href="programs.html" target="_blank">Continue reading...</a>
+            <a href="programs.html" target="_blank">Continue reading...</a><br><br><br>
 
             </article>
 
@@ -249,7 +273,7 @@ section  h1 {
 
             <p >Ms comes with brand news for your kids who want to learn anything
             they ever wanted,for example..</p>  </br>
-            <a href="Register.html" target="_blank">Continue reading...</a><br>
+            <a href="Register.html" target="_blank">Continue reading...</a><br><br>
 
             </article>
 
@@ -338,7 +362,7 @@ section  h1 {
                     <a href="#">Continue reading...</a></p>
             </article></div>
         </div>
-        </div><br>
+        </div>
 
               <footer >
 
