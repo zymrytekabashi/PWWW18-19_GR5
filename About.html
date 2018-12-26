@@ -6,7 +6,7 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>About us</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
@@ -153,8 +153,51 @@ and open the template in the editor.
                        p{
                   color:#8B4513;
                }
+               .video{
+                   margin-right: 100px;
+                   padding:20px;
+                   
+               }
+               .contact-map{
+	width: 100%;
+	margin-top: 50px;
+	height: 400px;
+}
+#map{
+	padding: 0px !important;
+}
+                  footer {
+
+                    font-family: Goudy Old Style, Garamond, Big Caslon, Times New Roman, serif;
+                    padding: 0px;
+                    text-align: center;
+                     background-color: #e2b240;
+                    position: relative;
+                    margin:0px;
+                    color:white;
                     
+                }
+                    #title{
+                    font-size:28px;
+                    
+                    
+                }
+                footer a:link{color:#4d1a00;
+                   text-decoration: none;}
+                
+               footer  a:hover{color: #ff5500;}
+               footer a:visited{color:#1a0900;}
+               
+               footer p{font-size:20px;
+               color:white;}
+               .contact{
+                     padding:20px;
+                     width:100%;
+                   display:inline-block;;
+                        width:30%;
+               text-align: center;}
         </style>
+        <link href="/C:\Users\HP\Downloads\fontawesome-free-5.6.3-web\css/all.css" rel="stylesheet">
         
         <header>
             <div class="topnav">
@@ -197,6 +240,22 @@ and open the template in the editor.
                 Aenean commodo ligula eget dolor Aenean massa. 
                 Ligula eget dolor  ligula eget Aenean massa.</p>
          </div>
+         <div>
+             <p>
+                 <video  style='margin:0px;' width="420" height="300"  controls>
+               <source src="Ms.mp4" type="video/mp4">
+               
+                Your browser does not support the video tag.
+                    </video>
+                 
+                 It is our ultimate goal to maintain an environment where parents have a piece 
+                 of mind when the children are in our care. It is important to know that children are safe, happy and well taken care of. 
+                 The essence of our care revolves around “The Whole Child” approach where proper education, nurture, nutrition and play combine. 
+                 Our campuses and staff are continuously improving,  our goal is  
+                 to provide the best care for the little ones. 
+             </p>
+             
+         </div>
          <h1 id="team">Featured Team Member</h1>
          <div class="team">
                
@@ -221,7 +280,46 @@ and open the template in the editor.
              </article>
          </div>
          
-         
-         
+         <div class="contact-map">
+            <div id = "map">
+               		<script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyC2iyzQh9KGez-dL2Y7BRaRuVtuycQ6YRc'></script>
+               <div style='height:400px;width:100%;'>
+                  	<div id='gmap_canvas' style='height:400px;width:100%;'></div>
+                  		<script type='text/javascript'>function init_map()
+                                    {var myOptions = {zoom:21,center:new google.maps.LatLng(40.6782, -73.9442 ),
+                                            mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'),
+                                        myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(40.6782, -73.9442 )});
+                                infowindow = new google.maps.InfoWindow({content:'<strong>Modern </strong><br>Brooklyn<br>'});
+                        google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);
+                    }google.maps.event.addDomListener(window, 'load', init_map);</script>
+               </div>
+            </div>
+         </div>
+         <footer >
+                  
+                  <div class="contact">
+                      
+                      <p id="title"><i class="fas fa-phone">Phone</i></p>
+                  <p> (860)555-1234</p>
+                  <p>(860)222-5678
+                      </p>
+                  </div>
+
+
+                  <div class="contact">   
+           <address>
+               <p id="title"> <i class="fas fa-map-marker-alt">Address</i></p>
+                <p>Atlantic Ave</p>
+                <p>Brooklyn</p>
+                   
+           </address> 
+                  </div>
+                  
+             
+<div class="contact">
+    <p id="title"> <i class="far fa-envelope">Email</i></p>
+              <a href="mailto:modernchool@gmail.com">modernschool@gmail.com</a>.
+                  </div>
+</footer>
     </body>
 </html>
