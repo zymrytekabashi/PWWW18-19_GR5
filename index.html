@@ -4,112 +4,122 @@ To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
-<html manifest="demo_html.appcache">
-    <head >
+
+    <head>
         <title>Punimi</title>
         <meta charset="UTF-8">
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="https://fonts.googleapis.com/css?family=Charm|Pacifico" rel="stylesheet">
-
         <style type="text/css">
           body{
+            font-family: Goudy Old Style, Garamond, Big Caslon, Times New Roman, serif;
+            background-color:#F5F5DC;
+            
 
-            font-family: 'Charm', cursive;
-            font-family: 'Pacifico', cursive;
-             background-color: #F5F5DC;
-             position: relative;
                }
-               .navigacioni {
-                              overflow: hidden;
-                              background-color: rgba(88,88,88,0.6);
+               header{
+                background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url( "kids.jpg" );
+                height:800px;
+              
+                background-size: cover;
+                background-position: center;
+                
+            }
+        .navigacioni {
+                 overflow: hidden;
+                 background-color: rgba(0,0,0,0.2);
+                 margin:0px;
 
-                            }
 
-               .navigacioni a,p {
-                                float:left;
-                                display:inline-block;
-                                color: #f2f2f2;
-                                text-align: center;
-                                padding: 5px 16px 1px 1em;
-                                text-decoration: none;
-                                font-family: 'Charm', cursive;
-                                text=align:center
+                }
 
-                                 }
+    .navigacioni a,.navigacioni p {
+                   float:left;
+                   display:inline-block;
+                   color: #e8ddcf;
+                   text-align: center;
+                   padding: 5px 16px 1px 1em;
+                   text-decoration: none;
 
-                  .navigacioni a:hover {
-                                        text-decoration: overline;
-                                        }
 
-                 nav p { color:#b3b3b3;
-                   font-family: 'Charm', cursive;
-                   font-family: 'Pacifico', cursive;}
+                }
 
-      #BoxAndImg {
-         position: relative;
-         font-family: Arial;
-       }
+     .navigacioni a:hover {
+                  text-decoration: overline;
+                     }
      .box{
-
-           background-color: rgba(88,88,88,0.6);
+           padding: 1em;
+           margin: 1em;
            border: 1px solid gray;
-            text-align:centered;
+           text-align:center;
            position: absolute;
-           top:100px;
-           right:50px;
-
-           padding-left: 20px;
-           padding-right:20px;
-           width:40%;
-           z-index: 2;
+           top:400px;
+           left: 749px;
+           width: 480px;
+           height:226px;
+           font-family: Goudy Old Style, Garamond, Big Caslon, Times New Roman, serif;
+           background-color: rgba(0,0,0,0.2);
+           font-size:20px;
            }
     .box2 {
-            background-color: rgba(88,88,88,0.6);
+
+            font-family: Goudy Old Style, Garamond, Big Caslon, Times New Roman, serif;
+            font-size:20px;
+            background-color: rgba(0,0,0,0.2);
             border: 1px solid gray;
-             text-align:centered ;
+            text-align:center;
             position: absolute;
-            bottom:35px;
-            right:25px;
-            left:25px;
-            padding-left: 20px;
-            padding-right:20px;
-            z-index:1;
+            top:710px;
+            left: 60px;
+            width: 1220px;
+            height:90px;
+            
+
+
 
     }
-     h3 {
-        margin: 0px 0px 3px 0px;
-        padding: 0;
+          h3 {
+                margin: 0px 0px 3px 0px;
+                padding: 0;
         }
 
 
-section  h1 {
-           margin: 0px 0px 9px 0px;
-           padding: 0;
+            section  h1 {
+                    margin: 0px 0px 9px 0px;
+                    padding: 0;
            }
 
- section p {
-           margin: 0;
-           padding: 0;
+           section p {
+              margin: 0;
+              padding: 0;
            }
 
-  h3,h5,p{
-        color: black;
-         }
-
-  .container{display:block;}
-
- .myclass{        padding-left: 40px;
+           .container {
+               padding:30px;
+               
+           }
+           .container p{color:#800000;
+                   font-size:20px;}
+           .container h1{ color: #e6b800;
+              font-size:25px;
+           }
+           
+           .container h5{
+               font-size:15px;
+               color:#8B4513;
+           }
+               .myclass{  padding-left:40px;
                   -webkit-column-count: 3;
-                  column-count: 3;
-                  -webkit-column-gap: 40px;
+                   column-count: 3;
+                   -webkit-column-gap: 40px;
                    text-align: left;
-                   column-gap: 40px;
-                   float:left;
-                   width:60%;
+                  column-gap: 40px;
+                  float:left;
+                  width:60%;
 
-         }
-  article .image{
+ }                  
+ 
+                   .image{
                          opacity: 1;
                          display: block;
                          width: 100%;
@@ -117,177 +127,177 @@ section  h1 {
                          transition: .5s ease;
                          backface-visibility: hidden;
   }
-  .rows{
-      float:right;
-      width:30%;
-     text-align: left;
+              .rows{
+                float:right;
+                width:30%;
+                text-align: left;
 
   }
-  .myclass2{       padding: 0px;
-                  -webkit-column-count: 5;
+              .myclass2{  
+                  padding: 20px;
+                   -webkit-column-count: 5;
                    column-count: 5;
-                  -webkit-column-gap: 10px;
+                   -webkit-column-gap: 10px;
                    text-align: center;
-                   column-gap: 10px;
-                   display: block;
-                   width: 100%;
-                   background-color: white;
+                  column-gap: 10px;
+                  display: block;
+                  width: 97%;
+                  text-align: left;
+                 
+                  background-color:#F5FCdB;
 
-  }
-  p{text-align:left;}
-  .myclass3 {
-             display: grid;
-             grid-row-gap: 50px;
-  }
-  .grid-item {
-  background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid rgba(0, 0, 0, 0.8);
-  padding: 20px;
-  font-size: 30px;
-  text-align: left;
-}
-  .image2{
-      display:list-item;
+  }        
+           .myclass2 p{color:#800000;
+                   font-size:20px;}
+           .myclass2 h1{ color: #e6b800;
+              font-size:25px;
+           }
+           
+           
+            .image2{
+                 
+                    width:170px;
+                    height:130px;
+            }
+          footer {
 
-      width:140px;
-
-  }
-  hr{
-       display: block;
-  float:right;
-
-  width:100%;
-  border-style: inset;
-  border-width: 1px;
-  }
-  .title { text-align:left;}
-  footer {
-
-                    border-top: 1px solid dimgray;
+                    font-family: Goudy Old Style, Garamond, Big Caslon, Times New Roman, serif;
                     padding: 0px;
                     text-align: center;
-
+                     background-color: #e2b240;
                     position: relative;
-
-                    color:black;
-                    font-size:15px;
+                    margin:0px;
+                    color:white;
+                    
                 }
-
-
-                .footer-menu li {
-
-
-                   display: inline-block;
-
-
+                 
+                #title{
+                    font-size:28px;
+                    
+                    
                 }
-                .footer-menu li a{
-                    color:pink;
-                    text-align: center;
-                   padding:10px 10px;
+                footer a:link{color:#4d1a00;
+                   text-decoration: none;}
+                
+               footer  a:hover{color: #ff5500;}
+               footer a:visited{color:#1a0900;}
+               
+               footer p{font-size:20px;}
+               
+               
+               nav p { color:#b3b3b3;}
+               .container a:link{
+                   float:right;
+                   color:#4d1a00;
                    text-decoration: none;
-                   position:relative;
-                   letter-spacing: 2px;
-
-                }
-
-
+               }
+              .container  a:hover{color: #ff5500;}
+               .container a:visited{color:#1a0900;}
+               
+               
+               .contact{
+                     padding:20px;
+                     width:100%;
+                   display:inline-block;;
+                        width:30%;
+               text-align: center;}
+               
+               
         </style>
+        <link href="/C:\Users\HP\Downloads\fontawesome-free-5.6.3-web\css/all.css" rel="stylesheet">
     </head>
   <body>
-    <header>
+      <header id="HomePage">
 
-            <div class="navigacioni">
+              <div class="navigacioni">
 
 
-          <p style="color:#b3b3b3; font-family: 'Charm', cursive; font-family: 'Pacifico', cursive;"> <a href="index.html" target="_blank"  style="text-decoration: none; font-size:25px;";>ModernSchool</a></br>Discover MS</p>
-
-            <nav style="float:right">
-
-               <p><a href="#">ACADEMICS</a></br>Internships</p>
-               <p><a href="#">REGISTER</a></br>Not a member?</p>
-               <p><a href="#">INFORMATION</a></br>Get informed</p>
-               <p><a href="#">MORE</a> </br> Extra info</p>
-               <p><a href="#">ACTIVITY</a></br>School activities</p>
+            <p style="color:#b3b3b3"> <a href="#"  style="text-decoration:none; font-size:25px;">ModernSchool</a><br>Discover MS</p>
+              <nav style="float:right">
+                  <p><a href="index.html">HOME</a><br>Internships</p>
+                  <p><a href="programs.html">PROGRAMS</a><br>Get informed</p>
+                  <p><a href="register.html">REGISTER</a><br>Not a member?</p>
+                  <p><a href="activity.html">ACTIVITIES</a> <br> School activities</p>
+                  <p><a href="about.html">ABOUT US</a><br>More</p>
 
 
 
-            </nav>
-      </div>
+              </nav>
+        </div>
 
-  </header>
-
-  <div id="BoxAndImg">
-
-      <img src="Kidstek.jpg"  style="width:98%; margin:15px ; " >
-
- <div  class="box">
-<h1 style="color:#4d4d4d ;font-family:sans-serif;">Diversity and Inclusion-Exploring and celebrating my identity </h1>
-<p style=" text-align:left; color:#666666;font-family:sans-serif;">With a long and proud history of diversity,
+    </header>
+<div >
+  
+ <section class="box">
+<h1 style="color:#4d4d4d ;   color: #e1b849;">Diversity and Inclusion-Exploring and celebrating my identity </h1>
+<p style=" text-align:left;  color: #e8ddcf;">With a long and proud history of diversity,
    ModernSchool advocates a college
    environment that explores differences. We embrace all demographics but diversity
     here goes far beyond that.Valuing, respecting and engaging in difference
-     makes DePauw and its students better citizens of the world.
-  </p>
-
+     makes DePauw and its students better citizens of the world.</p>
+</section>
 </div>
 <div class="box2">
-
-<h3 style="color:#4d4d4d ;font-family:sans-serif;">We live, learn and thrive together on a closely connected campus </h3>
-<p style=" text-align:left; color:#666666;font-family:sans-serif;">
+ <section >
+<h3 style="color:#e1b849;">We live, learn and thrive together on a closely connected campus </h3>
+<p style=" text-align:left; color: #e8ddcf;">
    Students enjoy a wide range of housing options,
     including first-year residence halls,
     Greek-affiliated houses and upperclass housing for sophomores,
      juniors and seniors. Each residence allows for a unique,
      co-curricular and connective college experience.</p>
-
+</section>
 </div>
-
-
-</div>
-
-
+     <!-- <figure>
+        <img src="School2.jpg"  style="width:100%; height:700px;" >
+     </figure>-->
+     
+ 
         <div class="container">
         <div class="myclass" >
             <article>
-            <span class="title">Kids-Tech</span>
+                
+            <h1 style="margin-top: 0px;">Coding for kids</h1>
 
 
-            <h5>New class from 21.01.2019</h5>
+            <h5>New class from 01.01.2019</h5>
 
             <img src="Kidstek.jpg"  class="image" >
             <p >There are plenty of reasons why your child should learn to code,
-                and so we wholeheartedly believe
-                    </p></br>
-            <a href="programs.html" target="_blank">Continue reading...</a><br><br><br>
+                and so we wholeheartedly believe that our class that starts next month will be very helpful.
+                Click the link below to learn more.
+            </p><br>
+                    <a href="programs.html" >Continue reading...</a><br>
 
             </article>
 
-
+            
             <article>
-            <span class="title">Get a discount on Ms!</span>
+                
+            <h1>Get a discount!</h1>
 
              <h5>Discount 30% ,02.02.2019</h5>
 
-            <img src="Math2.jpg"  class="image" >
+            <img src="Girl1.jpg"  class="image" >
 
-            <p >Ms comes with brand news for your kids who want to learn anything
-            they ever wanted,for example..</p>  </br>
-            <a href="Register.html" target="_blank">Continue reading...</a><br><br>
+            <p >Get 30% off your full-price on MS if you have two or more kids that want to take their first steps in our school. 
+            we are committed to making each child's first steps the right steps towards a brighter future.</p>  </br>
+            
+            <a href="Register.html" target="_blank">Continue reading...</a><br>
 
             </article>
 
             <article>
 
-          <span class="title">A title</span>
+          <h1>A title</h1>
 
             <h5>Title description,Nov 13 2018</h5>
 
             <img src="Music2.jpg"  class="image" >
 
-             <p >Some text here Some text here Some text here
-                 Some text here Some text here Some text here
-                 some text
+             <p > Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                Aenean commodo ligula eget dolor Aenean massa.
+                 Ligula eget dolor ligula eget Aenean massa.Ligula eget dolor ligula eget Aenean massa.
              </p>  </br>  <a href="#">Continue reading...</a>
 
              </article>
@@ -296,93 +306,103 @@ section  h1 {
         <div class="rows">
 
             <article>
-                <span class="title2">A title here</span>
+                <h1>A title here</h1>
+                
                 <p><img src="Book.jpg" align="left" class="image2">
                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
                 Aenean commodo ligula eget dolor Aenean massa.
-                 Ligula eget dolor ligula eget Aenean massa.<br>
-                    <a href="#">Continue reading...</a></p>
+                </p>
+                <a href="#">Continue reading...</a><br>
             </article>
             <hr>
             <article>
 
-                <span class="title2">A title here</span>
-                <p><img src="School.jpg" align="left" class="image2">
+                <h1>A title here</h1>
+                
+                <p><img src="Math2.jpg" align="left" class="image2">
                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
                 Aenean commodo ligula eget dolor Aenean massa.
-                Ligula eget dolor  ligula eget Aenean massa.<br>
-                    <a href="#">Continue reading...</a></p>
+                </p>
+                <a href="#">Continue reading...</a><br><hr>
 
             </article>
           </div>
         </div>
             <div class="myclass2"><article >
-                <span class="title2">A title here</span>
+                <h1 style="margin-top:0px;">A title here</h1>
                 <hr>
                 <p>
                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                Aenean commodo ligula eget dolor Aenean massa.
-                 Ligula eget dolor ligula eget Aenean massa.<br>
-                    <a href="#">Continue reading...</a></p>
+                Aenean commodo ligula eget dolor Aenean massa.Ligula eget dolor ligula eget Aenean massa.<br>
+
+                 <br>
+                    </p>
+            </article>
+                <article>
+                <h1>A title here</h1>
+                <hr>
+                <p>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                Aenean commodo ligula eget dolor Aenean massa.Ligula eget dolor ligula eget Aenean.<br>
+
+                <br>
+                    </p>
             </article>
             <article>
-                <span class="title2">A title here</span>
+                <h1>A title here</h1>
                 <hr>
                 <p>
                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
                 Aenean commodo ligula eget dolor Aenean massa.
-                 Ligula eget dolor ligula eget Aenean massa.<br>
-                    <a href="#">Continue reading...</a></p>
+                Ligula eget dolor ligula eget Aenean.<br><br>
+                    </p>
             </article>
             <article>
-                <span class="title2">A title here</span>
+                <h1>A title here</h1>
                 <hr>
                 <p>
                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
                 Aenean commodo ligula eget dolor Aenean massa.
-                 Ligula eget dolor ligula eget Aenean massa.<br>
-                    <a href="#">Continue reading...</a></p>
+                Ligula eget dolor ligula eget Aenean.<br><br>
+                    </p>
             </article>
             <article>
-                <span class="title2">A title here</span>
+                <h1>A title here</h1>
                 <hr>
                 <p>
                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
                 Aenean commodo ligula eget dolor Aenean massa.
-                 Ligula eget dolor ligula eget Aenean massa.<br>
-                    <a href="#">Continue reading...</a></p>
-            </article>
-            <article>
-                <span class="title2">A title here</span>
-                <hr>
-                <p>
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                Aenean commodo ligula eget dolor Aenean massa.
-                 Ligula eget dolor ligula eget Aenean massa.<br>
-                    <a href="#">Continue reading...</a></p>
+                 Ligula eget dolor ligula eget Aenean.<br>
+                    </p>
             </article></div>
-        </div>
-        </div>
+        
+        
 
               <footer >
+                  
+                  <div class="contact">
+                      
+                      <p id="title"><i class="fas fa-phone">Phone</i></p>
+                  <p> (860)555-1234</p>
+                  <p>(860)222-5678
+                      </p>
+                  </div>
 
 
+                  <div class="contact">   
            <address>
-                Our email address: <a href="mailto:modernschool@gmail.com">Modern School</a>.<br>
-                   Visit us at:<br>
-                      Modernschool.com<br>
-                       Box 564, New York<br>
-                        USA
-                     </address>
-             <ul class="footer-menu">
-                                <li><a href="#">Terms of Service</a></li>|
-                                <li><a href="#">Registration Agreement</a></li>|
-                                <li><a href="#" target="_blank">Privacy</a></li>|
-                                <li><a href="#">Sitemap</a></li>
-                            </ul>
-
-
-
+               <p id="title"> <i class="fas fa-map-marker-alt">Address</i></p>
+                <p>Atlantic Ave</p>
+                <p>Brooklyn</p>
+                   
+           </address> 
+                  </div>
+                  
+             
+<div class="contact">
+    <p id="title"> <i class="far fa-envelope">Email</i></p>
+              <a href="mailto:modernchool@gmail.com">modernschool@gmail.com</a>.
+                  </div>
 </footer>
     </body>
 </html>
