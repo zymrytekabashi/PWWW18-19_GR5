@@ -6,17 +6,17 @@
      <title>Regjistrohu</title>
     <link href="https://fonts.googleapis.com/css?family=Charm|Pacifico" rel="stylesheet">
      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-     <link href="RegisterStyle.css" rel="stylesheet">
+     <link href="registerrrstyle.css" rel="stylesheet">
      <script type="text/javascript" src="JScriptForRegister.js"></script>
 
    </head>
-   <body>
+   <body class="day" class="night">
      <header>
 
              <div class="navigacioni">
 
 
-           <p style="color:#b3b3b3; font-family: 'Charm', cursive; font-family: 'Pacifico', cursive;"> <a href="index.html" target="_blank"  style="text-decoration: none; font-size:25px;";>ModernSchool</a></br>Discover MS</p>
+           <p style="color:#b3b3b3;"> <a href="index.html" target="_blank"  style="text-decoration: none; font-size:25px;";>ModernSchool</a></br>Discover MS</p>
            <p><audio controls>
             <source src="RockNRoll-AvrilLavigne.mp3" type="audio/mpeg">
               Shfletuesi juaj nuk perkrahe audion.
@@ -24,22 +24,23 @@
            </audio></p>
              <nav style="float:right">
 
-                <p><a href="#">ACADEMICS</a></br>Internships</p>
-                <p><a href="#">REGISTER</a></br>Not a member?</p>
-                <p><a href="#">INFORMATION</a></br>Get informed</p>
-                <p><a href="#">MORE</a> </br> Extra info</p>
-                <p><a href="#">ACTIVITY</a></br>School activities</p>
+                <p><a href="#index.html"target="_self">HOME</a></br>Internships</p>
+                <p><a href="#programs.html"target="_self">PROGRAMS</a></br>Get informed</p>
+                <p><a href="#register.html" target="_self">REGISTER</a></br>Not a member?</p>
+                <p><a href="#activity.html" target="_self">ACTIVITIES</a></br>School activities</p>
+                <p><a href="#footer">ABOUT US</a> </br>More</p>
 
 
 
              </nav>
        </div>
+    </header>
 
-   </header>
 
-   <section >
-     <h1 >Register</h1><br>
-      <div id="title"><h2  > Welcome to the ModernSchool application!<br>It is necessary to register in order for you to be a part of our school system.<br> We look forward to meeting you soon.</h2>
+   <section class="Bigbox">
+     <div class="boxing">
+     <h1 >Register</h1>
+      <h5  id="title" > Welcome to the ModernSchool application!<br>It is necessary to register in order for you to be a part of our school system.<br> We look forward to meeting you soon.</h5>
   </div>
    </section>
 
@@ -48,12 +49,12 @@
 
           <div  class="registration" >
 
-             <label>ARE YOU NEW?<mark> REGISTER</mark></label></br><br>
-             <label><b>Parent/guardian-s Name </b></label></br>
+             <label style="color: #e1b849;"><b>ARE YOU NEW?<mark> REGISTER</b></mark></label></br><br>
+             <label>Parent/guardian-s Name </label></br>
              <input type="text" name="Parent" placeholder="Your Name "  size="60" id="parent"></br>
-             <label><b>E-mail</b></label></br>
+             <label>E-mail</label></br>
              <input type="email" name="email" placeholder="Email"  size="60" id="email"></br>
-             <label><b>How old is your child that will be applying?</b></label></br>
+             <label>How old is your child that will be applying?</label></br>
              <input type="number" name="children"  min="6" max=15 ; placeholder="Number"  size="60" id="children"></br>
              <label >Birth Month <input type="text" id="txtList"  placeholder="Select a month" list="months">
               <datalist id="months" name="list">
@@ -73,16 +74,16 @@
                   <select>
               </datalist>
             </label>
-             <label><b>First Name </b></label></br>
+             <label>First Name </label></br>
              <input type="text" name="name" placeholder="Child's name "  size="60" id="ChildName"></br>
-             <label><b>Last Name </b></label></br>
+             <label>Last Name </label></br>
              <input type="text" name="surname" placeholder="Last Name "  size="60" id="Surname"></br>
-             <label><b>Home Street Address </b></label></br>
+             <label>Home Street Address </label></br>
              <input type="text" name="address" placeholder="Address "  size="60" id="address"></br>
              <label><b>Are you interested in applying for financal aid?</b></label></br>
-             Yes<input type="radio" name="financial aid"  size="60" value="yes"></br>
-             No<input type="radio" name="financial aid"  size="60" value="no"></br>
-             <label><b>Password</b></label></br>
+            <label> Yes</label><input type="radio" name="financial aid"  size="60" value="yes"></br>
+            <label> No<label><input type="radio" name="financial aid"  size="60" value="no"></br>
+             <label>Password</label></br>
              <input type="password" name="password" placeholder="Password" size="60" id="password"></br>
              <input type="submit" value="Register">
              <div id="drag" ondrop="drop(event)" ondragover="allowDrop(event)"> <img id="foto" src="logo.png" draggable="true" ondragstart="drag(event)"style"display:inline;" width="50" height="50"></div>
@@ -91,28 +92,35 @@
 
        </form>
 
+</section>
 
 
-   <footer >
+          <footer id="footer">
+
+                  <div class="contact">
+
+                      <p class="headi"><i >Phone</i></p>
+                  <p> (860)555-1234</p>
+                  <p>(860)222-5678
+                      </p>
+                  </div>
 
 
- <address>
-     Our email address: <a href="mailto:modernschool@gmail.com">Modern School</a>.<br>
-        Visit us at:<br>
-           Modernschool.com<br>
-            Box 564, New York<br>
-             USA
-          </address>
-  <ul class="footer-menu">
-                     <li><a href="#">Terms of Service</a></li>|
-                     <li><a href="#">Registration Agreement</a></li>|
-                     <li><a href="#" target="_blank">Privacy</a></li>|
-                     <li><a href="#">Sitemap</a></li>
-                 </ul>
+                  <div class="contact">
+           <address>
+               <p class="headi"> <i >Address</i></p>
+                <p>Atlantic Ave</p>
+                <p>Brooklyn</p>
+
+           </address>
+                  </div>
 
 
-
- </footer>
+           <div class="contact">
+              <p class="headi"> <i >Email</i></p>
+                   <a href="mailto:modernchool@gmail.com">modernschool@gmail.com</a>.
+                  </div>
+      </footer>
 
    </body>
 
