@@ -11,7 +11,7 @@ and open the template in the editor.
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <style type="text/css">
             header{
-                background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url( "School1.jpg" );
+                background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url( "School1.jpg" );
                 height:800px;
                 margin:-10px;
                 background-size: cover;
@@ -28,6 +28,7 @@ and open the template in the editor.
                     list-style:none;
                     margin: 20px;
                     
+                    
                 }
                 .menu li{
                     display:inline-block;
@@ -37,7 +38,7 @@ and open the template in the editor.
                     
                 }
                 .menu li a{
-                   color:white;
+                   color:#e8ddcf;
                    float:right;
                    display: inline-block;
                    font-family: "Comic Sans MS", cursive, sans-serif;
@@ -51,48 +52,20 @@ and open the template in the editor.
                   text-decoration: overline;
                      }
      
-               .topnav .content {
-                 font-family: "Comic Sans MS", cursive, sans-serif;
+               .topnav  {
+                font-family: Goudy Old Style, Garamond, Big Caslon, Times New Roman, serif;
                  position: absolute; 
-                 top: 0; 
-                 background: rgb(0, 0, 0);
-                 background:  rgba(0, 0, 0, 0.0); 
-                 color: white; 
+                 top: 0;  
+                 color: #e8ddcf; 
                  width: 96%; 
                  padding: 20px; 
 }
             
            
           
-                footer {
-  
-                    font-family: "Comic Sans MS", cursive, sans-serif;
-                    padding: 20px;
-                    text-align: center;
-                    background:	#808080;
-                    color:black;
-                    font-size:15px;
-                }  
                 
-  
-                .footer-menu li {
-                    
-                   
-                   display: inline-block;
-                  
-                   
-                }
-                .footer-menu li a{
-                    color:white;
-                    text-align: center;
-                   padding:20px 20px;
-                   text-decoration: none;
-                   position:relative;
-                   letter-spacing: 2px;
-                    
-                }
-            body{ background-color: #F5F5DC;
-                  font-family: "Courier New", Courier, monospace ;}
+            body{ font-family: Goudy Old Style, Garamond, Big Caslon, Times New Roman, serif;
+                   background-color:#F5F5DC;}
            
            .prog{ padding:60px;
                   -webkit-column-count: 3; 
@@ -104,36 +77,11 @@ and open the template in the editor.
                   
                  
            }
-        .dropdown {
-                margin:20px 5px;
-                color:white;
-                float:right;
-                position: relative;
-                display: inline-block;
-                background: rgb(0, 0, 0);
-                background: rgba(0, 0, 0, 0.0); 
-              }
-
-          .dropdown-content {
-                 display: none;
-                 position: absolute;
-                 background: rgb(0, 0, 0);
-                 background: rgba(0, 0, 0, 0.0); 
-                 min-width: 160px;
-    
-                }
-
-            .dropdown-content a {
-                  color: black;
-                  padding: 5px 10px;
-                  text-decoration: none;
-                  display: block;
-               }
-
-              .dropdown :hover{text-decoration: overline;}
-
-.dropdown:hover .dropdown-content {display: block;
-                                   text-decoration: overline;}
+           .prog p{
+               color:#800000;
+                   font-size:20px;
+           }
+        
                    #centered {
                    position: absolute;
                    top: 50%;
@@ -142,17 +90,30 @@ and open the template in the editor.
                    font-family: "cursive",Brush Script MT;
                    font-weight:100;
                    font-size:70px;
-                   color:white;
+                   color:#e8ddcf;
                    text-shadow:-3px 3px 3px #000000;
                    
                    }
-                     .article{
+                     .article{ padding:20px;
                       text-align:center;
                      
                     }
-                    .title{
+                    
+                    .article h3{
+                        color:#efd098;
                         font-size:30px;
                     }
+                    
+                    .article h4{
+                        font-size:20px;
+                        color:#662200;
+                        
+                    }
+                    .title{
+                        font-size:30px;
+                        color:#e6b800;
+                    }
+                    
                     .image{
                          opacity: 1;
                          display: block;
@@ -163,49 +124,74 @@ and open the template in the editor.
                          
                            
                     }
-                    p{
-                        font-size:20px;
-                        
-                    }
+                    
+                   
+                    footer {
+
+                    font-family: Goudy Old Style, Garamond, Big Caslon, Times New Roman, serif;
+                    padding: 0px;
+                    text-align: center;
+                    background-color: #e2b240;
+                    position: relative;
+                    margin:0px;
+                    color:white;
+                    
+                }
+                    footer a:link{color:#4d1a00;
+                   text-decoration: none;}
+                
+               footer  a:hover{color: #ff5500;}
+               footer a:visited{color:#1a0900;}
+               
+               footer p{font-size:20px;}
+               .contact{
+                     padding:20px;
+                     width:100%;
+                   display:inline-block;;
+                        width:30%;
+               text-align: center;}
+               a:hover{
+               color: #ff5500;}
+               .quiz{
+                   padding:30px;
+                   
+                   
+               }
+              
+               
         </style>
+        <link href="/C:\Users\HP\Downloads\fontawesome-free-5.6.3-web\css/all.css" rel="stylesheet">
+        </style>
+        <script>
+   
+
+        </script>
    </head>
     <body>
         <header>
             <div class="topnav">
             
-          <div class='content' >
+         
              <ul class="menu">
-                 <li><a href="#">HOMEPAGE</a></li>
-                 <li><a href="#">REGISTER</a></li>
-                 <li><a href="#">ACTIVITY</a></li>
-                 <li><div class="dropdown">
-                  <span class="dropbtn">PROGRAMS</span>
-                   <div class="dropdown-content">
-                    <a href="#">KIDS-TECH</a>
-                    <a href="#">ECO-KIDS</a>
-                    <a href="#">FUNNY-MATH</a>
-                    <a href="#">BOOK'S CHOICE AWARD</a>
-                    <a href="#">KARAOKE-KIDS</a>
-                    <a href="#">DRAW YOUR STORY!</a>
-                    <a href="#">SUMMER SPECIAL</a>
-  
-                  </div></div></li>
-              <li><a href="#">CONTACT US</a></li>
+                 <li><a href="index.html">HOMEPAGE</a></li>
+                 <li><a href="programs.html">PROGRAMS</a></li>
+                 <li><a href="register.html">REGISTER</a></li>
+                 <li><a href="activity.html">ACTIVITIES</a></li>
+                  <li><a href="about.html">ABOUT US</a></li>
              </ul>
-            </div>
+         
             </div>
           
             <p id="centered">“Education is the key to unlocking the world,  passport to freedom.”<br> – Oprah Winfrey</p>
             
         </header>
         <div class='article'>
-                <p>The <abbr title="Modern School">MS</abbr> was built in 1948.</p>
-            <h1 style='color:#efd098;'>6 PILLARS OF GROWTH</h1>
-            <h3>We're committed to cultivating global, happy citizens who know 
-                who they are, understand their gifts and approach life with wonder, joy, humility, and a profound desire to share.</h3>
-            <h4>Our practice is focused on supporting the growth of children's minds, bodies and souls through an integrated, 
-                    differentiated curriculum rooted in the Montessori tradition. By placing equal emphasis on all 6 Pillars of Growth,
-                    children can continue to grow as balanced, realized, happy humans.</h4>
+                
+            <h1 style='color:#e6b800;'>THE BEST CHOICE FOR YOUR KIDS.</h1>
+            <h3>With a wide range of activities including advanced curriculum,arts and crafts, 
+                imaginative play and physical activities, your child will develop a strong foundation needed to succeed..</h3>
+            <h4>Our teachers are very loving and caring, most of our staff have been teaching for a while.  Consistency and comfort are 
+                extremely important for a successful preschool experience. ModernSchool offers such an environment for staff, children and their families..</h4>
         </div><br><br>
             <div class='prog' >
                 <div >
@@ -215,7 +201,7 @@ and open the template in the editor.
                 <p>There are plenty of reasons why your child should learn to code, and so we wholeheartedly believe programming to be a
                     vital skill for today’s youth. So do Bill Gates, Mark Zuckerberg, Sheryl Sandberg,
                     Will.i.am, and other notable figures.
-                    <a href='https://www.youtube.com/watch?v=nKIu9yen5nc' target='_blank' style='text-decoration:none;'> 
+                    <a href='https://www.youtube.com/watch?v=nKIu9yen5nc' target='_blank' style='text-decoration:none; '> 
                         Watch the video</a> that has garnered over 14 million views since its release.</p><br><br><br>
                 
                 
@@ -244,7 +230,7 @@ and open the template in the editor.
                   </p>
                     <img src="music.jpg" class="image"> <br>
                     <span class='title'> Karaoke' kids </span>
-                     <ul style="list-style-type:disc; font-size:20px;">
+                     <ul style="list-style-type:disc; font-size:20px; color:#800000;">
                         <li>Dance-time</li>
                         <li>Pick an instrument!
                             <ul>
@@ -266,7 +252,7 @@ and open the template in the editor.
                         
                         <p>  Spending the summer with your friends,at the same time learning
                         something new is always a great idea!We present to you our summer programs:</p>
-                        <dl>
+                        <dl style="color:#800000;">
                         <dt>Watter ballon fight.</dt>
                         <dd>Brain Chase.</dd>
                         <dt>Hiking.</dt>
@@ -276,29 +262,60 @@ and open the template in the editor.
                         
             </div>
             </div>
-            
-        </section>
+        <div class="quiz">
+        <h1  style="font-size: 400%; color:#800000;">Random Math Quiz of the day!!</h1>
+        <br>
         
-        
-        <footer >
-            <p style="font-size:19px;">Contact info:</p>
-            
-           <address>
-                Our email address: <a href="mailto:modernschool@gmail.com">Modern School</a>.<br> 
-                   Visit us at:<br>
-                      Modernschool.com<br>
-                       Box 564, New York<br>
-                        USA
-                     </address>
-             <ul class="footer-menu">
-                                <li><a href="/legal/">Terms of Service</a></li>|
-                                <li><a href="/legal/legal_domain">Registration Agreement</a></li>|
-                                <li><a href="https://www.endurance.com/privacy/privacy" target="_blank">Privacy</a></li>|
-                                <li><a href="/about/sitemap">Sitemap</a></li>
-                            </ul>
-            <p><em>Copyright &COPY; 2018 </em></p>
-
+        <h2 id="question" style="color:black; font-size:30px;"></h2></p>
+        <script > 
+                var minimum = 1;
+                var maximum = 100;
+                var int1 = Math.floor(Math.random() * (maximum - minimum + 1)) + minimum;
+                var int2 = Math.floor(Math.random() * (maximum - minimum + 1)) + minimum;
+                document.getElementById('question').innerHTML = int1 + " " + "+" + " " + int2;
+                var qanswer = int1 + int2;
  
+               function fire() {
+               var canswer = document.getElementById('answer').value;
+               var uanswer=parseInt(canswer);
+               if (uanswer ===qanswer) {
+               alert("Nice math skills! Refresh the page to play again!");
+        
+        
+           } else {
+                alert("WRONG! Don't snooze during math class!");
+      }
+    }
+    
+            </script>
+        <input type="text" name="answer" id="answer" style="width: 250px; height: 40px; font-size: 32px;"><button onclick="fire()" >Enter</button>
+        
+        </div>
+         <footer >
+                  
+                  <div class="contact">
+                      
+                      <p id="title"><i class="fas fa-phone">Phone</i></p>
+                  <p> (860)555-1234</p>
+                  <p>(860)222-5678
+                      </p>
+                  </div>
+
+
+                  <div class="contact">   
+           <address>
+               <p id="title"> <i class="fas fa-map-marker-alt">Address</i></p>
+                <p>Atlantic Ave</p>
+                <p>Brooklyn</p>
+                   
+           </address> 
+                  </div>
+                  
+             
+<div class="contact">
+    <p id="title"> <i class="far fa-envelope">Email</i></p>
+              <a href="mailto:modernchool@gmail.com">modernschool@gmail.com</a>.
+                  </div>
 </footer>
     </body>
     
