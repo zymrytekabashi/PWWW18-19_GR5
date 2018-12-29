@@ -5,7 +5,8 @@ body {
       background-repeat: no-repeat;
       background-attachment: fixed;
       background-position: center;
-      position: relative;
+
+      min-width: 800px;
 
       }
 
@@ -21,7 +22,7 @@ body {
               outline: 0px dashed #FFF8DC;
               border: 1px dashed gray;
               position: relative;
-              top:150px;
+              /*top:150px;*/
               width: 300px;
               height: 1000px;
               border-radius:20px;
@@ -32,6 +33,7 @@ body {
 
 label{    font-size:20px;
             color: #e8ddcf;
+            weight:bolder;
           }
 section h1 {
 
@@ -80,7 +82,7 @@ section h1 {
                                }
 
 
-input[type=text],input[type=password],input[type=email],input[type="submit"],input[type="number"],input[type="radio"],option{
+input[type=text],input[type=password],input[type=email],input[type="submit"],input[type="number"],.radio,option{
 
 
 
@@ -182,6 +184,13 @@ footer a:visited{color:#1a0900;}
               right:90px;
 
             }
+            #quizz{  position: absolute;
+                     top:400px;
+                     right:370px;
+                     background-color: rgba(0,139,139,0.4);
+                               border: 1px solid gray;
+                               border-radius: 5px;
+                             }
     #title:hover
 
            {
@@ -214,9 +223,24 @@ footer a:visited{color:#1a0900;}
 
                 }
 .day {
-      background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.6)),url("play.jpg");
+      background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.3)),url("play.jpg");
     }
 
 .night {
-        background-image:linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.2)),url("play.jpg");
+        background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("play.jpg");
       }
+
+    #submit{
+        font-family: sans-serif;
+        font-size: 20px;
+        background-color: #297;
+        color: #fff;
+        border: 0px;
+        border-radius: 3px;
+        padding: 20px;
+        cursor: pointer;
+        margin-bottom: 20px;
+    }
+    #submit:hover{
+        background-color: #3a8;
+    }
