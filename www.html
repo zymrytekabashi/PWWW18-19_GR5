@@ -1,0 +1,400 @@
+<!Doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+<title>Activity</title>
+ <link rel="stylesheet" href="www.css">
+ <style type="text/css">
+
+
+ .activity1 {
+              padding:30px;
+
+          }
+          .activity1 p{color:#800000;
+                  font-size:20px;}
+          .activity1 h1{ color: #e6b800;
+             font-size:25px;
+          }
+
+          .activity1 h5{
+              font-size:15px;
+              color:#8B4513;
+          }
+              .myclass{  padding-left:40px;
+                 -webkit-column-count: 3;
+                  column-count: 3;
+                  -webkit-column-gap: 40px;
+                  text-align: left;
+                 column-gap: 40px;
+                 float:left;
+                 width:85%;
+
+}
+
+           .image{
+                               opacity: 1;
+                               display: block;
+                               width: 100%;
+                               height: auto;
+                               transition: .5s ease;
+                               backface-visibility: hidden;
+            }
+            #centered {
+                   position: absolute;
+                   top: 50%;
+                   left: 50%;
+                   transform: translate(-50%, -50%);
+                   font-family: "cursive",Brush Script MT;
+                   font-weight:100;
+                   font-size:70px;
+                   color:#e8ddcf;
+                   text-shadow:-3px 3px 3px #000000;
+
+                   }
+                   .table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 20px;
+  margin-left:10px;
+  margin-right: 10px;
+
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+#calc {
+    width: 16em;
+    margin: 20px;
+    padding-top: 30px;
+    padding-left: 350px;
+
+    color: #839C29;
+    box-shadow: 0.4em 0.4em 0.4em rgba( 0, 0, 0, 0.2 );
+ }
+
+#calc div {
+    display: table;
+    width: 100%;
+ }
+
+#calc div span {
+    width: 50%;
+    display: table-cell;
+    border: 0.062em solid #a3c577;
+    border-bottom: 0;
+    box-sizing: border-box;
+    vertical-align: middle;
+    text-align: center;
+
+ }
+#calc div span:first-of-type,
+#calc div:first-of-type span:last-of-type{
+    padding: 0.5em 0;
+
+ }
+
+#calc div span:last-of-type {
+    border-left: 0;
+ }
+
+#calc div:last-of-type span{
+    border-bottom: 0.062em solid #a3c577;
+ }
+
+#calc input{
+    width: 100%;
+    height: 4em;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    background-color: #fff;
+    font-size: 1em;
+    color: #839C29;
+    text-align: center;
+ }
+
+#calc input[type="reset"] {
+    border: 0.062em solid #a3c577;
+    border-top: 0;
+    box-shadow: inset 0 0 1em rgba( 163, 197, 119, 0.5);
+ }
+ footer {
+
+                    font-family: Goudy Old Style, Garamond, Big Caslon, Times New Roman, serif;
+                    padding: 0px;
+                    text-align: center;
+                     background-color: #e2b240;
+                    position: relative;
+                    margin:0px;
+                    color:white;
+
+                }
+                    #title{
+                    font-size:28px;
+
+
+                }
+                footer a:link{color:#4d1a00;
+                   text-decoration: none;}
+
+               footer  a:hover{color: #ff5500;}
+               footer a:visited{color:#1a0900;}
+
+               footer p{font-size:20px;
+               color:white;}
+               .contact{
+                     padding:20px;
+                     width:100%;
+                   display:inline-block;;
+                        width:30%;
+               text-align: center;}
+
+</style>
+
+
+<script type = "text/javascript">
+          function displayNextImage() {
+              x = (x === images.length - 1) ? 0 : x + 1;
+              document.getElementById("img").src = images[x];
+          }
+
+          function displayPreviousImage() {
+              x = (x <= 0) ? images.length - 1 : x - 1;
+              document.getElementById("img").src = images[x];
+          }
+
+          function startTimer() {
+              setInterval(displayNextImage, 3000);
+          }
+
+          var images = [], x = -1;
+          images[0] = "image1.jpg"  ;
+          images[1] = "image2.jpg" ;
+          images[2] = "image3.jpg" ;
+
+
+
+          (function( d ) {
+   'use strict';
+
+   var l = d.getElementById( 'length' );
+   var w = d.getElementById( 'width' );
+
+   l.addEventListener( 'keyup', calculate, false );
+   w.addEventListener( 'keyup', calculate, false );
+function calculate() {
+   if ( ( isNaN( l.value ) || ( l.value =='' )) &&
+        ( isNaN( w.value ) || ( w.value == '')) ) {
+          return;
+    }
+   else {
+          d.getElementById( 'm2' ).value = l.value * w.value;
+          d.getElementById( 'panels' ).value = Math.ceil( l.value * w.value / 3.75 );
+    }
+ }
+}(document));
+      </script>
+
+
+
+
+
+</head>
+
+<body onload = "startTimer(30)">
+  <img id="img" src="startpicture.jpg"/ width = "995" height="600">
+
+
+
+
+<header class="header">
+    <div class="topnav">
+
+  <div class='content' >
+       <ul class="menu">
+         <li><a href="#">HOMEPAGE</a></li>
+         <li><a href="#">REGISTER</a></li>
+         <li><a href="#">ACTIVITY</a></li>
+         <li><a href="#">PROGRAMS</a></li>
+         <li><a href="#">CONTACT US</a></li></ul>
+
+    </div>
+    </div>
+
+
+
+
+ <p id="centered">“If you want real peace in the world, start with children.”<br> – Mahatma Gandi</p>
+
+</header>
+<div class="activity1">
+       <div class="myclass" >
+  <article>
+<h1>Printable Connect the Dots for Kids</h1>
+  <p> <img src  ="3.png" width="195 "height="135"   class = "image"><alt="kid of our school">
+
+  Kids of all ages seem to love connecting dots to reveal a picture and they'll get to do just that in this printable activity for kids.
+.</p><br/>
+ <a href="#">Continue reading...</a><br><hr>
+
+</article>
+
+
+
+  <article>
+    <h1>Printable Color by Number for Kids</h1>
+  <p><img src ="4.png" width="195 "height="135" class = "image"align="left"><alt="kid of our school">
+
+  A step up from coloring sheets, these printable color by numbers will have your children using a legend to color in a picture.
+  </p><br/>
+<a href="#">Continue reading...</a><br><hr>
+
+  </article>
+
+
+<article>
+  <h1>Seasonal Printables for Kids</h1>
+<p><img src ="2.png" width="195 "height="135" align="left"><alt="kid of our school">
+Kids love to celebrate holidays and seasons, and they'll get to do just that with these seasonal printables.</p><br/>
+<a href="#">Continue reading...</a><br><hr>
+</article>
+</div></div>
+
+
+
+  <table class ="table">
+
+  <tr>
+    <th>Activity</th>
+    <th>Month</th>
+    <th>Price</th>
+  </tr>
+  <tr>
+    <td>Pumpkin craft</td>
+    <td>January</td>
+    <td>20 &euro;</td>
+  </tr>
+  <tr>
+    <td>Charades</td>
+    <td>February</td>
+    <td>50 &euro;</td>
+  </tr>
+  <tr>
+    <td>Hangman</td>
+    <td>March</td>
+    <td>50 &euro;</td>
+  </tr>
+  <tr>
+    <td>Scatter-gories</td>
+    <td>April</td>
+    <td>50 &euro;</td>
+  </tr>
+  <tr>
+    <td>Bingo</td>
+    <td>May</td>
+    <td>30 &euro;</td>
+  </tr>
+  <tr>
+    <td>Puzzles</td>
+    <td>June</td>
+    <td>20 &euro;</td>
+  </tr>
+</table>
+
+<form id="calc" action="#">
+   <div>
+    <span>
+     Pool Size
+    </span><span>
+     Length/Width Of Your Pool
+    </span>
+   </div><div>
+    <span>
+     <label for="length">Length</label>
+    </span><span>
+     <input id="length" type="text" placeholder="In Metres">
+    </span>
+   </div><div>
+    <span>
+     <label for="width">Width</label>
+    </span><span>
+     <input id="width" type="text" placeholder="In Metres">
+    </span>
+   </div><div>
+    <span>
+     <label for="m2">m<sup>2</sup></label>
+    </span><span>
+     <input id="m2" type="text"  disabled>
+    </span>
+   </div><div>
+    <span>
+     <label for="panels">Solar Panels Needed  For Pool</label>
+    </span><span>
+     <input id="panels" type="text"  disabled>
+    </span>
+   </div>
+    <input type="reset" value="Clear Fields">
+  </form>
+
+  <footer >
+
+                  <div class="contact">
+
+                      <p id="title"><i class="fas fa-phone">Phone</i></p>
+                  <p> (860)555-1234</p>
+                  <p>(860)222-5678
+                      </p>
+                  </div>
+
+
+                  <div class="contact">
+           <address>
+               <p id="title"> <i class="fas fa-map-marker-alt">Address</i></p>
+                <p>Atlantic Ave</p>
+                <p>Brooklyn</p>
+
+           </address>
+                  </div>
+
+
+<div class="contact">
+    <p id="title"> <i class="far fa-envelope">Email</i></p>
+              <a href="mailto:modernchool@gmail.com">modernschool@gmail.com</a>.
+                  </div>
+</footer>
+
+
+
+
+
+
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
