@@ -8,6 +8,17 @@
      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
      <link href="registerrrstyle.css" rel="stylesheet">
      <script type="text/javascript" src="JScriptForRegister.js"></script>
+     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+     <script src="jquery-1.11.2.min.js"></script>
+     <script>
+     $(function(){
+         $("#flip").click(function(){
+            $("#panel").slideDown("slow")
+            $("#flip").text("Multiplication Table");
+         });
+     });
+     </script>
+
 
    </head>
    <body class="day" class="night" onload="form.reset(); form2.reset();">
@@ -17,11 +28,13 @@
 
 
            <p style="color:#b3b3b3;"> <a href="index.html" target="_blank"  style="text-decoration: none; font-size:25px;";>ModernSchool</a></br>Discover MS</p>
-           <p><audio controls>
+           <p><audio autoplay>
             <source src="RockNRoll-AvrilLavigne.mp3" type="audio/mpeg">
+              <embed src="path/your_song.mp3" autostart="true" loop="false" hidden="true">
               Shfletuesi juaj nuk perkrahe audion.
 
            </audio></p>
+
              <nav style="float:right">
 
                 <p><a href="#index.html"target="_self">HOME</a></br>Internships</p>
@@ -95,7 +108,7 @@
 </section >
 
 <section id="quizz">
-  <h2 style="font-size:38px; text-shadow:-4px 4px 6px dimgray;color: #e1b849;">Quick Quiz</h2>
+  <h2 style="font-size:38px; text-shadow:-4px 4px 6px dimgray;color: #e1b849; ">Quick Quiz</h2>
 
        <label id="quiz"></label>
       <button id="submit">Get Results</button>
@@ -157,15 +170,17 @@ function generateQuiz(questions, quizContainer, resultsContainer, submitButton){
 
 
                 // ...add an html radio button
-                answers.push(
-                    '<br><label>'  + '<input type="radio" name="question'+i+'" value="'+'a'+'">' + questions[i].answers['a']+ '</label>'
-                );
-                answers.push(
-                    '<label>'  + '<input type="radio" name="question'+i+'" value="'+'b'+'">'+ questions[i].answers['b']+ '</label>'
-                );
-                answers.push(
-                    '<label>'  + '<input type="radio" name="question'+i+'" value="'+'c'+'">' + questions[i].answers['c']+ '</label>'
-                );
+                for(letter in questions[i].answers){
+
+			// ...add an html radio button
+			answers.push(
+				'<br><label>'
+					+ '<input type="radio" name="question'+i+'" value="'+letter+'">'
+					+ questions[i].answers[letter]
+				+ '</label>'
+			);
+		}
+
 
 
             // add this question and its answers to the output
@@ -224,6 +239,23 @@ function generateQuiz(questions, quizContainer, resultsContainer, submitButton){
     }
 
 }</script>
+<div id="flip">Click here to see the muliplication table</div>
+<div id="panel">
+<table border="2">
+<script>
+
+              var nje=1,dy=2,tre=3,kater=4;pese=5;gjashte=6;shtate=7;tete=8;nenet=9;dhjete=10;
+      document.write("<tr>");
+      for(i=1;i<=10;i++){
+        dy=2*i;tre=3*i;kater=4*i;pese=5*i;gjashte=6*i;shtate=7*i;tete=8*i;nenet=9*i;dhjete=10*i;
+        document.write("<tr><td>"+nje+"</td><td>"+dy+"</td><td>"+tre+"</td><td>"+kater+"</td><td>"+pese+"</td><td>"+gjashte+"</td><td>"+shtate+"</td><td>"+tete+"</td><td>"+nenet+"</td><td>"+dhjete+"</td>");
+
+      }
+    document.write("</tr>");
+
+  </script>
+</table>
+</div>
           <footer id="footer">
 
                   <div class="contact">
@@ -248,8 +280,16 @@ function generateQuiz(questions, quizContainer, resultsContainer, submitButton){
            <div class="contact">
               <p class="headi"> <i >Email</i></p>
                    <a href="mailto:modernchool@gmail.com">modernschool@gmail.com</a>
+                   <label id="demo"></label>
+                   <script>
+                   var dateObj = new Date();
+                   var month = dateObj.getUTCMonth() + 1; //months from 1-12
+                   var day = dateObj.getUTCDate();
+                   var year = dateObj.getUTCFullYear();
 
-
+                   newdate = year + "/" + month + "/" + day;
+document.getElementById("demo").innerHTML = newdate;
+</script>
                   </div>
       </footer>
 
