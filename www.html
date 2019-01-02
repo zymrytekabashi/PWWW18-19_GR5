@@ -4,6 +4,7 @@
   <meta charset="utf-8">
 <title>Activity</title>
  <link rel="stylesheet" href="www.css">
+ <script type="text/javascript" src="JScriptForRegister.js"></script>
  <style type="text/css">
 
 
@@ -179,13 +180,17 @@ tr:nth-child(even) {
                                          text-decoration: overline;
                                          }
                        .myclass{  padding-left:40px;
-                                            -webkit-column-count: 3;
-                                             column-count: 3;
-                                             -webkit-column-gap: 40px;
-                                             text-align: left;
-                                            column-gap: 40px;
-                                            float:left;
-                                            width:96%;
+                                  column-count: 3;
+                                 -webkit-column-count: 3;
+                                 -o--column-count: 40px;
+                                 -moz--column-count: 40px;
+                                  column-gap: 40px;
+                                 -webkit-column-gap: 40px;
+                                  -o--column-gap: 40px;
+                                 -moz--column-gap: 40px;
+                                  text-align: left;
+                                  float:left;
+                                  width:96%;
 
                            }
                                        .image{
@@ -194,13 +199,40 @@ tr:nth-child(even) {
                              }
                              .container {
                                  padding:30px;
+                                 -webkit-column-count: 3;
+                                  column-count: 3;
+                                  -webkit-column-gap: 40px;
+                             }
+                             .column{
+                                   padding:5px;
+                                   width:67%;
+
 
                              }
-                             .container p{color:#800000;
+                            .container  p{color:#800000;
                                      font-size:20px;}
                              .container h1{ color: #e6b800;
                                 font-size:25px;
                              }
+                             input[type=text],button {   width: 100%;
+                                padding: 12px 20px;
+                                margin: 8px 0;
+                                box-sizing: border-box;
+                                width:20%;
+                                background-color: rgba(211, 211, 211, 0.3);
+                                border: 0;
+                                border-bottom: 1px solid #1c2833;
+                           }
+                         button{
+
+                           width:7%;
+                           background: #F08080;
+                           background: -webkit-linear-gradient(#F08080, #008B8B);
+                           background: -o-linear-gradient(#F08080, #008B8B);
+                           background: -moz-linear-gradient(#F08080, #008B8B);
+                           background: linear-gradient(#F08080, #008B8B);
+
+                         }
 
 </style>
 
@@ -395,7 +427,31 @@ Kids love to celebrate holidays and seasons, and they'll get to do just that wit
    </div>
     <input type="reset" value="Clear Fields">
   </form>
-
+<div >
+  <p style="font-size:20px;color:#800000;">Write a number between 5 and 12</p>
+  <input type="text" id="input" >
+  <button onclick="RightNumber()">Check</button>
+  <p id="outputHere"></p>
+</div>
+<div>
+<h2 style="text-align:center">DID YOU KNOW THAT </h2>
+<p  style =" text-align: center;font-size:20px;text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;"id="wow"></p>
+<script>
+var interesting=Math.floor(Math.random() * 7) + 1 ;
+const arr = [4, 5, 6,100,-12,0];
+var dy= 2.56742;
+switch(interesting){
+case 1:document.getElementById("wow").innerHTML=" PI="+Math.PI;break;
+case 2:  document.getElementById("wow").innerHTML=" Blue whale is the lagest animal on earth";break;
+case 3:   document.getElementById("wow").innerHTML="Rounding 2.56742 in four digits is "+dy.toExponential(4);break;  //it represents the number of digits after decimal point.
+case 4:  document.getElementById("wow").innerHTML=" The largest number in {4,5,6,100,-12,0}  is "+ Math.max.apply(Math, arr);break;
+case 5:  document.getElementById("wow").innerHTML= "2 to the power of 10 is  "+Math.pow(2,10) ;break;
+case 6:  document.getElementById("wow").innerHTML=" America was discoverd by Christopher Columbus ";break;
+case 7:  document.getElementById("wow").innerHTML="Sinuse of PI/2 is   "+Math.sin(Math.PI / 2);;break;
+default:  document.getElementById("wow").innerHTML=" America was discoverd by Christopher Columbus ";break;  //it represents the number of digits after decimal point.
+}
+</script>
+</div>
   <footer >
 
                   <div class="contact">
@@ -420,7 +476,44 @@ Kids love to celebrate holidays and seasons, and they'll get to do just that wit
 <div class="contact">
     <p id="title"> <i class="far fa-envelope">Email</i></p>
               <a href="mailto:modernchool@gmail.com">modernschool@gmail.com</a>.
+              <h4 id="dayy" ></h4>
                   </div>
+
+                  <script>
+
+
+      const day = new Date().getDay();
+
+switch (day) {
+    case 1:
+      document.getElementById("dayy").innerHTML="Happy Monday!";
+        break;
+    case 2:
+        document.getElementById("dayy").innerHTML="It's Tuesday. You got this!";
+        break;
+    case 3:
+          document.getElementById("dayy").innerHTML="Hump day already!";
+        break;
+        case 4:
+             document.getElementById("dayy").innerHTML=("Just one more day 'til the weekend!");
+             break;
+         case 5:
+            document.getElementById("dayy").innerHTML=("Happy Friday!");
+             break;
+         case 6:
+             document.getElementById("dayy").innerHTML=("Have a wonderful Saturday!");
+             break;
+         case 7:
+             document.getElementById("dayy").innerHTML=("It's Sunday, time to relax!");
+             break;
+
+    default:
+          document.getElementById("dayy").innerHTML=("Something went horribly wrong...");
+}
+
+
+
+                  </script>
 </footer>
 
 

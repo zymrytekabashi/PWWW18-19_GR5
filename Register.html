@@ -58,7 +58,7 @@
    </section>
 
    <section>
-     <form method="get" name="form" id="form"action="http://www.randyconnolly.com/tests/process.php" autocomplete="on"; onsubmit="return validateForm()">
+     <form method="get" name="form" id="form"action="http://www.randyconnolly.com/tests/process.php"  autocomplete="on"onsubmit="return validateForm()">
 
           <div  class="registration" >
 
@@ -107,7 +107,7 @@
 
 </section >
 
-<section id="quizz">
+ <section id="quizz">
   <h2 style="font-size:38px; text-shadow:-4px 4px 6px dimgray;color: #e1b849; ">Quick Quiz</h2>
 
        <label id="quiz"></label>
@@ -244,11 +244,11 @@ function generateQuiz(questions, quizContainer, resultsContainer, submitButton){
 <table border="2">
 <script>
 
-              var nje=1,dy=2,tre=3,kater=4;pese=5;gjashte=6;shtate=7;tete=8;nenet=9;dhjete=10;
+              var dy=2,tre=3,kater=4;pese=5;gjashte=6;shtate=7;tete=8;nenet=9;dhjete=10;
       document.write("<tr>");
       for(i=1;i<=10;i++){
         dy=2*i;tre=3*i;kater=4*i;pese=5*i;gjashte=6*i;shtate=7*i;tete=8*i;nenet=9*i;dhjete=10*i;
-        document.write("<tr><td>"+nje+"</td><td>"+dy+"</td><td>"+tre+"</td><td>"+kater+"</td><td>"+pese+"</td><td>"+gjashte+"</td><td>"+shtate+"</td><td>"+tete+"</td><td>"+nenet+"</td><td>"+dhjete+"</td>");
+        document.write("<tr><td>"+i+"</td><td>"+dy+"</td><td>"+tre+"</td><td>"+kater+"</td><td>"+pese+"</td><td>"+gjashte+"</td><td>"+shtate+"</td><td>"+tete+"</td><td>"+nenet+"</td><td>"+dhjete+"</td>");
 
       }
     document.write("</tr>");
@@ -256,6 +256,8 @@ function generateQuiz(questions, quizContainer, resultsContainer, submitButton){
   </script>
 </table>
 </div>
+
+
           <footer id="footer">
 
                   <div class="contact">
@@ -278,9 +280,9 @@ function generateQuiz(questions, quizContainer, resultsContainer, submitButton){
 
 
            <div class="contact">
-              <p class="headi"> <i >Email</i></p>
+             <p class="headi"> <i >Email</i></p>
                    <a href="mailto:modernchool@gmail.com">modernschool@gmail.com</a>
-                   <label id="demo"></label>
+                  <label id="demo"></label>
                    <script>
                    var dateObj = new Date();
                    var month = dateObj.getUTCMonth() + 1; //months from 1-12
@@ -290,6 +292,7 @@ function generateQuiz(questions, quizContainer, resultsContainer, submitButton){
                    newdate = year + "/" + month + "/" + day;
 document.getElementById("demo").innerHTML = newdate;
 </script>
+
                   </div>
       </footer>
 
