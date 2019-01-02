@@ -65,36 +65,8 @@ and open the template in the editor.
                body{ background-color: #F5F5DC;
                   font-family: "Courier New", Courier, monospace ;}
                
-               .dropdown {
-                margin:20px 5px;
-                color:white;
-                float:right;
-                position: relative;
-                display: inline-block;
-                background: rgb(0, 0, 0);
-                background: rgba(0, 0, 0, 0.0); 
-              }
-
-          .dropdown-content {
-                 display: none;
-                 position: absolute;
-                 background: rgb(0, 0, 0);
-                 background: rgba(0, 0, 0, 0.0); 
-                 min-width: 160px;
-    
-                }
-
-            .dropdown-content a {
-                  color: black;
-                  padding: 5px 10px;
-                  text-decoration: none;
-                  display: block;
-               }
-
-              .dropdown :hover{text-decoration: overline;}
-
-.dropdown:hover .dropdown-content {display: block;
-                                   text-decoration: overline;}
+              
+          
                    #centered {
                    position: absolute;
                    top: 50%;
@@ -182,6 +154,25 @@ and open the template in the editor.
                     
                     
                 }
+                .grid{
+                    padding:20px;
+  display:grid;
+  grid-column-gap: 10px;
+  grid-template-columns:  auto auto auto;
+  background-color: #F5F5DC;
+  
+}
+
+.grid-item {
+  background-color: rgba(226, 150, 51, 0.3);
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  font-size: 20px;
+  text-align: center;
+} 
+
+
+.grid p{color:#8B4513;}
                 footer a:link{color:#4d1a00;
                    text-decoration: none;}
                 
@@ -207,19 +198,8 @@ and open the template in the editor.
                  <li><a href="#">HOMEPAGE</a></li>
                  <li><a href="#">REGISTER</a></li>
                  <li><a href="#">ACTIVITY</a></li>
-                 <li><div class="dropdown">
-                  <span class="dropbtn">PROGRAMS</span>
-                   <div class="dropdown-content">
-                    <a href="#">KIDS-TECH</a>
-                    <a href="#">ECO-KIDS</a>
-                    <a href="#">FUNNY-MATH</a>
-                    <a href="#">BOOK'S CHOICE AWARD</a>
-                    <a href="#">KARAOKE-KIDS</a>
-                    
-                   <a href="#">SUMMER SPECIAL</a>
-                   
-  
-                  </div></div></li>
+                 <li><a>PROGRAMS</a>
+                                     </li>
               <li><a href="#">ABOUT US</a></li>
              </ul>
             </div>
@@ -280,7 +260,48 @@ and open the template in the editor.
              <p>Position</p>
              </article>
          </div>
-         
+         <div class="grid">
+             <div class="grid-item"><i class="far fa-heart" style="color:#8B4510; font-size:25px; font-weight:bold"> CARING</i>
+
+                 <p>The philosophy at Ms is based in the belief that each child is a unique individual. 
+                     Our goal is to help children feel confident and comfortable in relating needs and 
+                     feelings to others and to have positive self-esteem.</p></div>
+             <div class="grid-item"><i class="fas fa-mobile-alt" style="color:#8B4510; font-size:25px;"> COMMUNICATION</i>
+
+                 <p>We strive to provide a warm and nurturing environment that will bring out each child’s full potential and still
+                     encourage freedom of choice. The well-being of children is the most important. Each day you will receive a full report about your child (paper or email) with full detail about your child’s day
+
+</p></div>
+             <div class="grid-item"><i class="far fa-thumbs-up" style="color:#8B4510; font-size:25px; font-weight:bold"> OPEN-DOOR-POLICY</i>
+
+                 <P>We believe that it is very important to feel safe and comfortable about your little one being 
+                     away from home. That is why all of our campuses offer “open door policy” – you are ALWAYS welcome to come
+                     by or to call us as often as you feel necessary.
+                 </P></div>  
+             <div class="grid-item"><i class="fas fa-users" style="color:#8B4510; font-size:25px;"> ENGAGING</i>
+<P>Modern School’s interactive environment encourages curiosity, problem solving, creativity and social growth.
+                     We use positive reinforcements in all aspects of our program.</P></div>
+             <div class="grid-item"><i class="fas fa-check" style="color:#8B4510; font-size:25px;"> RESPECTFUL</i>
+<p>We work together with you as a team to meet your needs and concerns in a respectful and ethical manner. 
+                     Open and honest communication is the key to a successful preschool experience for children and their parents.</p></div>
+             <div class="grid-item"><i class="fas fa-hands-helping" style="color:#8B4510; font-size:25px;"> HELPFUL</i>
+<p>Our friendly staff and administrators will help with every step of transition to
+                     ensure happiness and safety of the children.
+                     You will get know all teachers on campus and soon you will feel like part of our big MS family</p></div>  
+             <div class="grid-item"><i class="fas fa-utensils" style="color:#8B4510; font-size:25px;"> NUTRITION</i>
+<p>Proper nutrition gives our bodies the right amount of energy, 
+                     enough raw materials and all of the “little helpers” we need to stay healthy.We provide 3 meals a day – morning snack
+                     ( or breakfast), hot lunch and afternoon snack which are included with tuition</p></div>
+             <div class="grid-item"><i class="fas fa-chalkboard-teacher" style="color:#8B4510; font-size:25px;"> OUR TEACHERS</i>
+<P>Our Teachers are loving, nurturing and very caring. Transition for most children is fast and smooth. 
+                     Most of our staff have been teaching at Modern School for a while, our focus is to create stability for the children.</P></div>
+             <div class="grid-item"><i class="fas fa-school" style="color:#8B4510; font-size:25px;"> ONGOING-EVALUATION</i>
+<p>Our school uses assessment data to compare our children with others from 
+                     across the country. Effective use of assessment data allows our school to identify problematic areas of learning at
+                     the classroom and school levels, so that teachers can generate solutions to address the problems.</p></div> 
+  
+             
+         </div>
          <div class="contact-map">
             <div id = "map">
                		<script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyC2iyzQh9KGez-dL2Y7BRaRuVtuycQ6YRc'></script>
@@ -296,6 +317,7 @@ and open the template in the editor.
                </div>
             </div>
          </div>
+         
          <footer >
                   
                   <div class="contact">
