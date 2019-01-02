@@ -6,8 +6,6 @@ body {
       background-attachment: fixed;
       background-position: center;
 
-      min-width: 800px;
-
       }
 
 
@@ -133,7 +131,7 @@ footer {
                                     margin:0px;
                                     color:white;
                                     position: relative;
-                                    top:150px;
+                                    margin-top: 10px;
 
 
                                 }
@@ -190,6 +188,7 @@ footer a:visited{color:#1a0900;}
                      background-color: rgba(0,139,139,0.4);
                                border: 1px solid gray;
                                border-radius: 5px;
+                               padding:20px;
                              }
     #title:hover
 
@@ -244,3 +243,26 @@ footer a:visited{color:#1a0900;}
     #submit:hover{
         background-color: #3a8;
     }
+table, tr, td {
+  background-color:#D2B48C;
+  padding:5px;
+
+
+}
+
+#panel, #flip
+{
+    padding: 5px;
+    text-align: center;
+    background-color:#F5F5DC;
+    border: 1px solid #999999;
+
+}
+#panel{
+
+    padding: 20px;
+    display: none;
+}
+#flip{
+  font-size:20px;
+color:#A52A2A;}
