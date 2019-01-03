@@ -411,18 +411,19 @@ Kids of all ages seem to love connecting dots to reveal a picture and they'll ge
     <span>
      <label for="length">Length</label>
     </span><span>
-     <input id="length" type="text" placeholder="In Metres">
+     <input id="length" onkeyup="search(this)" type="text" placeholder="In Metres">
     </span>
    </div><div>
     <span>
      <label for="width">Width</label>
     </span><span>
-     <input id="width" type="text" placeholder="In Metres">
+     <input id="width" onkeyup="search(this)"  type="text" placeholder="In Metres">
     </span>
    </div><div>
     <span>
      <label for="m2">m<sup>2</sup></label>
-    </span><span>
+    </span>
+    <span>
      <input id="m2" type="text"  disabled>
     </span>
    </div><div>
@@ -435,13 +436,16 @@ Kids of all ages seem to love connecting dots to reveal a picture and they'll ge
     <input type="reset" value="Clear Fields">
   </form>
 <div >
+
+
   <p style="font-size:20px;color:#800000;">Write a number between 5 and 12</p>
-  <input type="text" id="input" >
+  <input type="text"  id="IsNumer">
   <button onclick="RightNumber()">Check</button>
   <p id="outputHere"></p>
 
 
 
+</script>
   <canvas id="myCanvas" width="578" height="200"></canvas>
     <script>
       window.requestAnimFrame = (function(callback) {
