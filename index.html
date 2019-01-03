@@ -8,7 +8,7 @@ and open the template in the editor.
     <head>
         <title>Punimi</title>
         <meta charset="UTF-8">
-
+        <script type="text/javascript" src="JScriptForRegister.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <style type="text/css">
           body{
@@ -411,9 +411,9 @@ and open the template in the editor.
               <a href="mailto:modernchool@gmail.com">modernschool@gmail.com</a>.
 
                   <form method="get" id="form" action="http://www.randyconnolly.com/tests/process.php">
-                  <textarea name="Comments" rows="4" cols="52" placeholder="Your revisions regarding this site." autocomplete="off"></textarea>
+                  <textarea name="Comments" rows="4" cols="52" placeholder="Your revisions regarding this site." oninput="RegExec(this)" autocomplete="off"></textarea>
                    <keygen name="security" />
-                   <input type="submit">
+                   <input type="submit" >
                    </form>
 
    </div>

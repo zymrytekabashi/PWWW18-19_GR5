@@ -97,7 +97,7 @@ setInterval(function() {
                       var message, x;
                       message=document.getElementById("outputHere");
                       message.innerHTML="";
-                      x=document.getElementById("input").value;
+                      x=document.getElementById("IsNumer").value;
                         try {
                           if(x=="")throw "empty"
                           if(isNaN(x)) throw "not a number"
@@ -109,3 +109,24 @@ setInterval(function() {
                           message.innerHTML="Input is "+e;
                         }
                       }
+  function search(ele){
+        if(isNaN(ele.value)) {
+          alert(ele.value+" is not a number. Please write a valid number");
+                            }
+                      }
+
+    function RegExec(e) {
+                        var str = /(\d)+/g;
+                        var x =e.value;
+                        var res = str.exec(x);
+                        var patt1 = /HAPPY/i;
+
+                        var result = x.match(patt1);
+                        var outputi="You wrote some numbers " + res;
+                        if(res!=null&& str.global){
+                          if(result!=null) outputi=outputi+ "\n We are glad you're happy "
+                         alert(outputi);
+
+
+                       }
+                                      }
