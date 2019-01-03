@@ -9,8 +9,21 @@ and open the template in the editor.
         <title>About us</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="jquery-1.11.2.min.js"></script>
+        <script>
+            $(document).ready(function(){
+  $("button").click(function(){
+    $('#video1').toggle();
+  });
+            });
+            $(document).ready(function(){
+  $("#panel").click(function(){
+    $("#map").slideToggle("slow");
+  });
+});
+        </script>
+    
         <style>
             header{
                 background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url( "children.jpg" );
@@ -187,9 +200,22 @@ and open the template in the editor.
                    display:inline-block;;
                         width:30%;
                text-align: center;}
+               .button{
+                   background-color: #892222;
+                   border:none;
+                   padding:30px 40px;
+                   margin: 20px 500px;
+                   text-align: center;
+                   cursor:pointer;
+               }
+               #panel{padding:10px;
+                      color: #ebb900;
+               font-size:20px;
+               cursor:pointer;}
         </style>
         <link href="/C:\Users\HP\Downloads\fontawesome-free-5.6.3-web\css/all.css" rel="stylesheet">
-        
+    </head>
+    <body>
         <header>
             <div class="topnav">
             
@@ -221,14 +247,16 @@ and open the template in the editor.
                 Aenean commodo ligula eget dolor Aenean massa. 
                 Ligula eget dolor  ligula eget Aenean massa.</p>
          </div>
-         <div>
-             <p>
+         <div >
+             
                  <video  style='margin:0px;' width="420" height="300"  controls>
                <source src="Ms.mp4" type="video/mp4">
                
                 Your browser does not support the video tag.
-                    </video>
-                 
+                 </video><br>
+             <button class="button">About this school.</button>
+             <br>
+             <p id="video1">
                  It is our ultimate goal to maintain an environment where parents have a piece 
                  of mind when the children are in our care. It is important to know that children are safe, happy and well taken care of. 
                  The essence of our care revolves around “The Whole Child” approach where proper education, nurture, nutrition and play combine. 
@@ -261,6 +289,7 @@ and open the template in the editor.
              </article>
          </div>
          <div class="grid">
+             
              <div class="grid-item"><i class="far fa-heart" style="color:#8B4510; font-size:25px; font-weight:bold"> CARING</i>
 
                  <p>The philosophy at Ms is based in the belief that each child is a unique individual. 
@@ -302,17 +331,22 @@ and open the template in the editor.
   
              
          </div>
-         <div class="contact-map">
+         <div class="contact-map"><div id="panel"><i class="fas fa-chevron-down"></i> Find us in map.</div>
             <div id = "map">
                		<script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyC2iyzQh9KGez-dL2Y7BRaRuVtuycQ6YRc'></script>
                <div style='height:400px;width:100%;'>
                   	<div id='gmap_canvas' style='height:400px;width:100%;'></div>
-                  		<script type='text/javascript'>function init_map()
+                  		<script type='text/javascript'>
+                                    
+                                    
+                                    function init_map()
                                     {var myOptions = {zoom:21,center:new google.maps.LatLng(40.6782, -73.9442 ),
-                                            mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'),
-                                        myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(40.6782, -73.9442 )});
+                                            mapTypeId: google.maps.MapTypeId.ROADMAP};
+                                        map = new google.maps.Map(document.getElementById('gmap_canvas'),myOptions);
+                                        marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(40.6782, -73.9442 )});
                                 infowindow = new google.maps.InfoWindow({content:'<strong>Modern </strong><br>Brooklyn<br>'});
-                        google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);
+                        google.maps.event.addListener(marker, 'click', function()
+                        {infowindow.open(map,marker);});infowindow.open(map,marker);
                     }google.maps.event.addDomListener(window, 'load', init_map);</script>
                </div>
             </div>

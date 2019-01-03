@@ -9,6 +9,8 @@ and open the template in the editor.
         <title>Programs</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="jquery-1.11.2.min.js"></script>
         <style type="text/css" onload="answer.reset()">
             header{
                 background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url( "School1.jpg" );
@@ -170,11 +172,44 @@ and open the template in the editor.
 
       border: 0;
      }
+     
+     .students{
+         column-count: 3;
+         column-gap: 40px;
+         
+     }
+     #butoni{
+         background-color: #ebcdbf;
+         height:100px;
+         width:300px;
+         
+         font-size:20px;
+         margin:20px 10px;
+         cursor:pointer;
+         font-family: Goudy Old Style, Garamond, Big Caslon, Times New Roman, serif;
+        color:#662200;
+     }
         </style>
         <link href="/C:\Users\HP\Downloads\fontawesome-free-5.6.3-web\css/all.css" rel="stylesheet">
         </style>
         <script>
 
+$(document).ready(function(){
+  $("button").click(function(){
+    $("#student1").fadeToggle();
+    $("#student2").fadeToggle("slow");
+    $("#student3").fadeToggle(2000);
+  });
+});
+$(document).ready(function(){
+  $("#butoni").click(function(){
+    var div = $("#butoni");  
+  
+    div.animate({fontSize: '2em'}, "slow",function(){
+        alert("You can either show or hide images");
+    });
+    });
+  });
 
         </script>
    </head>
@@ -272,7 +307,13 @@ and open the template in the editor.
                        </dl>
 
             </div>
-            </div>
+            </div><button id="butoni">Students of the month!</button><br>
+        <div class="students">
+            
+            <div id="student1"><img src="s1.jpg" style="width:90%; height:260px;" alt="This picture cannot be shown"></div><br>
+            <div id="student2"><img src="s2.jpg" style="width:90%; height:260px;" alt="This picture cannot be shown"></div><br>
+            <div id="student3"><img src="s3.jpg" style="width:90%; height:260px;" alt="This picture cannot be shown"></div>
+        </div>
         <div class="quiz">
         <h1  style="font-size: 400%; color:#800000;">Random Math Quiz of the day!!</h1>
         <br>
