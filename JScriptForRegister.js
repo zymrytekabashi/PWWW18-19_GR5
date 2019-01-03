@@ -4,7 +4,7 @@ function validateForm() {
   var parent = document.forms["form"]["Parent"].value;
   var email=document.forms["form"]["email"].value;
    var email = document.getElementById('email');
-   var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+   var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/; //Regular Expression Literal ;Character set [xyz]
    var children=document.forms["form"]["children"].value;
   var name=document.forms["form"]["name"].value;
   var surname=document.forms["form"]["surname"].value;
@@ -12,6 +12,7 @@ function validateForm() {
    var re =/^[a-zA-Z0-9\s,.'-]{3,}$/;
    var password = document.getElementById('password');
    var p=/^[A-Za-z]\w{7,15}$/;
+
 
   if (parent == "") {
     alert("Please enter your name");
@@ -60,7 +61,7 @@ function validateForm() {
 
      return false;
    }
-
+//   /\b(\w*work\w*)\b/g
 }
 
 function allowDrop(ev){

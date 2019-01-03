@@ -40,6 +40,7 @@
                                height: auto;
                                transition: .5s ease;
                                backface-visibility: hidden;
+
             }
             #centered {
                    position: absolute;
@@ -278,6 +279,9 @@ function calculate() {
     }
  }
 }(document));
+
+
+
       </script>
 
 
@@ -321,10 +325,10 @@ function calculate() {
   <article>
      <h1>Printable Connect the Dots for Kids</h1>
         <p> <img src  ="3.png"    class = "image"><alt="kid of our school">
+Kids of all ages seem to love connecting dots to reveal a picture and they'll get to do just that in this printable activity for kids.
 
-  Kids of all ages seem to love connecting dots to reveal a picture and they'll get to do just that in this printable activity for kids.
-.</p><br>
- <a href="#">Continue reading...</a><br>
+</p>
+ <a href="#">Continue reading...</a>
 
 </article>
 
@@ -334,9 +338,9 @@ function calculate() {
     <br>
     <h1>Printable Color by Number for Kids</h1>
   <p><img src ="4.png"  class = "image"><alt="kid of our school">
-    A step up from coloring sheets, these printable color by numbers will have your children using a legend to color in a picture.
-  </p><br>
-<a href="#">Continue reading...</a><br>
+A step up from coloring sheets, these printable color by numbers will have your children matching and using a legend to color in a picture.
+</p><br>
+<a href="#">Continue reading...</a>
 
   </article>
 
@@ -347,13 +351,14 @@ function calculate() {
 
   <h1>Seasonal Printables for Kids</h1>
 <p><img src ="2.png"  class="image" ><alt="kid of our school">
-Kids love to celebrate holidays and seasons, and they'll get to do just that with these seasonal printables.</p><br>
+Kids of all ages seem to love connecting dots to reveal a picture and they'll get to do just that in this printable activity for kids.</p><br>
 <a href="#">Continue reading...</a><br>
 </article>
 </div></div>
 
 </div>
 </div>
+<h1>The price of the activities</h1>
   <table class ="table">
 
   <tr>
@@ -392,6 +397,8 @@ Kids love to celebrate holidays and seasons, and they'll get to do just that wit
     <td>20 &euro;</td>
   </tr>
 </table>
+
+<h1>Some types of activities in our school</h1>
 
 <form id="calc" action="#">
    <div>
@@ -432,7 +439,80 @@ Kids love to celebrate holidays and seasons, and they'll get to do just that wit
   <input type="text" id="input" >
   <button onclick="RightNumber()">Check</button>
   <p id="outputHere"></p>
+
+
+
+  <canvas id="myCanvas" width="578" height="200"></canvas>
+    <script>
+      window.requestAnimFrame = (function(callback) {
+        return window.requestAnimationFrame || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame || window.oRequestAnimationFrame || window.msRequestAnimationFrame ||
+        function(callback) {
+          window.setTimeout(callback, 1000 / 60);
+        };
+      })();
+
+      function drawRectangle(myRectangle, context) {
+        context.beginPath();
+        context.rect(myRectangle.x, myRectangle.y, myRectangle.width, myRectangle.height);
+        context.fillStyle = '#8ED6FF';
+        context.fill();
+        context.lineWidth = myRectangle.borderWidth;
+        context.strokeStyle = 'black';
+        context.stroke();
+      }
+      function animate(myRectangle, canvas, context, startTime) {
+        // update
+        var time = (new Date()).getTime() - startTime;
+
+        var linearSpeed = 100;
+        // pixels / second
+        var newX = linearSpeed * time / 1000;
+
+        if(newX < canvas.width - myRectangle.width - myRectangle.borderWidth / 2) {
+          myRectangle.x = newX;
+        }
+
+        // clear
+        context.clearRect(0, 0, canvas.width, canvas.height);
+
+        drawRectangle(myRectangle, context);
+
+        // request new frame
+        requestAnimFrame(function() {
+          animate(myRectangle, canvas, context, startTime);
+        });
+      }
+      var canvas = document.getElementById('myCanvas');
+      var context = canvas.getContext('2d');
+
+      var myRectangle = {
+        x: 0,
+        y: 75,
+        width: 100,
+        height: 50,
+        borderWidth: 5
+      };
+
+      drawRectangle(myRectangle, context);
+
+      // wait one second before starting animation
+      setTimeout(function() {
+        var startTime = (new Date()).getTime();
+        animate(myRectangle, canvas, context, startTime);
+      }, 1000);
+    </script>
+
+
+    <svg height="150" width="500">
+  <ellipse cx="240" cy="100" rx="220" ry="30" style="fill:purple" />
+  <ellipse cx="220" cy="70" rx="190" ry="20" style="fill:lime" />
+  <ellipse cx="210" cy="45" rx="170" ry="15" style="fill:yellow" />
+  Sorry, your browser does not support inline SVG.
+</svg>
+
+
 </div>
+
 <div>
 <h2 style="text-align:center">DID YOU KNOW THAT </h2>
 <p  style =" text-align: center;font-size:20px;text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;"id="wow"></p>
@@ -451,6 +531,7 @@ case 7:  document.getElementById("wow").innerHTML="Sinuse of PI/2 is   "+Math.si
 default:  document.getElementById("wow").innerHTML=" America was discoverd by Christopher Columbus ";break;  //it represents the number of digits after decimal point.
 }
 </script>
+
 </div>
   <footer >
 
