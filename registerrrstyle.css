@@ -6,6 +6,7 @@ body {
       background-attachment: fixed;
       background-position: center;
 
+
       }
 
 
@@ -26,6 +27,8 @@ body {
               border-radius:20px;
               font-family: Goudy Old Style, Garamond, Big Caslon, Times New Roman, serif;
               background-color: rgba(0,0,0,0.8);
+              box-shadow: 5px 5px #A9A9A9;
+
               }
 
 
@@ -186,9 +189,19 @@ footer a:visited{color:#1a0900;}
                      top:400px;
                      right:370px;
                      background-color: rgba(0,139,139,0.4);
-                               border: 1px solid gray;
-                               border-radius: 5px;
+
+                              border-radius: 5px;
                                padding:20px;
+                               border: 20px solid transparent;
+                               padding: 15px;
+                               -webkit-border-image: url(transparent-floral-decorative-1.png) 10 round; /* Safari 3.1-5 */
+                              -o-border-image: url(transparent-floral-decorative-1.png) 10 round; /* Opera 11-12.1 */
+                              -moz-border-image: url(transparent-floral-decorative-1.png) 10 round;
+                                border-image: url(transparent-floral-decorative-1.png) 10 round;
+                                background-image: url("footerphoto.png"), url("decoration-drawing-flower-4.png");
+                              background-position: right bottom, left top;
+                              background-repeat: no-repeat, no-repeat;
+                              
                              }
     #title:hover
 

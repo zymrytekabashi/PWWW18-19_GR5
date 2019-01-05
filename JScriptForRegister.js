@@ -85,10 +85,10 @@ setInterval(function() {
                         var d = new Date();
                         var n = d.getHours();
                         if (n > 23 || n < 6) {
-                                             document.body.className = "night";
+                                          //   document.body.className = "night";
                                             }
                         else {
-                                        document.body.className = "day";
+                                      //  document.body.className = "day";
                                }
                         console.log("test");
                       }, 1000 * 60 * 60);

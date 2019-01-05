@@ -20,7 +20,7 @@ and open the template in the editor.
                header{
                 background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url( "kids.jpg" );
                 height:800px;
-
+                background-origin: padding-box;
                 background-size: cover;
                 background-position: center;
 
@@ -201,6 +201,14 @@ and open the template in the editor.
                    display:inline-block;;
                         width:30%;
                text-align: center;}
+
+               @font-face {
+                        font-family: initialFont;
+                        src: url("//fonts.googleapis.com/css?family=Charm|Dancing+Script|Pacifico");
+                        font-stretch:normal;
+                        font-style:normal;
+                        font-weight: bold;
+}
                input[type=submit],textarea{
                width: 100%;
                padding: 12px 20px;
@@ -208,7 +216,13 @@ and open the template in the editor.
                box-sizing: border-box;
                background-color: rgba(211, 211, 211, 0.3);
                border: 0;
-               border-bottom: 1px solid #1c2833;}
+               border-bottom: 1px solid #1c2833;
+              /* text-wrap:unrestricted;*/
+              word-break: break-all;
+                -ms-word-break: break-all;
+                font-family: initialFont;
+
+           }
 
         </style>
         <link href="/C:\Users\HP\Downloads\fontawesome-free-5.6.3-web\css/all.css" rel="stylesheet">
@@ -411,9 +425,9 @@ and open the template in the editor.
               <a href="mailto:modernchool@gmail.com">modernschool@gmail.com</a>.
 
                   <form method="get" id="form" action="http://www.randyconnolly.com/tests/process.php">
-                  <textarea name="Comments" rows="4" cols="52" placeholder="Your revisions regarding this site." oninput="RegExec(this)" autocomplete="off"></textarea>
+                  <textarea name="Comments" rows="4" cols="52" placeholder="Your revisions regarding this site." wrap="soft|hard" oninput="RegExec(this)" autocomplete="off"></textarea>
                    <keygen name="security" />
-                   <input type="submit" >
+                   <input type="submit" value="Submit" >
                    </form>
 
    </div>
