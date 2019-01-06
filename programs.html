@@ -4,65 +4,46 @@ To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
-<html lang="en" manifest="manifest.site">
+<html manifest="manifest.appache">
     <head>
         <title>Programs</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script src="jquery-1.11.2.min.js"></script>
+        <script type="text/javascript" src="JSPrograms.js"></script>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"  crossorigin="anonymous">
         <style type="text/css" onload="answer.reset()">
             header{
-                background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url( "School1.jpg" );
+                background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url( "School1.jpg" );
                 height:800px;
                 margin:-10px;
                 background-size: cover;
                 background-position: center;
 
             }
-                          .topnav {
-
-                 background-color: transparent;
-                }
-
-                .menu{
-                    float:right;
-                    list-style:none;
-                    margin: 20px;
+            .navigacioni {
+                 overflow: hidden;
+                 background-color: rgba(0,0,0,0.2);
+                 margin:0px;
 
 
                 }
-                .menu li{
-                    display:inline-block;
-                    margin:10px 5px;
 
-
-
-                }
-                .menu li a{
-                   color:#e8ddcf;
-                   float:right;
-                   display: inline-block;
-                   font-family: "Comic Sans MS", cursive, sans-serif;
+    .navigacioni a,.navigacioni p {
+                   float:left;
+                   display:inline-block;
+                   color: #e8ddcf;
                    text-align: center;
-                   padding:20px 20px;
+                   padding: 5px 16px 1px 1em;
                    text-decoration: none;
-                   position:relative;
-                   letter-spacing: 2px;
+
+
                 }
-                .topnav a:hover {
+
+     .navigacioni a:hover {
                   text-decoration: overline;
                      }
-
-               .topnav  {
-                font-family: Goudy Old Style, Garamond, Big Caslon, Times New Roman, serif;
-                 position: absolute;
-                 top: 0;
-                 color: #e8ddcf;
-                 width: 96%;
-                 padding: 20px;
-}
-
 
 
 
@@ -156,6 +137,7 @@ and open the template in the editor.
                color: #ff5500;}
                .quiz{
                    padding:30px;
+                   display:inline;
 
 
                }
@@ -190,8 +172,8 @@ and open the template in the editor.
         color:#662200;
      }
         </style>
-        <link href="/C:\Users\HP\Downloads\fontawesome-free-5.6.3-web\css/all.css" rel="stylesheet">
-        </style>
+
+
         <script>
 
 $(document).ready(function(){
@@ -211,25 +193,29 @@ $(document).ready(function(){
     });
   });
 
+
         </script>
    </head>
     <body >
         <header>
-            <div class="topnav">
+               <div class="navigacioni">
 
 
-             <ul class="menu">
-                 <li><a href="index.html">HOMEPAGE</a></li>
-                 <li><a href="programs.html">PROGRAMS</a></li>
-                 <li><a href="register.html">REGISTER</a></li>
-                 <li><a href="activity.html">ACTIVITIES</a></li>
-                  <li><a href="about.html">ABOUT US</a></li>
-             </ul>
+            <p style="color:#b3b3b3"> <a href="#"  style="text-decoration:none; font-size:25px;">ModernSchool</a><br>Discover MS</p>
+              <nav style="float:right">
+                  <p><a href="index.html" >HOME</a><br>Internships</p>
+                  <p><a href="programs.html"target="_self">PROGRAMS</a><br>Get informed</p>
+                  <p><a href="register.html" target='_blank'>REGISTER</a><br>Not a member?</p>
+                  <p><a href="www.html">ACTIVITIES</a> <br> School activities</p>
+                  <p><a href="about.html">ABOUT US</a><br>More</p>
 
-            </div>
+
+
+              </nav>
+
 
             <p id="centered">“Education is the key to unlocking the world,  passport to freedom.”<br> – Oprah Winfrey</p>
-
+               </div>
         </header>
         <div class='article'>
 
@@ -241,10 +227,10 @@ $(document).ready(function(){
         </div><br><br>
             <div class='prog' >
                 <div >
-                 <img src="Kidstek.jpg" class="image"><br>
-                    <span class="title">Kids-tech</span><br>
+                 <img src="Kidstek.jpg" class="image" id="tek"><br>
+                    <span class="title" >Kids-tech</span><br>
 
-                <p>There are plenty of reasons why your child should learn to code, and so we wholeheartedly believe programming to be a
+                <p >There are plenty of reasons why your child should learn to code, and so we wholeheartedly believe programming to be a
                     vital skill for today’s youth. So do Bill Gates, Mark Zuckerberg, Sheryl Sandberg,
                     Will.i.am, and other notable figures.
                     <a href='https://www.youtube.com/watch?v=nKIu9yen5nc' target='_blank' style='text-decoration:none; '>
@@ -315,6 +301,7 @@ $(document).ready(function(){
             <div id="student3"><img src="s3.jpg" style="width:90%; height:260px;" alt="This picture cannot be shown"></div>
         </div>
         <div class="quiz">
+            <article>
         <h1  style="font-size: 400%; color:#800000;">Random Math Quiz of the day!!</h1>
         <br>
 
@@ -340,8 +327,17 @@ $(document).ready(function(){
     }
 
             </script>
-        <input type="text" name="answer" id="answer" placeholder="Your answer here"style="width: 250px; height: 40px; font-size: 32px;"/><br><button onclick="fire()" >Enter</button>
+        <input type="text" name="answer" id="answer" placeholder="Your answer here"style="width: 250px; height: 40px; font-size: 32px;"/>
+        <br><button onclick="fire()" >Enter</button>
+            </article>
+            <article><p>If you register now we have some suprises for you!</p>
 
+<button onclick="sayHi()">1st Prize</button>
+<button onclick="unknownCmd()">2nd Prize</button>
+<button onclick='stop()'>3rd PRize</button>
+
+<p><strong>Note:</strong> Internet Explorer 9 and earlier versions do not support Web Workers.</p>
+            </article>
         </div>
          <footer >
 
@@ -374,6 +370,10 @@ $(document).ready(function(){
                    =
                   <output name="output"></output>
               </form>
+                  </div>
+             <div id="last" style="background-color: #dea521;">
+                      <p style="text-align:left; font-size: 18px; padding:5px;">Copyright&copy 2018 ModernSchool | All rights reserved.</p>
+
                   </div>
 </footer>
     </body>
