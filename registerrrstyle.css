@@ -9,21 +9,30 @@ body {
 
       }
 
+@media screen and (max-width:902px) {
+                               .navigacioni a,.navigacioni p  {
+                                                             float: none;
+                                                             width:100%;
+                                                              }
+                              #title{ font-size: 10px;}
 
+
+      }
 
 .registration {
 
               padding: 3em;
-              margin: 1em;
+              margin: 20px;;
               color: #17202a ;
               float:left
               font-size: 16px;
               outline: 0px dashed #FFF8DC;
               border: 1px dashed gray;
-              position: relative;
+              position: apsolute;
+              width:70%;
               /*top:150px;*/
-              width: 300px;
-              height: 1000px;
+              /*width: 25%;
+              height: 100%;*/
               border-radius:20px;
               font-family: Goudy Old Style, Garamond, Big Caslon, Times New Roman, serif;
               background-color: rgba(0,0,0,0.8);
@@ -85,8 +94,6 @@ section h1 {
 
 input[type=text],input[type=password],input[type=email],input[type="submit"],input[type="number"],.radio,option{
 
-
-
                    width: 100%;
                    padding: 12px 20px;
                    margin: 8px 0;
@@ -94,10 +101,17 @@ input[type=text],input[type=password],input[type=email],input[type="submit"],inp
                    background-color: rgba(211, 211, 211, 0.3);
                    border: 0;
                    border-bottom: 1px solid #1c2833;
-
-
-
               }
+   .ww{
+           width: 20%;
+           background-color: rgba(47,79,79, 0.9);
+           padding: 12px 20px;
+           margin: 8px 0;
+           box-sizing: border-box;
+           border: 0;
+           border-bottom: 1px solid #1c2833;
+
+   }
 
 input[type="submit"]:hover{
                       background-color:#DEB887;
@@ -122,118 +136,85 @@ input[type="submit"]:hover{
                    }
 
 .navigacioni a:hover {
-                          text-decoration: overline;
-                          }
+                      text-decoration: overline;
+                      }
 footer {
-
-                                    font-family: Goudy Old Style, Garamond, Big Caslon, Times New Roman, serif;
-                                    padding: 0px;
-                                    text-align: center;
-                                       background-color: rgba(88,88,88,0.6);
-                                    position: relative;
-                                    margin:0px;
-                                    color:white;
-                                    position: relative;
-                                    margin-top: 10px;
-
-
-                                }
+        font-family: Goudy Old Style, Garamond, Big Caslon, Times New Roman, serif;
+        padding: 0px;
+        text-align: center;
+        background-color: rgba(88,88,88,0.6);
+        color:white;
+        margin-top: 10px;
+        }
 
 footer a:link{color:#4d1a00;
-                                   text-decoration: none;}
+              text-decoration: none;}
 
 footer  a:hover{color: #ff5500;}
 footer a:visited{color:#1a0900;}
 
+.contact p{font-size:15px;}
+.headi { font-size:35px;}
 
+.container a:link{
+                   float:right;
+                   color:#4d1a00;
+                   text-decoration: none;
+                 }
+.container  a:hover{color: #ff5500;}
+.container a:visited{color:#1a0900;}
+.contact{
+          padding:20px;
+          display:inline-block;;
+          width:30%;
+          text-align: center;
+        }
+ .contact p{font-size:28px;}
+  #title {
+          color:white ;
+          text-shadow:-3px 3px 3px #000000;
+          text-align: center;
+          color: #e8ddcf;
+          font-size: 25px;
+        }
 
-                               .contact p{font-size:15px;}
-                                .headi { font-size:35px;}
+  .boxing{
+          background-color: rgba(0,0,0,0.2);
+          border: 1px solid gray;
+          margin:10px;
+         }
+#quizz{
+         margin:10px;
+         width:30%;
+         background-color: rgba(0,139,139,0.4);
+         border-radius: 5px;
+         padding:20px;
+         border: 20px solid transparent;
+         padding: 15px;
+        -webkit-border-image: url(transparent-floral-decorative-1.png) 10 round; /* Safari 3.1-5 */
+        -o-border-image: url(transparent-floral-decorative-1.png) 10 round; /* Opera 11-12.1 */
+        -moz-border-image: url(transparent-floral-decorative-1.png) 10 round;
+         border-image: url(transparent-floral-decorative-1.png) 10 round;
+         background-image: url("footerphoto.png"), url("decoration-drawing-flower-4.png");
+         background-position: right bottom, left top;
+         background-repeat: no-repeat, no-repeat;
 
-                               .container a:link{
-                                   float:right;
-                                   color:#4d1a00;
-                                   text-decoration: none;
-                               }
-                              .container  a:hover{color: #ff5500;}
-                               .container a:visited{color:#1a0900;}
-
-
-                               .contact{
-                                     padding:20px;
-                                     width:100%;
-                                   display:inline-block;;
-                                        width:30%;
-                               text-align: center;}
-                     .contact p{font-size:28px;}
-  #title {       color:white ;
-                 text-shadow:-3px 3px 3px #000000;
-                 text-align: center;
-                color: #e8ddcf;
-                font-size: 25px;
-
-
-
-
-               }
-    .Bigbox{ position: relative;}
-
-    .boxing{  background-color: rgba(0,0,0,0.2);
-              border: 1px solid gray;
-              position: absolute;
-              top:70px;
-              right:90px;
-
-            }
-            #quizz{  position: absolute;
-                     top:400px;
-                     right:370px;
-                     background-color: rgba(0,139,139,0.4);
-
-                              border-radius: 5px;
-                               padding:20px;
-                               border: 20px solid transparent;
-                               padding: 15px;
-                               -webkit-border-image: url(transparent-floral-decorative-1.png) 10 round; /* Safari 3.1-5 */
-                              -o-border-image: url(transparent-floral-decorative-1.png) 10 round; /* Opera 11-12.1 */
-                              -moz-border-image: url(transparent-floral-decorative-1.png) 10 round;
-                                border-image: url(transparent-floral-decorative-1.png) 10 round;
-                                background-image: url("footerphoto.png"), url("decoration-drawing-flower-4.png");
-                              background-position: right bottom, left top;
-                              background-repeat: no-repeat, no-repeat;
-                              
                              }
-    #title:hover
 
-           {
 
+#title:hover{
              -webkit-transform: scale(1.3);
-
              -ms-transform: scale(1.3);
-
              transform: scale(1.3);
-
              box-shadow: inset 0 0 0 25px rgba(0,0,0,0.8);;
-
-
-
            }
-
-
-
-    #drag,#drop{
-
+#drag,#drop{
                  display:inline-block;
-
                  border: 1px solid dimgray;
-
                  padding:1px;
-
                  width:50px;
-
                  height:50px;
-
-                }
+            }
 .day {
       background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.3)),url("play.jpg");
     }
@@ -253,29 +234,27 @@ footer a:visited{color:#1a0900;}
         cursor: pointer;
         margin-bottom: 20px;
     }
-    #submit:hover{
-        background-color: #3a8;
-    }
+#submit:hover{
+               background-color: #3a8;
+             }
 table, tr, td {
-  background-color:#D2B48C;
-  padding:5px;
-
-
+              background-color:#D2B48C;
+              padding:5px;
 }
-
-#panel, #flip
-{
-    padding: 5px;
-    text-align: center;
-    background-color:#F5F5DC;
-    border: 1px solid #999999;
-
-}
+.tablee{
+        background-color: transparent;
+      }
+#panel, #flip{
+             padding: 5px;
+             text-align: center;
+             background-color:#F5F5DC;
+             border: 1px solid #999999;
+            }
 #panel{
-
-    padding: 20px;
-    display: none;
-}
+       padding: 20px;
+       display: none;
+       }
 #flip{
-  font-size:20px;
-color:#A52A2A;}
+     font-size:20px;
+     color:#A52A2A;
+     }
