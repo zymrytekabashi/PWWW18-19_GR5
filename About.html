@@ -10,6 +10,7 @@ and open the template in the editor.
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"  crossorigin="anonymous">
         <script src="jquery-1.11.2.min.js"></script>
         <script type='text/javascript' src='Game.js'></script>
         <script>
@@ -202,6 +203,26 @@ and open the template in the editor.
     background-image: radial-gradient(red,orange,yellow);
 }
         </style>
+        <script>
+            if(localStorage){
+	$(document).ready(function(){
+		$(".save").click(function(){
+			// Get input name
+			var firstName = $("#firstName").val();
+			
+			// Store data
+    		localStorage.setItem("first_name", firstName);
+			console.log("Your first name is saved.");
+		});
+		$(".access").click(function(){
+			// Retrieve data
+    		console.log("Hi, " + localStorage.getItem("first_name"));
+		});
+	});
+} else{
+    console.log("Sorry, your browser do not support local storage.");
+}
+        </script>
         <link href="/C:\Users\HP\Downloads\fontawesome-free-5.6.3-web\css/all.css" rel="stylesheet">
     </head>
     <body  >
@@ -227,20 +248,18 @@ and open the template in the editor.
         <h1 style="text-align:center;">We believe we are all students of life for life and that the whole wide world is our classroom.</h1>
         <p><img src="a.jpg" align="left"  class="image">FOUNDER & CEO
          </p>
-         <div><h1>Name Surname </h1>
-             <p style="font-size:30px;">The <abbr title="Modern School">MS</abbr> was built in 1948.
-             Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
-                Aenean commodo ligula eget dolor Aenean massa. 
-                Ligula eget dolor  ligula eget Aenean massa.
-         Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
-                Aenean commodo ligula eget dolor Aenean massa. 
-                Ligula eget dolor  ligula eget Aenean massa
-                Aenean commodo ligula eget dolor Aenean massa. 
-                Ligula eget dolor  ligula eget Aenean massa.</p>
+         <div><h1>Alicia Williams </h1>
+             <p style="font-size:20px; ">
+                 <em> Alicia Williams</em> has been a leader in education for over 15 years. She started in the sector as an elementary school teacher. 
+             During her teaching years, she received her Masters of Education in Curriculum and Instruction and wrote curriculum and 
+             assessments for the Osborn School District. Over the last decade, she has been in a variety of education leadership positions 
+             including managing the Teaching and Learning Team nationally for Teach For America, serving as a Vice President on their Teacher Preparation
+             Support and Development Team, and leading the school design of a new innovative elementary school model with Achievement First Greenfield. 
+             She know is the principal of <abbr title="Modern School">MS</abbr> and  has been focused on improving education for our students. </p>
          </div>
          <div >
              
-                 <video  style='margin:0px; position:absolute; top:1380px; left:30px;' width="420" height="300"  controls>
+                 <video  style='margin:0px; position:absolute; top:1300px; left:30px;' width="420" height="300"  controls>
                <source src="Ms.mp4" type="video/mp4">
                
                 Your browser does not support the video tag.
@@ -261,9 +280,9 @@ and open the template in the editor.
                
              <article>
            
-             <img src="a.jpg" class="img-circle">
-             <h2>Name and Surname</h2>
-             <p>Position</p>
+             <img src="b.jpg" class="img-circle">
+             <h2>Brianna Clark</h2>
+             <p>Assistant Director</p>
              </article>
                
              <article>
@@ -414,7 +433,12 @@ function showError(error) {
              
 <div class="contact">
     <p id="title"> <i class="far fa-envelope">Email</i></p>
-              <a href="mailto:modernchool@gmail.com">modernschool@gmail.com</a>.
+    <a href="mailto:modernchool@gmail.com">modernschool@gmail.com</a><br><br>
+               <form>
+                   <label>Check if someone you know is going to our school: <input type="text" id="firstName"></label><br>
+        <button type="button" class="save">Save Name</button>
+        <button type="button" class="access">Get Name</button>
+    </form>
                   </div>
              <div id="last" style="background-color: #dea521;">
                       <p style="text-align:left; font-size: 18px; padding:5px;">Copyright&copy 2018 ModernSchool | Allright reserved.</p>
