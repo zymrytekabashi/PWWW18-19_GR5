@@ -1,0 +1,19 @@
+Cache Manifest
+
+Cache:
+registerrrstyle.css
+www.css
+index.html
+programs.html
+www.html
+register.html
+about.html
+JScriptForRegister.js
+JSPrograms.js
+Game.js
+
+Network:
+
+Fallback:
+#static.html
+
