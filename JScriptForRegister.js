@@ -33,6 +33,7 @@ function validateForm() {
 
      return false;
    }
+
    if (surname == "") {
      window.alert("Please enter your child's surname");
 
@@ -62,6 +63,8 @@ function validateForm() {
      return false;
    }
 //   /\b(\w*work\w*)\b/g
+localStorage.setItem("first_name", parent);
+alert("Your first name is saved.");
 }
 
 function allowDrop(ev){
@@ -85,10 +88,10 @@ setInterval(function() {
                         var d = new Date();
                         var n = d.getHours();
                         if (n > 23 || n < 6) {
-                                          //   document.body.className = "night";
+                                             document.body.className = "night";
                                             }
                         else {
-                                      //  document.body.className = "day";
+                                       document.body.className = "day";
                                }
                         console.log("test");
                       }, 1000 * 60 * 60);
@@ -129,4 +132,23 @@ setInterval(function() {
 
 
                        }
+                                      }
+            var w;
+
+    function startWorker() {
+              if(typeof(Worker) !== "undefined") {
+              if(typeof(w) == "undefined") {
+                    w = new Worker("demo_workers.js");
+                                          }
+              w.onmessage = function(event) {
+                                          document.getElementById("result").innerHTML = event.data;
+                                          };
+              } else {
+            document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Workers...";
+                                        }
+                                      }
+
+                function stopWorker() {
+                      w.terminate();
+                  w = undefined;
                                       }
