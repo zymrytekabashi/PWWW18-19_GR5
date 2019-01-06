@@ -119,9 +119,10 @@ setInterval(function() {
                       }
 
     function RegExec(e) {
+                        var re = new RegExp('\d/g');
                         var str = /(\d)+/g;
                         var x =e.value;
-                        var res = str.exec(x);
+                        var res = str.exec(x);  // similar to "x".match(/(\d)+/g); exept match doesnt return an array
                         var patt1 = /HAPPY/i;
 
                         var result = x.match(patt1);
