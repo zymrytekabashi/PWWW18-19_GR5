@@ -11,6 +11,7 @@ and open the template in the editor.
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script src="jquery-1.11.2.min.js"></script>
+        <script type='text/javascript' src='game.js'></script>
         <script>
             $(document).ready(function(){
   $("button").click(function(){
@@ -24,57 +25,38 @@ and open the template in the editor.
 });
         </script>
     
-        <style>
+        <style onload='startGame()'>
             header{
-                background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url( "children.jpg" );
+                background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url( "children.jpg" );
                 height:800px;
                 margin:-10px;
                 background-size: cover;
                 background-position: center;
                 
             }
-                          .topnav {
-                  
-                 background-color: transparent;
+                              .navigacioni {
+                 overflow: hidden;
+                 background-color: rgba(0,0,0,0.2);
+                 margin:0px;
+
+
                 }
-                 
-                .menu{
-                    float:right;
-                    list-style:none;
-                    margin: 20px;
-                    
-                }
-                .menu li{
-                    display:inline-block;
-                    margin:10px 5px;
-                    
-                         
-                    
-                }
-                .menu li a{
-                   color:white;
-                   float:right;
-                   display: inline-block;
-                   font-family: "Comic Sans MS", cursive, sans-serif;
+
+    .navigacioni a,.navigacioni p {
+                   float:left;
+                   display:inline-block;
+                   color: #e8ddcf;
                    text-align: center;
-                   padding:20px 20px;
+                   padding: 5px 16px 1px 1em;
                    text-decoration: none;
-                   position:relative;
-                   letter-spacing: 2px;
+
+
                 }
-                .topnav a:hover {
+
+     .navigacioni a:hover {
                   text-decoration: overline;
                      }
-     
-               .topnav .content {
-                 font-family: "Comic Sans MS", cursive, sans-serif;
-                 position: absolute; 
-                 top: 0; 
-                 background: rgb(0, 0, 0);
-                 background:  rgba(0, 0, 0, 0.0); 
-                 color: white; 
-                 width: 96%; 
-                 padding: 20px;}
+
                body{ background-color: #F5F5DC;
                   font-family: "Courier New", Courier, monospace ;}
                
@@ -212,26 +194,35 @@ and open the template in the editor.
                       color: #ebb900;
                font-size:20px;
                cursor:pointer;}
+               canvas {
+                   position:absolute;
+                   top:4030px;
+                   
+    border:1px solid #d3d3d3;
+    background-image: radial-gradient(red,orange,yellow);
+}
         </style>
         <link href="/C:\Users\HP\Downloads\fontawesome-free-5.6.3-web\css/all.css" rel="stylesheet">
     </head>
-    <body>
+    <body  >
         <header>
-            <div class="topnav">
-            
-          <div class='content' >
-             <ul class="menu">
-                 <li><a href="#">HOMEPAGE</a></li>
-                 <li><a href="#">REGISTER</a></li>
-                 <li><a href="#">ACTIVITY</a></li>
-                 <li><a>PROGRAMS</a>
-                                     </li>
-              <li><a href="#">ABOUT US</a></li>
-             </ul>
-            </div>
-            </div>
+             <div class="navigacioni">
+
+
+            <p style="color:#b3b3b3"> <a href="#"  style="text-decoration:none; font-size:25px;">ModernSchool</a><br>Discover MS</p>
+              <nav style="float:right">
+                  <p><a href="index.html" >HOME</a><br>Internships</p>
+                  <p><a href="programs.html">PROGRAMS</a><br>Get informed</p>
+                  <p><a href="register.html" target='_blank'>REGISTER</a><br>Not a member?</p>
+                  <p><a href="www.html">ACTIVITIES</a> <br> School activities</p>
+                  <p><a href="about.html" target='_self'>ABOUT US</a><br>More</p>
+
+
+
+              </nav>
+        
             <p id="centered">About us</p>
-            
+        </div>
         </header>
         <h1 style="text-align:center;">We believe we are all students of life for life and that the whole wide world is our classroom.</h1>
         <p><img src="a.jpg" align="left"  class="image">FOUNDER & CEO
@@ -249,14 +240,14 @@ and open the template in the editor.
          </div>
          <div >
              
-                 <video  style='margin:0px;' width="420" height="300"  controls>
+                 <video  style='margin:0px; position:absolute; top:1380px; left:30px;' width="420" height="300"  controls>
                <source src="Ms.mp4" type="video/mp4">
                
                 Your browser does not support the video tag.
                  </video><br>
              <button class="button">About this school.</button>
              <br>
-             <p id="video1">
+             <p id='video1' style='margin-left:37%;'>
                  It is our ultimate goal to maintain an environment where parents have a piece 
                  of mind when the children are in our care. It is important to know that children are safe, happy and well taken care of. 
                  The essence of our care revolves around “The Whole Child” approach where proper education, nurture, nutrition and play combine. 
@@ -340,7 +331,8 @@ and open the template in the editor.
                                     
                                     
                                     function init_map()
-                                    {var myOptions = {zoom:21,center:new google.maps.LatLng(40.6782, -73.9442 ),
+                                    {var myOptions = 
+                                                {zoom:21,center:new google.maps.LatLng(40.6782, -73.9442 ),
                                             mapTypeId: google.maps.MapTypeId.ROADMAP};
                                         map = new google.maps.Map(document.getElementById('gmap_canvas'),myOptions);
                                         marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(40.6782, -73.9442 )});
@@ -348,10 +340,57 @@ and open the template in the editor.
                         google.maps.event.addListener(marker, 'click', function()
                         {infowindow.open(map,marker);});infowindow.open(map,marker);
                     }google.maps.event.addDomListener(window, 'load', init_map);</script>
+                                
+
+
+
+
                </div>
             </div>
          </div>
-         
+         <div style="padding:20px;">
+             <button onclick="getLocation()" style="margin-top:50px; padding:20px; color:orange;">
+                 Get your cordinates to calculate the distance from us,by clicking this button.</button>
+         <p id="try"></p>
+
+<script>
+var x = document.getElementById("try");
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition, showError);
+  } else { 
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+function showPosition(position) {
+  x.innerHTML = "Latitude: " + position.coords.latitude + 
+  "<br>Longitude: " + position.coords.longitude;
+}
+
+function showError(error) {
+  switch(error.code) {
+    case error.PERMISSION_DENIED:
+      x.innerHTML = "User denied the request for Geolocation.";
+      break;
+    case error.POSITION_UNAVAILABLE:
+      x.innerHTML = "Location information is unavailable.";
+      break;
+    case error.TIMEOUT:
+      x.innerHTML = "The request to get user location timed out.";
+      break;
+    case error.UNKNOWN_ERROR:
+      x.innerHTML = "An unknown error occurred.";
+      break;
+  }
+}
+</script>
+    </div>
+         <div class='game' style='padding:40px;' font-size='20px;'>
+             <p style='margin-left:20%'>Make sure this window has focus, then use the arrow keys on you keyboard to move the red square.</p>
+<p style='margin-left:20%; margin-bottom:7%;'>When pressing both the left and the down arrow, the red square will move both down and to the left.</p>
+         </div>      
          <footer >
                   
                   <div class="contact">
