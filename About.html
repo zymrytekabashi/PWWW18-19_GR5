@@ -7,7 +7,7 @@ and open the template in the editor.
 <html manifest="manifest.appache">
     <head>
         <title>About us</title>
-        <meta charset="UTF-8">
+        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"  crossorigin="anonymous">
@@ -25,7 +25,7 @@ and open the template in the editor.
   });
 });
         </script>
-    
+
         <style onload='startGame()'>
             header{
                 background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url( "children.jpg" );
@@ -33,7 +33,7 @@ and open the template in the editor.
                 margin:-10px;
                 background-size: cover;
                 background-position: center;
-                
+
             }
                               .navigacioni {
                  overflow: hidden;
@@ -60,9 +60,9 @@ and open the template in the editor.
 
                body{ background-color: #F5F5DC;
                   font-family: "Courier New", Courier, monospace ;}
-               
-              
-          
+
+
+
                    #centered {
                    position: absolute;
                    top: 50%;
@@ -73,18 +73,18 @@ and open the template in the editor.
                    font-size:70px;
                    color:white;
                    text-shadow:-3px 3px 3px #000000;
-                   
+
                    }
                      .article{
                       text-align:center;
-                     
+
                     }
                     .title{
                         font-size:30px;
                     }
                     .team{
                         padding:60px;
-                  -webkit-column-count: 3; 
+                  -webkit-column-count: 3;
                   column-count: 3;
                   -webkit-column-gap: 40px;
                   text-align: center;
@@ -92,17 +92,17 @@ and open the template in the editor.
                   font-family: Goudy Old Style, Garamond, Big Caslon, Times New Roman, serif;
                   margin-top: 40px;
                   text-align: center;
-                 
-                  
+
+
            }
            .image{
                padding:60px;
                width:30%;
-               
+
            }
            #team{padding:60px;
            text-align: center;}
-           
+
           .img-circle {
            padding:30px;
            opacity: 1;
@@ -113,8 +113,8 @@ and open the template in the editor.
 }
                 h1{
                     color: #e6b800;
-    
-                      }   
+
+                      }
                       h2{
                           color:#800000;
                       }
@@ -124,7 +124,7 @@ and open the template in the editor.
                .video{
                    margin-right: 100px;
                    padding:20px;
-                   
+
                }
                .contact-map{
 	width: 100%;
@@ -143,12 +143,12 @@ and open the template in the editor.
                     position: relative;
                     margin:0px;
                     color:white;
-                    
+
                 }
                     #title{
                     font-size:28px;
-                    
-                    
+
+
                 }
                 .grid{
                     padding:20px;
@@ -156,7 +156,7 @@ and open the template in the editor.
   grid-column-gap: 10px;
   grid-template-columns:  auto auto auto;
   background-color: #F5F5DC;
-  
+
 }
 
 .grid-item {
@@ -165,16 +165,16 @@ and open the template in the editor.
   padding: 20px;
   font-size: 20px;
   text-align: center;
-} 
+}
 
 
 .grid p{color:#8B4513;}
                 footer a:link{color:#4d1a00;
                    text-decoration: none;}
-                
+
                footer  a:hover{color: #ff5500;}
                footer a:visited{color:#1a0900;}
-               
+
                footer p{font-size:20px;
                color:white;}
                .contact{
@@ -198,7 +198,7 @@ and open the template in the editor.
                canvas {
                    position:absolute;
                    top:4030px;
-                   
+
     border:1px solid #d3d3d3;
     background-image: radial-gradient(red,orange,yellow);
 }
@@ -209,7 +209,7 @@ and open the template in the editor.
 		$(".save").click(function(){
 			// Get input name
 			var firstName = $("#firstName").val();
-			
+
 			// Store data
     		localStorage.setItem("first_name", firstName);
 			console.log("Your first name is saved.");
@@ -236,12 +236,12 @@ and open the template in the editor.
                   <p><a href="programs.html">PROGRAMS</a><br>Get informed</p>
                   <p><a href="register.html" target='_blank'>REGISTER</a><br>Not a member?</p>
                   <p><a href="www.html">ACTIVITIES</a> <br> School activities</p>
-                  <p><a href="about.html" target='_self'>ABOUT US</a><br>More</p>
+                  <p><a href="#footer" target='_self'>ABOUT US</a><br>More</p>
 
 
 
               </nav>
-        
+
             <p id="centered">About us</p>
         </div>
         </header>
@@ -250,48 +250,48 @@ and open the template in the editor.
          </p>
          <div><h1>Alicia Williams </h1>
              <p style="font-size:20px; ">
-                 <em> Alicia Williams</em> has been a leader in education for over 15 years. She started in the sector as an elementary school teacher. 
-             During her teaching years, she received her Masters of Education in Curriculum and Instruction and wrote curriculum and 
-             assessments for the Osborn School District. Over the last decade, she has been in a variety of education leadership positions 
+                 <em> Alicia Williams</em> has been a leader in education for over 15 years. She started in the sector as an elementary school teacher.
+             During her teaching years, she received her Masters of Education in Curriculum and Instruction and wrote curriculum and
+             assessments for the Osborn School District. Over the last decade, she has been in a variety of education leadership positions
              including managing the Teaching and Learning Team nationally for Teach For America, serving as a Vice President on their Teacher Preparation
-             Support and Development Team, and leading the school design of a new innovative elementary school model with Achievement First Greenfield. 
+             Support and Development Team, and leading the school design of a new innovative elementary school model with Achievement First Greenfield.
              She know is the principal of <abbr title="Modern School">MS</abbr> and  has been focused on improving education for our students. </p>
          </div>
          <div >
-             
+
                  <video  style='margin:0px; position:absolute; top:1300px; left:30px;' width="420" height="300"  controls>
                <source src="Ms.mp4" type="video/mp4">
-               
+
                 Your browser does not support the video tag.
                  </video><br>
              <button class="button">About this school.</button>
              <br>
              <p id='video1' style='margin-left:37%;'>
-                 It is our ultimate goal to maintain an environment where parents have a piece 
-                 of mind when the children are in our care. It is important to know that children are safe, happy and well taken care of. 
-                 The essence of our care revolves around “The Whole Child” approach where proper education, nurture, nutrition and play combine. 
-                 Our campuses and staff are continuously improving,  our goal is  
-                 to provide the best care for the little ones. 
+                 It is our ultimate goal to maintain an environment where parents have a piece
+                 of mind when the children are in our care. It is important to know that children are safe, happy and well taken care of.
+                 The essence of our care revolves around “The Whole Child” approach where proper education, nurture, nutrition and play combine.
+                 Our campuses and staff are continuously improving,  our goal is
+                 to provide the best care for the little ones.
              </p>
-             
+
          </div>
          <h1 id="team">Featured Team Member</h1>
          <div class="team">
-               
+
              <article>
-           
+
              <img src="b.jpg" class="img-circle">
              <h2>Brianna Clark</h2>
              <p>Assistant Director</p>
              </article>
-               
+
              <article>
-             
+
              <img src="b.jpg" class="img-circle">
              <h2>Name and Surname</h2>
              <p>Position</p>
              </article>
-             
+
              <article>
              <img src="c.jpg" class="img-circle">
              <h2>Name and Surname</h2>
@@ -299,11 +299,11 @@ and open the template in the editor.
              </article>
          </div>
          <div class="grid">
-             
+
              <div class="grid-item"><i class="far fa-heart" style="color:#8B4510; font-size:25px; font-weight:bold"> CARING</i>
 
-                 <p>The philosophy at Ms is based in the belief that each child is a unique individual. 
-                     Our goal is to help children feel confident and comfortable in relating needs and 
+                 <p>The philosophy at Ms is based in the belief that each child is a unique individual.
+                     Our goal is to help children feel confident and comfortable in relating needs and
                      feelings to others and to have positive self-esteem.</p></div>
              <div class="grid-item"><i class="fas fa-mobile-alt" style="color:#8B4510; font-size:25px;"> COMMUNICATION</i>
 
@@ -313,33 +313,33 @@ and open the template in the editor.
 </p></div>
              <div class="grid-item"><i class="far fa-thumbs-up" style="color:#8B4510; font-size:25px; font-weight:bold"> OPEN-DOOR-POLICY</i>
 
-                 <P>We believe that it is very important to feel safe and comfortable about your little one being 
+                 <P>We believe that it is very important to feel safe and comfortable about your little one being
                      away from home. That is why all of our campuses offer “open door policy” – you are ALWAYS welcome to come
                      by or to call us as often as you feel necessary.
-                 </P></div>  
+                 </P></div>
              <div class="grid-item"><i class="fas fa-users" style="color:#8B4510; font-size:25px;"> ENGAGING</i>
 <P>Modern School’s interactive environment encourages curiosity, problem solving, creativity and social growth.
                      We use positive reinforcements in all aspects of our program.</P></div>
              <div class="grid-item"><i class="fas fa-check" style="color:#8B4510; font-size:25px;"> RESPECTFUL</i>
-<p>We work together with you as a team to meet your needs and concerns in a respectful and ethical manner. 
+<p>We work together with you as a team to meet your needs and concerns in a respectful and ethical manner.
                      Open and honest communication is the key to a successful preschool experience for children and their parents.</p></div>
              <div class="grid-item"><i class="fas fa-hands-helping" style="color:#8B4510; font-size:25px;"> HELPFUL</i>
 <p>Our friendly staff and administrators will help with every step of transition to
                      ensure happiness and safety of the children.
-                     You will get know all teachers on campus and soon you will feel like part of our big MS family</p></div>  
+                     You will get know all teachers on campus and soon you will feel like part of our big MS family</p></div>
              <div class="grid-item"><i class="fas fa-utensils" style="color:#8B4510; font-size:25px;"> NUTRITION</i>
-<p>Proper nutrition gives our bodies the right amount of energy, 
+<p>Proper nutrition gives our bodies the right amount of energy,
                      enough raw materials and all of the “little helpers” we need to stay healthy.We provide 3 meals a day – morning snack
                      ( or breakfast), hot lunch and afternoon snack which are included with tuition</p></div>
              <div class="grid-item"><i class="fas fa-chalkboard-teacher" style="color:#8B4510; font-size:25px;"> OUR TEACHERS</i>
-<P>Our Teachers are loving, nurturing and very caring. Transition for most children is fast and smooth. 
+<P>Our Teachers are loving, nurturing and very caring. Transition for most children is fast and smooth.
                      Most of our staff have been teaching at Modern School for a while, our focus is to create stability for the children.</P></div>
              <div class="grid-item"><i class="fas fa-school" style="color:#8B4510; font-size:25px;"> ONGOING-EVALUATION</i>
-<p>Our school uses assessment data to compare our children with others from 
+<p>Our school uses assessment data to compare our children with others from
                      across the country. Effective use of assessment data allows our school to identify problematic areas of learning at
-                     the classroom and school levels, so that teachers can generate solutions to address the problems.</p></div> 
-  
-             
+                     the classroom and school levels, so that teachers can generate solutions to address the problems.</p></div>
+
+
          </div>
          <div class="contact-map"><div id="panel"><i class="fas fa-chevron-down"></i> Find us in map.</div>
             <div id = "map">
@@ -347,10 +347,10 @@ and open the template in the editor.
                <div style='height:400px;width:100%;'>
                   	<div id='gmap_canvas' style='height:400px;width:100%;'></div>
                   		<script type='text/javascript'>
-                                    
-                                    
+
+
                                     function init_map()
-                                    {var myOptions = 
+                                    {var myOptions =
                                                 {zoom:21,center:new google.maps.LatLng(40.6782, -73.9442 ),
                                             mapTypeId: google.maps.MapTypeId.ROADMAP};
                                         map = new google.maps.Map(document.getElementById('gmap_canvas'),myOptions);
@@ -359,7 +359,7 @@ and open the template in the editor.
                         google.maps.event.addListener(marker, 'click', function()
                         {infowindow.open(map,marker);});infowindow.open(map,marker);
                     }google.maps.event.addDomListener(window, 'load', init_map);</script>
-                                
+
 
 
 
@@ -378,13 +378,13 @@ var x = document.getElementById("try");
 function getLocation() {
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(showPosition, showError);
-  } else { 
+  } else {
     x.innerHTML = "Geolocation is not supported by this browser.";
   }
 }
 
 function showPosition(position) {
-  x.innerHTML = "Latitude: " + position.coords.latitude + 
+  x.innerHTML = "Latitude: " + position.coords.latitude +
   "<br>Longitude: " + position.coords.longitude;
 }
 
@@ -409,11 +409,11 @@ function showError(error) {
          <div class='game' style='padding:40px;' font-size='20px;'>
              <p style='margin-left:20%'>Make sure this window has focus, then use the arrow keys on you keyboard to move the red square.</p>
 <p style='margin-left:20%; margin-bottom:7%;'>When pressing both the left and the down arrow, the red square will move both down and to the left.</p>
-         </div>      
-         <footer >
-                  
+         </div>
+         <footer id="footer">
+
                   <div class="contact">
-                      
+
                       <p id="title"><i class="fas fa-phone">Phone</i></p>
                   <p> (860)555-1234</p>
                   <p>(860)222-5678
@@ -421,16 +421,16 @@ function showError(error) {
                   </div>
 
 
-                  <div class="contact">   
+                  <div class="contact">
            <address>
                <p id="title"> <i class="fas fa-map-marker-alt">Address</i></p>
                 <p>Atlantic Ave</p>
                 <p>Brooklyn</p>
-                   
-           </address> 
+
+           </address>
                   </div>
-                  
-             
+
+
 <div class="contact">
     <p id="title"> <i class="far fa-envelope">Email</i></p>
     <a href="mailto:modernchool@gmail.com">modernschool@gmail.com</a><br><br>
