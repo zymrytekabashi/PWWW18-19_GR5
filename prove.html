@@ -60,6 +60,8 @@ function component(width, height, color, x, y, type) {
         }
     }
     this.newPos = function() {
+      if(this.x<0)this.x=400;
+      if(this.y<0)this.y=400;
         this.x += this.speedX;
         this.y += this.speedY;
     }
