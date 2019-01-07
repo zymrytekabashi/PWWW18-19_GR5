@@ -12,7 +12,7 @@ and open the template in the editor.
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"  crossorigin="anonymous">
         <script src="jquery-1.11.2.min.js"></script>
-        <script type='text/javascript' src='Game.js'></script>
+
         <script>
             $(document).ready(function(){
   $("button").click(function(){
@@ -71,7 +71,7 @@ and open the template in the editor.
                    font-family: "cursive",Brush Script MT;
                    font-weight:100;
                    font-size:70px;
-                   color:white;
+                   color:#e8ddcf;
                    text-shadow:-3px 3px 3px #000000;
 
                    }
@@ -100,16 +100,17 @@ and open the template in the editor.
                width:30%;
 
            }
-           #team{padding:60px;
-           text-align: center;}
+           #team{padding:80px 0px 0px 0px;
+           text-align: center;
+           }
 
           .img-circle {
-           padding:30px;
+
            opacity: 1;
           display: block;
-          width: 50%;
+          width: 80%;
           height: auto;
-          border-radius: 50%;
+          border-radius: 48%;
 }
                 h1{
                     color: #e6b800;
@@ -156,17 +157,23 @@ and open the template in the editor.
   grid-column-gap: 10px;
   grid-template-columns:  auto auto auto;
   background-color: #F5F5DC;
-
+  transition:transform.2s;
 }
 
 .grid-item {
-  background-color: rgba(226, 150, 51, 0.3);
+
   border: 1px solid rgba(0, 0, 0, 0.3);
   padding: 20px;
   font-size: 20px;
   text-align: center;
-}
+  background-image: url( "Space1.jpg" );
 
+}
+.grid :hover{
+    -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.1);
+}
 
 .grid p{color:#8B4513;}
                 footer a:link{color:#4d1a00;
@@ -190,6 +197,7 @@ and open the template in the editor.
                    margin: 20px 500px;
                    text-align: center;
                    cursor:pointer;
+                   border-radius:10%;
                }
                #panel{padding:10px;
                       color: #ebb900;
@@ -202,6 +210,8 @@ and open the template in the editor.
     border:1px solid #d3d3d3;
     background-image: radial-gradient(red,orange,yellow);
 }
+.team h2{font-size:27px;}
+.team p,.main p,.second p{color:#8B4513;}
         </style>
         <script>
             if(localStorage){
@@ -234,7 +244,7 @@ and open the template in the editor.
               <nav style="float:right">
                   <p><a href="index.html" >HOME</a><br>Internships</p>
                   <p><a href="programs.html">PROGRAMS</a><br>Get informed</p>
-                  <p><a href="register.html" target='_blank'>REGISTER</a><br>Not a member?</p>
+                  <p><a href="register.html" >REGISTER</a><br>Not a member?</p>
                   <p><a href="www.html">ACTIVITIES</a> <br> School activities</p>
                   <p><a href="#footer" target='_self'>ABOUT US</a><br>More</p>
 
@@ -246,9 +256,9 @@ and open the template in the editor.
         </div>
         </header>
         <h1 style="text-align:center;">We believe we are all students of life for life and that the whole wide world is our classroom.</h1>
-        <p><img src="a.jpg" align="left"  class="image">FOUNDER & CEO
+        <p style="color:#8B4513;"><img src="a.jpg" align="left"  class="image" >FOUNDER & CEO
          </p>
-         <div><h1>Alicia Williams </h1>
+         <div class="main"><h1>Alicia Williams </h1>
              <p style="font-size:20px; ">
                  <em> Alicia Williams</em> has been a leader in education for over 15 years. She started in the sector as an elementary school teacher.
              During her teaching years, she received her Masters of Education in Curriculum and Instruction and wrote curriculum and
@@ -257,16 +267,16 @@ and open the template in the editor.
              Support and Development Team, and leading the school design of a new innovative elementary school model with Achievement First Greenfield.
              She know is the principal of <abbr title="Modern School">MS</abbr> and  has been focused on improving education for our students. </p>
          </div>
-         <div >
+         <div  class="second">
 
-                 <video  style='margin:0px; position:absolute; top:1300px; left:30px;' width="420" height="300"  controls>
+                 <video  style='margin:0px; position:absolute; top:1300px; left:65px;' width="420" height="300"  controls>
                <source src="Ms.mp4" type="video/mp4">
 
                 Your browser does not support the video tag.
                  </video><br>
              <button class="button">About this school.</button>
              <br>
-             <p id='video1' style='margin-left:37%;'>
+             <p id='video1' style='margin-left:37%; font-size:20px;'>
                  It is our ultimate goal to maintain an environment where parents have a piece
                  of mind when the children are in our care. It is important to know that children are safe, happy and well taken care of.
                  The essence of our care revolves around “The Whole Child” approach where proper education, nurture, nutrition and play combine.
@@ -280,22 +290,22 @@ and open the template in the editor.
 
              <article>
 
-             <img src="b.jpg" class="img-circle">
-             <h2>Brianna Clark</h2>
-             <p>Assistant Director</p>
+             <img src="teacher.png" class="img-circle">
+             <h2 id="text">Brianna Clark</h2>
+             <p id="text">Assistant Director</p>
              </article>
 
              <article>
 
-             <img src="b.jpg" class="img-circle">
-             <h2>Name and Surname</h2>
-             <p>Position</p>
-             </article>
-
-             <article>
              <img src="c.jpg" class="img-circle">
-             <h2>Name and Surname</h2>
-             <p>Position</p>
+             <h2 id="text">Madelaine Perrie</h2>
+             <p id="text">Teacher</p>
+             </article>
+
+             <article>
+             <img src="d.jpg" class="img-circle">
+             <h2 id="text">Jennifer Lanz</h2>
+             <p id="text">Teacher</p>
              </article>
          </div>
          <div class="grid">
@@ -435,13 +445,13 @@ function showError(error) {
     <p id="title"> <i class="far fa-envelope">Email</i></p>
     <a href="mailto:modernchool@gmail.com">modernschool@gmail.com</a><br><br>
                <form>
-                   <label>Check if someone you know is going to our school: <input type="text" id="firstName"></label><br>
+                   <label>Write your first name:<br> <input type="text" id="firstName"></label><br>
         <button type="button" class="save">Save Name</button>
         <button type="button" class="access">Get Name</button>
     </form>
                   </div>
              <div id="last" style="background-color: #dea521;">
-                      <p style="text-align:left; font-size: 18px; padding:5px;">Copyright&copy 2018 ModernSchool | Allright reserved.</p>
+                      <p style="text-align:left; font-size: 18px;  padding:5px;">Copyright&copy 2018 ModernSchool | Allright reserved.</p>
                   </div>
 </footer>
     </body>
