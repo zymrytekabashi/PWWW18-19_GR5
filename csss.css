@@ -1,12 +1,6 @@
 
-     header{
-         text-align: center ;
-         font-size: 18px;
-         color: rgba(25, 25,25, 1);
-     }
-
             .wrap {
-                margin-top: 150px;
+                padding:150px;
                 perspective: 1000px;
                 perspective-origin: 50% 50%;
                 background-size: 80px 80px;
@@ -33,7 +27,7 @@
                     transition: transform 0.2s ease-in;
                 }
 .front {
-                background-image:url("girl1.jpg");
+                background-color: rgba(255, 0, 0, .6);
                 transform: translateZ(100px);
             }
 
@@ -65,7 +59,6 @@
                 transform: rotateX(270deg) translateY(100px);
                 transform-origin: bottom center;
             }
-
             @keyframes rotate {
                 from {
                     transform: rotateX(0deg) rotateY(0deg);
@@ -103,3 +96,13 @@
             .wrap:hover .bottom {
                 transform: rotateX(270deg) translateZ(100px) translateY(100px);
             }
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jan 7, 2019, 7:02:30 PM
+    Author     : HP
+*/
+
