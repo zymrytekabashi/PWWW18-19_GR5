@@ -28,12 +28,14 @@ and open the template in the editor.
 
         <style onload='startGame()'>
             header{
-                background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url( "children.jpg" );
+                /*background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url( "children.jpg" );
                 height:800px;
                 margin:-10px;
                 background-size: cover;
-                background-position: center;
-
+                background-position: center;*/
+                background:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url( "children.jpg" ) center  ;
+                height:800px;
+                margin:-10px;
             }
                               .navigacioni {
                  overflow: hidden;
@@ -59,7 +61,7 @@ and open the template in the editor.
                      }
 
                body{ background-color: #F5F5DC;
-                  font-family: "Courier New", Courier, monospace ;}
+                  font-family: Goudy Old Style, Garamond, Big Caslon, Times New Roman, serif;}
 
 
 
@@ -222,6 +224,7 @@ and open the template in the editor.
 
 			// Store data
     		localStorage.setItem("first_name", firstName);
+                sessionStorage.setItem("first_name",firstName);
 			console.log("Your first name is saved.");
 		});
 		$(".access").click(function(){
@@ -290,22 +293,22 @@ and open the template in the editor.
 
              <article>
 
-             <img src="teacher.png" class="img-circle">
+               <figure><img src="teacher.png" class="img-circle">
              <h2 id="text">Brianna Clark</h2>
-             <p id="text">Assistant Director</p>
+             <figcaption id="text1">Assistant Director</figcaption></figure>
              </article>
 
              <article>
 
-             <img src="c.jpg" class="img-circle">
-             <h2 id="text">Madelaine Perrie</h2>
-             <p id="text">Teacher</p>
+              <figure><img src="c.jpg" class="img-circle">
+             <h2 id="text">Madelainne Perrie</h2>
+             <figcaption id="text1">Teacher</figcaption></figure>
              </article>
 
              <article>
-             <img src="d.jpg" class="img-circle">
+                 <figure><img src="d.jpg" class="img-circle">
              <h2 id="text">Jennifer Lanz</h2>
-             <p id="text">Teacher</p>
+             <figcaption id="text1">Teacher</figcaption></figure>
              </article>
          </div>
          <div class="grid">
@@ -361,7 +364,9 @@ and open the template in the editor.
 
                                     function init_map()
                                     {var myOptions =
-                                                {zoom:21,center:new google.maps.LatLng(40.6782, -73.9442 ),
+                                                {
+                                                    zoom:21,center:new google.maps.LatLng(40.6782, -73.9442
+                                                    ),
                                             mapTypeId: google.maps.MapTypeId.ROADMAP};
                                         map = new google.maps.Map(document.getElementById('gmap_canvas'),myOptions);
                                         marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(40.6782, -73.9442 )});
@@ -379,7 +384,14 @@ and open the template in the editor.
          </div>
          <div style="padding:20px;">
              <button onclick="getLocation()" style="margin-top:50px; padding:20px; color:orange;">
-                 Get your cordinates to calculate the distance from us,by clicking this button.</button>
+                 <script type = "text/javascript">
+                     
+         var re = /icon/gi;
+         var str = " Get your cordinates to calculate the distance from us,by clicking this icon.";
+         var newstr = str.replace(re, "button");        
+         document.write(newstr ); 
+      </script> 
+                </button>
          <p id="try"></p>
 
 <script>
@@ -416,10 +428,7 @@ function showError(error) {
 }
 </script>
     </div>
-         <div class='game' style='padding:40px;' font-size='20px;'>
-             <p style='margin-left:20%'>Make sure this window has focus, then use the arrow keys on you keyboard to move the red square.</p>
-<p style='margin-left:20%; margin-bottom:7%;'>When pressing both the left and the down arrow, the red square will move both down and to the left.</p>
-         </div>
+      
          <footer id="footer">
 
                   <div class="contact">
@@ -445,7 +454,7 @@ function showError(error) {
     <p id="title"> <i class="far fa-envelope">Email</i></p>
     <a href="mailto:modernchool@gmail.com">modernschool@gmail.com</a><br><br>
                <form>
-                   <label>Write your first name:<br> <input type="text" id="firstName"></label><br>
+                   <label>Write your first name:<br> <input type="text" id="firstName" autofocus pattern="[a-zA-Z]""></label><br>
         <button type="button" class="save">Save Name</button>
         <button type="button" class="access">Get Name</button>
     </form>
