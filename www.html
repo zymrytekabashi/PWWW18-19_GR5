@@ -94,10 +94,11 @@ tr:nth-child(even) {
 #calc {
     width: 16em;
     margin: 20px;
-    padding-top: 30px;
-    padding-left: 350px;
-
+    padding-top: 20px;
+    padding-left: 100px;
+    float:right;
     color: #839C29;
+    display:inline-block;
     box-shadow: 0.4em 0.4em 0.4em rgba( 0, 0, 0, 0.2 );
  }
 
@@ -458,6 +459,7 @@ function showFunction2(diva, divb) {
     </div>
 
 <h1 style="color:#8B4513; text-align:center; font-size:50px;">Some types of activities in our school</h1>
+<div>  <iframe <iframe width="600px" height="400px" style="display:inline-block;" src="file:///C:/Users/Admin/Desktop/pwww_18_09_gr5/PWWW18-09_GR5-1/PWWW18-19_GR5/prove.html"></iframe></div>
 
 <form id="calc" action="#">
    <div>
@@ -478,110 +480,27 @@ function showFunction2(diva, divb) {
     </span><span>
      <input id="width" onkeyup="search(this)"  type="text" placeholder="In Metres">
     </span>
-   </div><div>
-    <span>
-     <label for="m2">m<sup>2</sup></label>
-    </span>
-    <span>
-     <input id="m2" type="text"  disabled>
-    </span>
-   </div><div>
-    <span>
-     <label for="panels">Solar Panels Needed  For Pool</label>
-    </span><span>
-     <input id="panels" type="text"  disabled>
-    </span>
    </div>
     <input type="reset" value="Clear Fields">
   </form>
 
-  <iframe <iframe width="500px" height="500px" src="file:///C:/Users/Admin/Desktop/pwww_18_09_gr5/PWWW18-09_GR5-1/PWWW18-19_GR5/prove.html"></iframe>></iframe>
+
 
 <div >
-
-
   <p style="font-size:20px;color:#800000;">Write a number between 5 and 12</p>
   <input type="text"  id="IsNumer">
   <button onclick="RightNumber()">Check</button>
-  <p id="outputHere"></p>
-
-
-
-
-  <canvas id="myCanvas" width="578" height="200"></canvas>
-    <script>
-      window.requestAnimFrame = (function(callback) {
-        return window.requestAnimationFrame || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame || window.oRequestAnimationFrame || window.msRequestAnimationFrame ||
-        function(callback) {
-          window.setTimeout(callback, 1000 / 60);
-        };
-      })();
-
-      function drawRectangle(myRectangle, context) {
-        context.beginPath();
-        context.rect(myRectangle.x, myRectangle.y, myRectangle.width, myRectangle.height);
-        context.fillStyle = '#8ED6FF';
-        context.fill();
-        context.lineWidth = myRectangle.borderWidth;
-        context.strokeStyle = 'black';
-        context.stroke();
-      }
-      function animate(myRectangle, canvas, context, startTime) {
-        // update
-        var time = (new Date()).getTime() - startTime;
-
-        var linearSpeed = 100;
-        // pixels / second
-        var newX = linearSpeed * time / 1000;
-
-        if(newX < canvas.width - myRectangle.width - myRectangle.borderWidth / 2) {
-          myRectangle.x = newX;
-        }
-
-        // clear
-        context.clearRect(0, 0, canvas.width, canvas.height);
-
-        drawRectangle(myRectangle, context);
-
-        // request new frame
-        requestAnimFrame(function() {
-          animate(myRectangle, canvas, context, startTime);
-        });
-      }
-      var canvas = document.getElementById('myCanvas');
-      var context = canvas.getContext('2d');
-
-      var myRectangle = {
-        x: 0,
-        y: 75,
-        width: 100,
-        height: 50,
-        borderWidth: 5
-      };
-
-      drawRectangle(myRectangle, context);
-
-      // wait one second before starting animation
-      setTimeout(function() {
-        var startTime = (new Date()).getTime();
-        animate(myRectangle, canvas, context, startTime);
-      }, 1000);
-    </script>
-
-
-    <svg height="150" width="500">
-      <defs>
-    <radialGradient id="grad1" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
-      <stop offset="0%" style="stop-color:rgb(255,255,255);stop-opacity:0" />
-      <stop offset="100%" style="stop-color:rgb(0,0,255);stop-opacity:1" />
-    </radialGradient>
-  </defs>
-  <ellipse cx="240" cy="100" rx="220" ry="30" fill="url(#grad1)" />
-  <ellipse cx="220" cy="70" rx="190" ry="20" style="fill:lime" />
-  <ellipse cx="210" cy="45" rx="170" ry="15" style="fill:yellow" />
-  Sorry, your browser does not support inline SVG.
+  <svg>
+    <defs>
+  <radialGradient id="grad1" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+    <stop offset="0%" style="stop-color:rgb(255,255,255);stop-opacity:0" />
+    <stop offset="100%" style="stop-color:rgb(0,0,255);stop-opacity:1" />
+  </radialGradient>
+</defs>
+<ellipse cx="240" cy="100" rx="20" ry="30" fill="url(#grad1)" />
+Sorry, your browser does not support inline SVG.
 </svg>
-
+  <p id="outputHere"></p>
 
 </div>
 
