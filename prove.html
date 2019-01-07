@@ -1,12 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
+
+  <script src="jquery-3.3.1.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <style>
 canvas {
     border:1px solid #d3d3d3;
-    background-image: url("5.jpg");
+    background-image: url("gamebackground.jpg");
 }
+button{
+        width: 20%;
+        background-color: rgba(47,79,79, 0.9);
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border: 0;
+        border-bottom: 1px solid #1c2833;
+
+}
+.important {
+  font-weight: bold;
+  font-size: xx-large;
+}
+
+.shtoNgjyra {
+  color: #800000;
+}
+body{background-color: rgba(255,218,185,0.7);
+font-family: Goudy Old Style, Garamond, Big Caslon, Times New Roman, serif;
+ color:#A52A2A}
 </style>
 </head>
 <body onload="startGame()">
@@ -150,6 +173,33 @@ function clearmove() {
   <button onmousedown="moveright()" onmouseup="clearmove()" ontouchstart="moveright()">RIGHT</button><br><br>
   <button onmousedown="movedown()" onmouseup="clearmove()" ontouchstart="movedown()">DOWN</button>
 </div>
+<h2>This is a game for children</h2>
+
+<button id="buttonn">Dont wanna read that</button>
+
+<p id="test"> Not for Adults</p>
+<button id="btn2">Hide it!</button>
+ <p>This is going to change colors.WOW</p>
+<button id="shfaq">Add styles to elements</button>
+<script>
+$(function(){
+
+    $("#buttonn").click(function(){
+
+        $("h2").hide();
+
+    });
+
+    $("#btn2").click(function(){
+        $("#test").hide();
+    });
+
+    $("#shfaq").click(function(){
+      $("h2, p").addClass("shtoNgjyra");
+
+    });
+});
+</script>
 
 
 </body>
