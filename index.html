@@ -16,7 +16,7 @@ and open the template in the editor.
           body{
             font-family: Goudy Old Style, Garamond, Big Caslon, Times New Roman, serif;
             background-color:#f4f4d7;
-              
+
 
                }
                header{
@@ -211,7 +211,7 @@ and open the template in the editor.
                         font-stretch:normal;
                         font-style:normal;
                         font-weight: bold;
-}
+                     }
                input[type=submit],textarea{
                width: 100%;
                padding: 12px 20px;
@@ -426,8 +426,8 @@ and open the template in the editor.
     <p id="title"> <i class="far fa-envelope">Email</i></p>
               <a href="mailto:modernchool@gmail.com">modernschool@gmail.com</a>
 
-                  <form  id="form" action="mailto:modernschool@gmail.com" method="post" enctype="text/plain">
-                  <textarea name="Comments" rows="4" cols="52" placeholder="Your revisions regarding this site." wrap="soft" oninput="RegExec(this)" ></textarea>
+                  <form method="get" id="form" action="http://www.randyconnolly.com/tests/process.php">
+                  <textarea name="Comments" rows="4" cols="52" placeholder="Your revisions regarding this site." wrap="soft|hard" oninput="RegExec(this)" autocomplete="off"></textarea>
                    <keygen name="security" />
                    <input type="submit" value="Submit" >
                    </form>
