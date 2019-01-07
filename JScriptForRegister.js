@@ -89,6 +89,8 @@ setInterval(function() {
                         var n = d.getHours();
                         if (n > 23 || n < 6) {
                                              document.body.className = "night";
+                                            // var night =  document.getElementsByClassName('night')
+                                            console.log('We are here')
                                             }
                         else {
                                        document.body.className = "day";

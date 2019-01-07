@@ -4,7 +4,7 @@ To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
-<html manifest="manifest.appache">
+<html manifest="manifest.appcache">
     <head>
         <title>About us</title>
         <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
@@ -432,7 +432,7 @@ function showError(error) {
          <footer id="footer">
 
                   <div class="contact">
-
+                        <label id="creators"></label>
                       <p id="title"><i class="fas fa-phone">Phone</i></p>
                   <p> (860)555-1234</p>
                   <p>(860)222-5678
@@ -454,10 +454,28 @@ function showError(error) {
     <p id="title"> <i class="far fa-envelope">Email</i></p>
     <a href="mailto:modernchool@gmail.com">modernschool@gmail.com</a><br><br>
                <form>
+
                    <label>Write your first name:<br> <input type="text" id="firstName" autofocus pattern="[a-zA-Z]"></label><br>
         <button type="button" class="save">Save Name</button>
         <button type="button" class="access">Get Name</button>
     </form>
+    <script>  function Person(first, last, profession) {
+        this.firstName = first;
+        this.lastName = last;
+        this.profession = "Student";
+
+      }
+      var Studentja1 = new Person("Eljesa", "Mehmeti");
+     var Studentja2 = new Person("Zymryte", "Kabashi");
+     var Studentja3 = new Person("Ariana", "Gashi");
+     Person.prototype.name = function() {
+ return this.firstName + " " + this.lastName
+};
+Person.prototype.nationality = "Kosova";
+
+document.getElementById("creators").innerHTML =("The creators of these web pages are  " +
+Studentja1.name()+", "+ Studentja2.name()+" and  "+
+ Studentja3.name()+ " and they all are  " + Studentja1.profession+" from "+Studentja1.nationality);</script>
                   </div>
              <div id="last" style="background-color: #dea521;">
                       <p style="text-align:left; font-size: 18px;  padding:5px;">Copyright&copy 2018 ModernSchool | Allright reserved.</p>

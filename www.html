@@ -6,13 +6,14 @@
 
  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"  crossorigin="anonymous">
  <script type="text/javascript" src="JScriptForRegister.js"></script>
+ <link rel="stylesheet" href="csss.css">
  <style type="text/css">
 
                  body{ background-color: #F5F5DC;
                   font-family: Goudy Old Style, Garamond, Big Caslon, Times New Roman, serif;}
 
               header{
-                background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0)),url("image1.jpg");
+                background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0)),url("back.jpg");
                 height:680px;
 
                 background-size: cover;
@@ -93,11 +94,13 @@ tr:nth-child(even) {
 
 #calc {
     width: 16em;
-    margin: 20px;
-    padding-top: 20px;
-    padding-left: 100px;
+    margin: 30px;
+
+    padding-top: 3px;
+    padding-left: 40px;
     color: #839C29;
     box-shadow: 0.4em 0.4em 0.4em rgba( 0, 0, 0, 0.2 );
+     margin-top:50px
  }
 
 #calc div {
@@ -216,7 +219,8 @@ tr:nth-child(even) {
                            }
 
                              .container {
-                                 padding:60px;
+
+                                 padding:0px 30px 0px 30px;
                                  -webkit-column-count: 3;
                                   column-count: 3;
                                   -webkit-column-gap: 40px;
@@ -258,7 +262,24 @@ tr:nth-child(even) {
                            background: linear-gradient(#F08080, #008B8B);
 
                          }
+<<<<<<< HEAD
+<<<<<<< HEAD
 
+
+
+
+=======
+=======
+>>>>>>> f99bffcaf264086f73da298b2bd2872ccdd6166d
+                         .back{
+                             background-image: url("back.jpg");
+                             background-repeat: repeat;
+                             margin:0px;
+                         }
+<<<<<<< HEAD
+>>>>>>> f99bffcaf264086f73da298b2bd2872ccdd6166d
+=======
+>>>>>>> f99bffcaf264086f73da298b2bd2872ccdd6166d
 </style>
 
 
@@ -360,6 +381,40 @@ function showFunction2(diva, divb) {
 
           </div>
   </header>
+    <div class="back">
+     <div class="wrap">
+            <div class="cube">
+                <div class="front">
+                    <h2> Big  Monster coloring pages</h2>
+                  "
+                   Print out one of the five designs and let kids color them in, they can open and close the monsters’ mouths by folding on the lines."
+
+
+                </div>
+                <div class="back">
+                    <h2>. Fingerprint Art </h2>
+                    "Fingerprint Art  teaches kids how to turn their fingerprints into hundreds of
+                    different animals, people, and designs. "
+                </div>
+                <div class="top">
+                    <h2>Print + color Unicorn masks</h2>
+                    “Print out the free template and let kids design and color their unicorn, add elastic so they can wear the masks for make believe play.”
+                </div>
+                <div class="bottom">
+                    <h2> The Dice Game</h2>
+                    “The free printable instruction sheet makes it easy to learn how to play. Best for kids 5+ although younger kids can play with help.”
+                </div>
+                <div class="left">
+                    <h2> Marshmallow catapults </h2>
+                   “These are SO easy to put together and SO much fun to play with . One of our very favorite indoor activities.”
+                </div>
+                <div class="right">
+                    <h2>Origami</h2>
+                    “Origami is a great way to keep little hands busy.Find some ideas at our page by exploring for more.”
+                </div>
+            </div>
+        </div>
+    </div>
   <div class="container" >
   <article >
 
@@ -457,8 +512,20 @@ function showFunction2(diva, divb) {
     </div>
 
 <h1 style="color:#8B4513; text-align:center; font-size:50px;">Some types of activities in our school</h1>
-<iframe width="500px" height="400px"  src="file:///C:/Users/Admin/Desktop/pwww_18_09_gr5/PWWW18-09_GR5-1/PWWW18-19_GR5/prove.html"></iframe>
+<<<<<<< HEAD
+<<<<<<< HEAD
+<iframe style="margin:50px;float:left"width="500px" height="400px"  src="file:///C:/Users/Admin/Desktop/pwww_18_09_gr5/PWWW18-09_GR5-1/PWWW18-19_GR5/prove.html"></iframe>
+<video  style='margin:50px' width="40%" controls>
+<source src="playvideo.mp4"  type="video/mp4">
+</video>
+=======
+<iframe style="width:500px; height:400px;"  src="prove.html"></iframe>
 
+>>>>>>> f99bffcaf264086f73da298b2bd2872ccdd6166d
+=======
+<iframe style="width:500px; height:400px;"  src="prove.html"></iframe>
+
+>>>>>>> f99bffcaf264086f73da298b2bd2872ccdd6166d
 <form id="calc" action="#">
    <div>
     <span>
@@ -483,10 +550,10 @@ function showFunction2(diva, divb) {
   </form>
 
 
-<div >
+<div style="margin:50px;">
   <p style="font-size:20px;color:#800000;">Write a number between 5 and 12</p>
   <input type="text"  id="IsNumer">
-  <button onclick="RightNumber()">Check</button>
+  <button onclick="RightNumber()"><span>Check</span></button>
   <p id="outputHere"></p>
 
 </div>
@@ -500,11 +567,13 @@ function showFunction2(diva, divb) {
 <ellipse cx="240" cy="100" rx="20" ry="30" fill="url(#grad1)" />
 Sorry, your browser does not support inline SVG.
 </svg>
-<div>
+
+<div >
+
 <h2 style="text-align:center">DID YOU KNOW THAT </h2>
 <p  style =" text-align: center; font-size:20px; text-shadow: 00, 3px ,#FF0000, 00 ,5px ,#0000FF;"id="wow"></p>
 <script>
-var interesting=Math.floor(Math.random() * 8) + 1 ;
+var interesting=Math.floor(Math.random() * 9) + 1 ;
 const arr = [4, 5, 6,100,-12,0];
 var dy= 2.56742;
 switch(interesting){
@@ -513,6 +582,7 @@ case 2:  document.getElementById("wow").innerHTML=" Blue whale is the lagest ani
 case 3:   document.getElementById("wow").innerHTML="Rounding 2.56742 in four digits is "+dy.toExponential(4);break;  //it represents the number of digits after decimal point.
 case 4:  document.getElementById("wow").innerHTML=" The largest number in {4,5,6,100,-12,0}  is "+ Math.max.apply(Math, arr);break;
 case 5:  document.getElementById("wow").innerHTML= "2 to the power of 10 is  "+Math.pow(2,10) ;break;
+case 9:  document.getElementById("wow").innerHTML= "2<sup>1024</sup>  is  "+Number.MAX_VALUE;break;
 case 6:  document.getElementById("wow").innerHTML=" America was discoverd by Christopher Columbus ";break;
 case 7:  document.getElementById("wow").innerHTML="Sinuse of PI/2 is   "+Math.sin(Math.PI / 2);;break;
 case 8:  document.getElementById("wow").innerHTML="Hello in Albanian is &#199kemi\\P&#235rsh&#235ndetje";break;

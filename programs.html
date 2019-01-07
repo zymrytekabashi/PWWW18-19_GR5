@@ -4,7 +4,7 @@ To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
-<html manifest="manifest.appache">
+<html manifest="manifest.appcache">
     <head>
         <title>Programs</title>
         <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
@@ -37,7 +37,6 @@ and open the template in the editor.
                    text-align: center;
                    padding: 5px 16px 1px 1em;
                    text-decoration: none;
-
 
                 }
 
@@ -118,8 +117,8 @@ and open the template in the editor.
                     position: relative;
                     margin:0px;
                     color:white;
-                    
-                    
+
+
 
                 }
                     footer a:link{color:#4d1a00;
@@ -139,7 +138,7 @@ and open the template in the editor.
                color: #ff5500;}
                .quiz{
                    padding:30px;
-                  
+
 
 
                }
@@ -160,9 +159,9 @@ and open the template in the editor.
      .students{
          column-count: 3;
          column-gap: 40px;
-         
+
      }
-     #center{     
+     #center{
                    position: relative;
                    top: 30%;
                    left: 30%;
@@ -188,8 +187,14 @@ and open the template in the editor.
          cursor:pointer;
          font-family: Goudy Old Style, Garamond, Big Caslon, Times New Roman, serif;
         color:#662200;
-        
+        outline: 4px solid pink;
+        outline-offset: 5px;
+        resize: horizontal;
+
+
+
      }
+
         </style>
 
 
@@ -324,7 +329,7 @@ $(document).ready(function(){
                 <p id='center'>Anna Falls has learnt to play the guitar<br>,piano and drums  is less than 6 months.She is 7 years old.</p></div>
         </div>
         <div class="quiz">
-            
+
         <h1  style="font-size: 400%; color:#800000;">Random Math Quiz of the day!!</h1>
         <br>
 
@@ -352,8 +357,8 @@ $(document).ready(function(){
             </script>
         <input type="text" name="answer" id="answer" placeholder="Your answer here"style="width: 250px; height: 40px; font-size: 32px;"/>
         <br><button onclick="fire()" >Enter</button>
-            
-          
+
+
         </div>
          <footer id="footer">
 

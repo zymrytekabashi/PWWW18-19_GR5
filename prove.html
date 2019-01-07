@@ -14,7 +14,7 @@ canvas {
 
 var myGamePiece;
 var myObstacles = [];
-
+var p=0;
 
 function startGame() {
     myGamePiece = new component(20, 20, "F1948A", 10, 125);
@@ -83,11 +83,14 @@ function component(width, height, color, x, y, type) {
 }
 
 function updateGameArea() {
+
     var x, height, gap, minHeight, maxHeight, minGap, maxGap;
     for (i = 0; i < myObstacles.length; i += 1) {
         if (myGamePiece.crashWith(myObstacles[i])) {
-            myGameArea.stop(alert("you arrived the destinacion"));
-            return;
+          p=p+1;
+            myGameArea.stop(alert("you arrived the destinacion and have won "+p+" times"));
+
+            return startGame();
         }
     }
     myGameArea.clear();
