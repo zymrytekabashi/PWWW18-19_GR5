@@ -3,23 +3,23 @@
 <head>
   <meta charset="utf-8">
 <title>Activity</title>
- 
+
  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"  crossorigin="anonymous">
  <script type="text/javascript" src="JScriptForRegister.js"></script>
  <style type="text/css">
 
                  body{ background-color: #F5F5DC;
                   font-family: Goudy Old Style, Garamond, Big Caslon, Times New Roman, serif;}
-                
+
               header{
                 background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0)),url("image1.jpg");
                 height:680px;
-                
+
                 background-size: cover;
                 background-position: center;
-                
+
             }
-            
+
  .activity1 {
               padding:30px;
 
@@ -116,12 +116,16 @@ tr:nth-child(even) {
     text-align: center;
 
  }
+ section canvas {
+     border:1px solid #d3d3d3;
+     background-image: url("5.jpg");
+ }
 #calc div span:first-of-type,
 #calc div:first-of-type span:last-of-type{
     padding: 0.5em 0;
 
  }
-
+#linku:hover {background-color: black;}
 #calc div span:last-of-type {
     border-left: 0;
  }
@@ -211,7 +215,7 @@ tr:nth-child(even) {
                                   width:96%;
 
                            }
-                              
+
                              .container {
                                  padding:60px;
                                  -webkit-column-count: 3;
@@ -255,7 +259,7 @@ tr:nth-child(even) {
                            background: linear-gradient(#F08080, #008B8B);
 
                          }
-                        
+
 </style>
 
 
@@ -328,7 +332,7 @@ function showFunction2(diva, divb) {
 
 </head>
 
-<body onload = "startTimer(30)">
+<body onload = "startTimer(30) " >
 
 
 
@@ -349,8 +353,8 @@ function showFunction2(diva, divb) {
 
 
               </nav>
-   
- 
+
+
 <img id="img" src="girl1.jpg"  width = "1334" height="600">
 
  <p id="centered">“If you want real peace in the world, start with children.”<br> – Mahatma Gandi</p>
@@ -359,7 +363,7 @@ function showFunction2(diva, divb) {
   </header>
   <div class="container" >
   <article >
-      
+
      <h1 style="margin-top:0px;">Printable Connect the Dots for Kids</h1>
      <img src="girl1.jpg" class="image" alt="kids"><br>
      <p>A step up from coloring sheets, these printable color by numbers will have your children matching and using a legend to color in a picture.</p>
@@ -376,11 +380,12 @@ function showFunction2(diva, divb) {
 
 
 </article>
-     
-      
+
+
   <article>
       <br>
     <h1 >Printable Color by Number for Kids</h1>
+
     <img src ="4.png"  class = "image" alt="kid of our school"><br>
 <p>A step up from coloring sheets, these printable color by numbers will have your children matching and using a legend to color in a picture.</p>
      <div id="div3">
@@ -406,7 +411,7 @@ function showFunction2(diva, divb) {
 
 <p>A step up from coloring sheets, these printable color by numbers will have your children matching and using a legend to color in a picture.</p>
 
-<p style="color:red;" onclick="showFunction2('div5','div6')">show less</p></div>
+<p style="color:red;" onclick="showFunction2('div5','div6')"><br><a  id="linku">show less</a></p></div>
 </article>
 </div>
 
@@ -489,6 +494,8 @@ function showFunction2(diva, divb) {
    </div>
     <input type="reset" value="Clear Fields">
   </form>
+  <iframe src="prove.htm" style="height:400px;width:600px"></iframe>
+
 <div >
 
 
@@ -581,7 +588,7 @@ function showFunction2(diva, divb) {
 <h2 style="text-align:center">DID YOU KNOW THAT </h2>
 <p  style =" text-align: center; font-size:20px; text-shadow: 00, 3px ,#FF0000, 00 ,5px ,#0000FF;"id="wow"></p>
 <script>
-var interesting=Math.floor(Math.random() * 7) + 1 ;
+var interesting=Math.floor(Math.random() * 8) + 1 ;
 const arr = [4, 5, 6,100,-12,0];
 var dy= 2.56742;
 switch(interesting){
@@ -592,6 +599,7 @@ case 4:  document.getElementById("wow").innerHTML=" The largest number in {4,5,6
 case 5:  document.getElementById("wow").innerHTML= "2 to the power of 10 is  "+Math.pow(2,10) ;break;
 case 6:  document.getElementById("wow").innerHTML=" America was discoverd by Christopher Columbus ";break;
 case 7:  document.getElementById("wow").innerHTML="Sinuse of PI/2 is   "+Math.sin(Math.PI / 2);;break;
+case 8:  document.getElementById("wow").innerHTML="Hello in Albanian is &#199kemi\\P&#235rsh&#235ndetje";break;
 default:  document.getElementById("wow").innerHTML=" America was discoverd by Christopher Columbus ";break;  //it represents the number of digits after decimal point.
 }
 </script>
