@@ -11,11 +11,11 @@ and open the template in the editor.
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"  crossorigin="anonymous">
-        <script src="jquery-1.11.2.min.js"></script>
+        <script src="jquery-3.3.1.min.js"></script>
 
         <script>
             $(document).ready(function(){
-  $("button").click(function(){
+  $("#buton").click(function(){
     $('#video1').toggle();
   });
             });
@@ -26,7 +26,7 @@ and open the template in the editor.
 });
         </script>
 
-        <style onload='startGame()'>
+        <style >
             header{            
                 background:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url( "children.jpg" ) center  ;
                 height:800px;
@@ -41,7 +41,7 @@ and open the template in the editor.
                 }
 
     .navigacioni a,.navigacioni p {
-                   float:left;
+                   
                    display:inline-block;
                    color: #e8ddcf;
                    text-align: center;
@@ -89,7 +89,7 @@ and open the template in the editor.
                   font-family: Goudy Old Style, Garamond, Big Caslon, Times New Roman, serif;
                   margin-top: 40px;
                   text-align: center;
-
+                 
 
            }
            .image{
@@ -150,11 +150,11 @@ and open the template in the editor.
                 }
                 .grid{
                     padding:20px;
-  display:grid;
-  grid-column-gap: 10px;
-  grid-template-columns:  auto auto auto;
-  background-color: #F5F5DC;
-  transition:transform.2s;
+                   display:grid;
+                   grid-column-gap: 10px;
+                  grid-template-columns:  auto auto auto;
+                  background-color: #F5F5DC;
+                  transition:transform.2s;
 }
 
 .grid-item {
@@ -170,14 +170,16 @@ and open the template in the editor.
     -ms-transform: scale(1.1); /* IE 9 */
   -webkit-transform: scale(1.1); /* Safari 3-8 */
   transform: scale(1.1);
+  cursor: pointer;
 }
 
 .grid p{color:#8B4513;}
                 footer a:link{color:#4d1a00;
                    text-decoration: none;}
 
-               footer  a:hover{color: #ff5500;}
+              
                footer a:visited{color:#1a0900;}
+               footer  a:hover{color: #ff5500;}
 
                footer p{font-size:20px;
                color:white;}
@@ -231,14 +233,14 @@ and open the template in the editor.
     console.log("Sorry, your browser do not support local storage.");
 }
         </script>
-        <link href="/C:\Users\HP\Downloads\fontawesome-free-5.6.3-web\css/all.css" rel="stylesheet">
+        
     </head>
     <body  >
         <header>
              <div class="navigacioni">
 
 
-            <p style="color:#b3b3b3"> <a href="#"  style="text-decoration:none; font-size:25px;">ModernSchool</a><br>Discover MS</p>
+            <p style="color:#b3b3b3"> <a href="index.html"  style="text-decoration:none; font-size:25px;">ModernSchool</a><br>Discover MS</p>
               <nav style="float:right">
                   <p><a href="index.html" >HOME</a><br>Internships</p>
                   <p><a href="programs.html">PROGRAMS</a><br>Get informed</p>
@@ -272,7 +274,7 @@ and open the template in the editor.
 
                 Your browser does not support the video tag.
                  </video><br>
-             <button class="button">About this school.</button>
+             <button class="button" id='buton'>About this school.</button>
              <br>
              <p id='video1' style='margin-left:37%; font-size:20px;'>
                  It is our ultimate goal to maintain an environment where parents have a piece
@@ -360,8 +362,7 @@ and open the template in the editor.
                                     function init_map()
                                     {var myOptions =
                                                 {
-                                                    zoom:21,center:new google.maps.LatLng(40.6782, -73.9442
-                                                    ),
+                                                    zoom:21,center:new google.maps.LatLng(40.6782, -73.9442 ),
                                             mapTypeId: google.maps.MapTypeId.ROADMAP};
                                         map = new google.maps.Map(document.getElementById('gmap_canvas'),myOptions);
                                         marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(40.6782, -73.9442 )});

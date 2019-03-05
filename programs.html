@@ -10,12 +10,12 @@ and open the template in the editor.
         <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-        <script src="jquery-1.11.2.min.js"></script>
-        <script type="text/javascript" src="JSPrograms.js"></script>
+        <script src="jquery-3.3.1.min.js"></script>
+        
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"  crossorigin="anonymous">
         <style type="text/css" onload="answer.reset()">
             header{
-                background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url( "School1.jpg" );
+                background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url( "School1.jpg" );
                 height:800px;
                 margin:-10px;
                 background-size: cover;
@@ -31,7 +31,7 @@ and open the template in the editor.
                 }
 
     .navigacioni a,.navigacioni p {
-                   float:left;
+                   
                    display:inline-block;
                    color: #e8ddcf;
                    text-align: center;
@@ -134,8 +134,7 @@ and open the template in the editor.
                    display:inline-block;;
                         width:30%;
                text-align: center;}
-               a:hover{
-               color: #ff5500;}
+               
                .quiz{
                    padding:30px;
 
@@ -201,7 +200,7 @@ and open the template in the editor.
         <script>
 
 $(document).ready(function(){
-  $("button").click(function(){
+  $("#butoni").click(function(){
     $("#student1").fadeToggle();
     $("#student2").fadeToggle("slow");
     $("#student3").fadeToggle(2000);
@@ -225,7 +224,7 @@ $(document).ready(function(){
                <div class="navigacioni">
 
 
-            <p style="color:#b3b3b3"> <a href="#"  style="text-decoration:none; font-size:25px;">ModernSchool</a><br>Discover MS</p>
+            <p style="color:#b3b3b3"> <a href="index.html"  style="text-decoration:none; font-size:25px;">ModernSchool</a><br>Discover MS</p>
               <nav style="float:right">
                 <p><a href="index.html">HOME</a><br/>Internships</p>
                 <p><a href="programs.html"target="_self">PROGRAMS</a><br/>Get informed</p>

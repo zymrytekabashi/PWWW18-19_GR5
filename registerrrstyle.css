@@ -24,11 +24,11 @@ body {
               padding: 3em;
               margin: 20px;;
               color: #17202a ;
-              float:left
+              float:left;
               font-size: 16px;
               outline: 0px dashed #FFF8DC;
               border: 1px dashed gray;
-              position: apsolute;
+              position: relative;
               width:70%;
               border-radius:20px;
               font-family: Goudy Old Style, Garamond, Big Caslon, Times New Roman, serif;

@@ -2,7 +2,7 @@
 function validateForm() {
 
   var parent = document.forms["form"]["Parent"].value;
-  var email=document.forms["form"]["email"].value;
+  //var email=document.forms["form"]["email"].value;
    var email = document.getElementById('email');
    var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/; //Regular Expression Literal ;Character set [xyz]
    var children=document.forms["form"]["children"].value;
@@ -54,7 +54,7 @@ function validateForm() {
        }
    }
    if(!genValue){
-       window.alert("Please choose if you wnat financial aid or not");
+       window.alert("Please choose if you want financial aid or not");
        return false;
    }
    if (!p.test(password.value)) {
@@ -63,8 +63,8 @@ function validateForm() {
      return false;
    }
 //   /\b(\w*work\w*)\b/g
-localStorage.setItem("first_name", parent);
-alert("Your first name is saved.");
+//localStorage.setItem("first_name", parent);
+//alert("Your first name is saved.");
 }
 
 function allowDrop(ev){
@@ -96,7 +96,7 @@ setInterval(function() {
                                        document.body.className = "day";
                                }
                         console.log("test");
-                      }, 1000 * 60 * 60);
+                      }, 1 * 60 * 60);
 
   function RightNumber(){
                       var message, x;
