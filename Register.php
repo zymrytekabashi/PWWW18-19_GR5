@@ -7,10 +7,18 @@
     <link href="https://fonts.googleapis.com/css?family=Charm|Pacifico" rel="stylesheet">
      <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
      <link href="registerrrstyle.css" rel="stylesheet">
+
      <script type="text/javascript" src="JScriptForRegister.js"></script>
      <script src="jquery-3.3.1.min.js"></script>
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-
+     <script>
+     $(function(){
+         $("#flip").click(function(){
+            $("#panel").slideDown("slow")
+            $("#flip").text("Multiplication Table");
+         });
+     });
+     </script>
 
 
 
@@ -49,8 +57,8 @@
   <tr class="tablee">
     <td class="tablee"  rowspan="2">
    <section>
-      
-     <form method="post" name="form" id="form" action="Form.php"  autocomplete="on" onsubmit="return validateForm()">
+
+     <form method="post" name="form" id="form" action="Php/Form.php"  autocomplete="on" onsubmit="return validateForm()">
 
           <div  class="registration" >
 
@@ -90,7 +98,7 @@
             <label> No<label><input type="radio" class="radio" name="financial aid"  size="60" value="no"></br>
              <label>Password</label></br>
              <input type="password" name="password" placeholder="Password" size="60" id="password"></br>
-             <input type="submit" class="save" name="submit"value="Register">
+             <input type="submit" class="save"value="Register">
              <div id="drag" ondrop="drop(event)" ondragover="allowDrop(event)"> <img id="foto" src="logo.png" draggable="true" ondragstart="drag(event)"style"display:inline;" width="50" height="50"></div>
              <div id="drop" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
 
@@ -309,14 +317,7 @@ document.getElementById("demo").innerHTML = newdate;
                   </div>
 
       </footer>
-      <script>
-      $(function(){
-          $("#flip").click(function(){
-             $("#panel").slideDown("slow")
-             $("#flip").text("Multiplication Table");
-          });
-      });
-      </script>
+
    </body>
 
 
