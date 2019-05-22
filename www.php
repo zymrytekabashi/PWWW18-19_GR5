@@ -3,7 +3,8 @@
 <head>
 <meta charset="utf-8">
 <title>Activity</title>
-
+<?php include 'php/Sessions.php';
+echo $message; ?>
  <script src="jquery-3.3.1.min.js"></script>
  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"  crossorigin="anonymous">
  <script type="text/javascript" src="JScriptForRegister.js"></script>
@@ -347,11 +348,10 @@ function showFunction2(diva, divb) {
 <body onload = "startTimer(30) " >
 
 
+   
 
   <header>
-  <?php include'php/Sessions.php';
-echo "<p>$message</p>"; ?>
-          <div class="navigacioni">
+       <div class="navigacioni">
 
 
         <p style="color:#b3b3b3;"> <a href="index.html"   style="text-decoration: none; font-size:25px;">ModernSchool</a></br>Discover MS</p>

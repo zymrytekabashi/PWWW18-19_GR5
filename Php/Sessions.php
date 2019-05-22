@@ -1,16 +1,17 @@
 <?php
-if(isset($_SESSION['count']))
+session_start();
+if(!isset($_SESSION['count']))
 {
-$_SESSION['count']+=1;
+$_SESSION['count']=0;
 
 
 }
 
 else {
-    $_SESSION['count']=1;
+    $_SESSION['count']+=1;
 }
 
-$message="You have visited this page  ". $_SESSION['count'] .;
+$message="You have visited this page  ". $_SESSION['count'] ;
 $message .= " times in this session ";
 
 ?>
