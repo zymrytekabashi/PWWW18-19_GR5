@@ -4,7 +4,10 @@
 <meta charset="utf-8">
 <title>Activity</title>
 <?php include 'php/Sessions.php';
+  include 'php/cookie.php';
+
 echo $message; ?>
+ 
  <script src="jquery-3.3.1.min.js"></script>
  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"  crossorigin="anonymous">
  <script type="text/javascript" src="JScriptForRegister.js"></script>

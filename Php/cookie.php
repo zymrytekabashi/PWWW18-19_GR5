@@ -8,8 +8,8 @@ setcookie($cookie_name, $cookie_value, time() + (86400 * 30), "/"); // 86400 = 1
 if(!isset($_COOKIE[$cookie_name])) {
     echo "Cookie named '" . $cookie_name . "' is not set!";
 } else {
-    echo "Cookie '" . $cookie_name . "' is set!<br>";
-    echo "Value is: " . $_COOKIE[$cookie_name];
+    echo"<p hidden>Cookie '" . $cookie_name . "' is set!<br>";
+    echo "Value is: " . $_COOKIE[$cookie_name]."</p>";
 }
 
 
@@ -19,9 +19,9 @@ setcookie("cookie[three]","cookiethree");
 
 if(isset($_COOKIE['cookie'])){
     foreach($_COOKIE['cookie'] as $name=>$value){
-        $namw=htmlspecialchars($name);
+        $name=htmlspecialchars($name);
         $value=htmlspecialchars($value);
-        echo "$name: $value <br> \n";
+        echo" <p hidden>name: $value <br> \n</p>";
     }
 }
 
