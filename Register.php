@@ -58,7 +58,7 @@
     <td class="tablee"  rowspan="2">
    <section>
 
-     <form method="post" name="form" id="form" action="Php/Form.php"  autocomplete="on" onsubmit="return validateForm()">
+     <form method="post" name="form" id="form" action="Php/MySql.php"  autocomplete="on" onsubmit="return validateForm()">
 
           <div  class="registration" >
 
